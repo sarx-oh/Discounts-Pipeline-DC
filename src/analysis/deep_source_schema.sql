@@ -1,0 +1,6 @@
+SELECT * FROM (SELECT 'items' source_name,typeof(struct(t.*)) schema_text FROM {{items_sold}} t LIMIT 1)
+UNION ALL SELECT * FROM (SELECT 'products',typeof(struct(t.*)) FROM {{dim_items}} t LIMIT 1)
+UNION ALL SELECT * FROM (SELECT 'payments',typeof(struct(t.*)) FROM {{payments}} t LIMIT 1)
+UNION ALL SELECT * FROM (SELECT 'discounts',typeof(struct(t.*)) FROM {{discounts}} t LIMIT 1)
+UNION ALL SELECT * FROM (SELECT 'checks',typeof(struct(t.*)) FROM {{checks}} t LIMIT 1)
+UNION ALL SELECT * FROM (SELECT 'voids',typeof(struct(t.*)) FROM {{voids}} t LIMIT 1)

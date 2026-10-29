@@ -1,0 +1,36 @@
+{
+  "status": "AWAITING_HUMAN_REVIEW",
+  "arms": {
+    "A_POLICY": {
+      "selected": 33,
+      "reviewed": 0,
+      "review_coverage": 0.0,
+      "confirmed_breach_share": null,
+      "justified_share": null,
+      "insufficient_evidence_share": null,
+      "data_issue_share": null,
+      "mean_review_minutes": null
+    },
+    "B_POLICY_PLUS_CONTEXT": {
+      "selected": 50,
+      "reviewed": 0,
+      "review_coverage": 0.0,
+      "confirmed_breach_share": null,
+      "justified_share": null,
+      "insufficient_evidence_share": null,
+      "data_issue_share": null,
+      "mean_review_minutes": null
+    },
+    "CONTROL": {
+      "selected": 50,
+      "reviewed": 0,
+      "review_coverage": 0.0,
+      "confirmed_breach_share": null,
+      "justified_share": null,
+      "insufficient_evidence_share": null,
+      "data_issue_share": null,
+      "mean_review_minutes": null
+    }
+  },
+  "limitation": "No recall estimate or misuse probability. Metrics among reviewed cases include unresolved decisions; incomplete coverage can bias comparisons."
+}

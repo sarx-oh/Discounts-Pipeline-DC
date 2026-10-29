@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "train_n": 81699,
+  "replication_n": 21483,
+  "source_statement_id": "01f1d269-05a4-1cba-9889-ac2d8ed58798",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "code_sha256": "df9ab218e607ad74f28c8ade6d4a14e869f6c79bcff2248e48a09b49eb70f462",
+  "partition": "hash residue 19, July 26-August 20; no shared sample keys",
+  "limitation": "Previously included in full-population summaries; partially reserved replication only",
+  "models": {
+    "context": {
+      "log_loss": 0.3114174246811842,
+      "roc_auc": 0.6674126078959254,
+      "average_precision": 0.17229030074392274,
+      "brier": 0.08972270072583634,
+      "observed_rate": 0.10352371642694223,
+      "predicted_rate": 0.10124480990343675
+    },
+    "payment": {
+      "log_loss": 0.3084038164276248,
+      "roc_auc": 0.6819774605052444,
+      "average_precision": 0.1942785197433125,
+      "brier": 0.08888054111673231,
+      "observed_rate": 0.10352371642694223,
+      "predicted_rate": 0.10161849397269825
+    },
+    "product": {
+      "log_loss": 0.3024866264764088,
+      "roc_auc": 0.7111788177329781,
+      "average_precision": 0.2120970968080004,
+      "brier": 0.08771497305923441,
+      "observed_rate": 0.10352371642694223,
+      "predicted_rate": 0.10301949466297232
+    },
+    "product_employee": {
+      "log_loss": 0.30100032012987693,
+      "roc_auc": 0.7158796704782702,
+      "average_precision": 0.2226547630919683,
+      "brier": 0.0872777046166432,
+      "observed_rate": 0.10352371642694223,
+      "predicted_rate": 0.10339078458336634
+    },
+    "retrospective_tip": {
+      "log_loss": 0.29943188084438654,
+      "roc_auc": 0.7249478987867394,
+      "average_precision": 0.22368108500812073,
+      "brier": 0.0870167408146342,
+      "observed_rate": 0.10352371642694223,
+      "predicted_rate": 0.10349787593117794
+    },
+    "boosted_payment": {
+      "log_loss": 0.30530302793201797,
+      "roc_auc": 0.6966446314364471,
+      "average_precision": 0.21041419434729394,
+      "brier": 0.08821076922849887,
+      "observed_rate": 0.10352371642694223,
+      "predicted_rate": 0.10156871867361915
+    }
+  },
+  "paired": {
+    "payment_vs_context": {
+      "point": 0.003013608253559359,
+      "interval95": [
+        0.0009582160523954104,
+        0.005187056357268614
+      ],
+      "locations": 127,
+      "dates": 26,
+      "method": "independent exponential weights crossed by location and date"
+    },
+    "product_vs_payment": {
+      "point": 0.005917189951216058,
+      "interval95": [
+        0.0036561901052666527,
+        0.008086338397329555
+      ],
+      "locations": 127,
+      "dates": 26,
+      "method": "independent exponential weights crossed by location and date"
+    },
+    "retrospective_tip_vs_product_employee": {
+      "point": 0.0015684392854904319,
+      "interval95": [
+        2.7107788245530896e-05,
+        0.003191434240925658
+      ],
+      "locations": 127,
+      "dates": 26,
+      "method": "independent exponential weights crossed by location and date"
+    },
+    "boosted_payment_vs_payment": {
+      "point": 0.003100788495606841,
+      "interval95": [
+        9.223282046696931e-05,
+        0.006436086726567517
+      ],
+      "locations": 127,
+      "dates": 26,
+      "method": "independent exponential weights crossed by location and date"
+    }
+  },
+  "severity": {
+    "mean_baseline": {
+      "mae": 0.1656179821460273,
+      "rmse": 0.19591117553769258,
+      "observed_mean": 0.23994046672661873,
+      "predicted_mean": 0.23658746118830853
+    },
+    "fractional": {
+      "mae": 0.136978001833119,
+      "rmse": 0.1724679696113949,
+      "observed_mean": 0.23994046672661873,
+      "predicted_mean": 0.23767593985467564
+    },
+    "squared_error_gain": {
+      "point": 0.008635988158683558,
+      "interval95": [
+        0.0066074789001413945,
+        0.010688087536598025
+      ],
+      "locations": 127,
+      "dates": 26,
+      "method": "independent exponential weights crossed by location and date"
+    }
+  }
+}

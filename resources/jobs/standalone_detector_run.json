@@ -1,0 +1,32 @@
+{
+  "run_name": "Applebees standalone discount-review prototype",
+  "tasks": [
+    {
+      "task_key": "standalone_detector",
+      "timeout_seconds": 7200,
+      "max_retries": 0,
+      "disable_auto_optimization": true,
+      "notebook_task": {
+        "notebook_path": "/Users/a01645653@tec.mx/Applebees_project/01_validated_release/Applebees_Fase2/notebooks/02_run_detection_prototype.py",
+        "source": "WORKSPACE"
+      },
+      "environment_key": "detector"
+    }
+  ],
+  "environments": [
+    {
+      "environment_key": "detector",
+      "spec": {
+        "environment_version": "5",
+        "dependencies": [
+          "numpy==2.4.4",
+          "pandas==3.0.2",
+          "scipy==1.16.3",
+          "scikit-learn==1.8.0",
+          "statsmodels==0.14.6",
+          "matplotlib==3.10.9"
+        ]
+      }
+    }
+  ]
+}

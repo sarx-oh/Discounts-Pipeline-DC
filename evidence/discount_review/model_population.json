@@ -1,0 +1,38 @@
+{
+  "statement_id": "01f1d24a-a28c-1636-82be-ba40970102b7",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  },
+  "rows": [
+    {
+      "temporal_split": "validation",
+      "all_tickets": "467839",
+      "eligible": "450549",
+      "eligible_discounted": "48500",
+      "nonpositive_reconciled": "14184",
+      "nonreconciled": "3037",
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-25"
+    },
+    {
+      "temporal_split": "test",
+      "all_tickets": "451484",
+      "eligible": "434233",
+      "eligible_discounted": "44010",
+      "nonpositive_reconciled": "14319",
+      "nonreconciled": "2864",
+      "first_date": "2026-07-26",
+      "last_date": "2026-08-20"
+    },
+    {
+      "temporal_split": "train",
+      "all_tickets": "1223523",
+      "eligible": "1178191",
+      "eligible_discounted": "117915",
+      "nonpositive_reconciled": "36690",
+      "nonreconciled": "8359",
+      "first_date": "2026-04-28",
+      "last_date": "2026-06-30"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "job_id": 372187525837578,
+  "settings_unchanged": true,
+  "task_keys": [
+    "bronze",
+    "silver",
+    "gold",
+    "auditoria"
+  ],
+  "detector_task_added": false,
+  "settings_sha256": "59ebb222e445536db0ee4947dd73baeb877844db2a4bcad8bcd738f9de334bc4"
+}

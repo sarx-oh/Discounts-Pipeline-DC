@@ -1,0 +1,42 @@
+{
+  "sample_positive_tickets": 10588,
+  "interpretation": "Rounded percentages in existing 5% sample; expected promotions and product mix can produce repetition. Not anomaly labels.",
+  "patterns": [
+    {
+      "rounded_pct": 0.0,
+      "sample_tickets": 106,
+      "emp50_share": 0.0,
+      "most_common_dominant_category": "FOOD"
+    },
+    {
+      "rounded_pct": 10.0,
+      "sample_tickets": 1708,
+      "emp50_share": 0.0,
+      "most_common_dominant_category": "FOOD"
+    },
+    {
+      "rounded_pct": 15.0,
+      "sample_tickets": 121,
+      "emp50_share": 0.0,
+      "most_common_dominant_category": "FOOD"
+    },
+    {
+      "rounded_pct": 25.0,
+      "sample_tickets": 288,
+      "emp50_share": 0.013888888888888888,
+      "most_common_dominant_category": "FOOD"
+    },
+    {
+      "rounded_pct": 50.0,
+      "sample_tickets": 795,
+      "emp50_share": 0.9421383647798742,
+      "most_common_dominant_category": "FOOD"
+    },
+    {
+      "rounded_pct": 50.1,
+      "sample_tickets": 395,
+      "emp50_share": 0.9949367088607595,
+      "most_common_dominant_category": "FOOD"
+    }
+  ]
+}

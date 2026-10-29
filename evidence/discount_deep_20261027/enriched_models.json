@@ -1,0 +1,335 @@
+{
+  "status": "PASS",
+  "n": 103495,
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "target_reconciliation": "all 103495 keys and target values match prior sample",
+  "source_sha256": "83bf550afe1a36a4e190ccf426ff4bab073cfaedbfd05669da250550d3d75a53",
+  "folds": [
+    {
+      "train_end": "2026-05-31",
+      "end": "2026-06-30",
+      "train_n": 32656,
+      "evaluation_n": 26513,
+      "models": {
+        "baseline_payment": {
+          "log_loss": 0.30974991360613374,
+          "roc_auc": 0.6715092887589558,
+          "average_precision": 0.17466121067454538,
+          "brier": 0.08871633876283679,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.1015425369627305,
+          "card_only": {
+            "log_loss": 0.31445087882721,
+            "roc_auc": 0.6031692736353469,
+            "average_precision": 0.13926828538915118,
+            "brier": 0.08709672543150883,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.0959973547485875
+          }
+        },
+        "product_detailed_payment": {
+          "log_loss": 0.3061620715314338,
+          "roc_auc": 0.6884989577118619,
+          "average_precision": 0.18920069864290026,
+          "brier": 0.08791059938655543,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10237456127213641,
+          "gain_vs_baseline_payment": {
+            "point": 0.0035878420746999484,
+            "interval95": [
+              0.0016659925635863966,
+              0.005393972910743751
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.312099008494113,
+            "roc_auc": 0.6210753214655452,
+            "average_precision": 0.14863402850145213,
+            "brier": 0.08664127957875803,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.09692107726288954
+          }
+        },
+        "product_employee": {
+          "log_loss": 0.3054412761478964,
+          "roc_auc": 0.6912995932299515,
+          "average_precision": 0.19505266604877133,
+          "brier": 0.08767950862020317,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10256454915490773,
+          "gain_vs_baseline_payment": {
+            "point": 0.004308637458237351,
+            "interval95": [
+              0.00223913272753515,
+              0.006224897772556375
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.3118220928750932,
+            "roc_auc": 0.6226351757869593,
+            "average_precision": 0.15175271535631651,
+            "brier": 0.08656774021743363,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.09699018207245541
+          }
+        },
+        "retrospective_tip": {
+          "log_loss": 0.3026349149923145,
+          "roc_auc": 0.7064719050681668,
+          "average_precision": 0.20190624686795927,
+          "brier": 0.08713598196072618,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10245382172610483,
+          "gain_vs_product_employee": {
+            "point": 0.0028063611555819027,
+            "interval95": [
+              0.0013687858934340903,
+              0.00432004486529869
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.3072927307500469,
+            "roc_auc": 0.6530491500930203,
+            "average_precision": 0.1655531437453362,
+            "brier": 0.08574908562653587,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.09680992723633124
+          }
+        }
+      }
+    },
+    {
+      "train_end": "2026-06-30",
+      "end": "2026-07-25",
+      "train_n": 59169,
+      "evaluation_n": 22530,
+      "models": {
+        "baseline_payment": {
+          "log_loss": 0.3207631348619367,
+          "roc_auc": 0.6594625541494797,
+          "average_precision": 0.18744882272793106,
+          "brier": 0.09219872710245967,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09940253806469397,
+          "card_only": {
+            "log_loss": 0.33213854811907845,
+            "roc_auc": 0.5643893415964791,
+            "average_precision": 0.13737054234786797,
+            "brier": 0.09211598506030252,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.09467973526912746
+          }
+        },
+        "product_detailed_payment": {
+          "log_loss": 0.31614998198517197,
+          "roc_auc": 0.681814764004034,
+          "average_precision": 0.20522293847795092,
+          "brier": 0.09122786334568911,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.10137400523509384,
+          "gain_vs_baseline_payment": {
+            "point": 0.004613152876764767,
+            "interval95": [
+              0.0023490745470728233,
+              0.006845374225674367
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.32790686459462887,
+            "roc_auc": 0.592892885153664,
+            "average_precision": 0.1533004378308261,
+            "brier": 0.09137056265120011,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.09686596859651969
+          }
+        },
+        "product_employee": {
+          "log_loss": 0.3152734291628377,
+          "roc_auc": 0.684116086566164,
+          "average_precision": 0.2134015170805021,
+          "brier": 0.09092899100536378,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.10155697427684005,
+          "gain_vs_baseline_payment": {
+            "point": 0.0054897056990990106,
+            "interval95": [
+              0.003148044263774062,
+              0.008110340892625707
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.3275109003377293,
+            "roc_auc": 0.5945396671048688,
+            "average_precision": 0.1571647673788355,
+            "brier": 0.09126786476997234,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.096989838382194
+          }
+        },
+        "retrospective_tip": {
+          "log_loss": 0.3126095688511041,
+          "roc_auc": 0.6986792340524965,
+          "average_precision": 0.21829617952685393,
+          "brier": 0.09045203440788242,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.10161866657171242,
+          "gain_vs_product_employee": {
+            "point": 0.0026638603117336386,
+            "interval95": [
+              0.0010645312215251726,
+              0.004449101069636375
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.3232563329878043,
+            "roc_auc": 0.6247323003387152,
+            "average_precision": 0.16895559728224843,
+            "brier": 0.09050042700373709,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.09692950977141
+          }
+        }
+      }
+    },
+    {
+      "train_end": "2026-07-25",
+      "end": "2026-08-20",
+      "train_n": 81699,
+      "evaluation_n": 21796,
+      "models": {
+        "baseline_payment": {
+          "log_loss": 0.30359178278629284,
+          "roc_auc": 0.7042813289856238,
+          "average_precision": 0.20532361257262538,
+          "brier": 0.08764183756485902,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10092170551475282,
+          "card_only": {
+            "log_loss": 0.30116141019594295,
+            "roc_auc": 0.6226498202199471,
+            "average_precision": 0.1481890854118097,
+            "brier": 0.08285569504852976,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.0965440351485429
+          }
+        },
+        "product_detailed_payment": {
+          "log_loss": 0.2990003008893954,
+          "roc_auc": 0.72373571638591,
+          "average_precision": 0.22014338825369617,
+          "brier": 0.0866573294960052,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10245653488488173,
+          "gain_vs_baseline_payment": {
+            "point": 0.004591481896897476,
+            "interval95": [
+              0.0020299686635503137,
+              0.006775922624707335
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.29758023913689385,
+            "roc_auc": 0.6460392742865496,
+            "average_precision": 0.1586300904667992,
+            "brier": 0.08224848291089354,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.09819407473802416
+          }
+        },
+        "product_employee": {
+          "log_loss": 0.29704475250556955,
+          "roc_auc": 0.7291802798921776,
+          "average_precision": 0.2343354790430044,
+          "brier": 0.08608258297820295,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.1028078087117205,
+          "gain_vs_baseline_payment": {
+            "point": 0.0065470302807232785,
+            "interval95": [
+              0.004150864574584308,
+              0.00891248624292437
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.296367470436679,
+            "roc_auc": 0.6508458415372833,
+            "average_precision": 0.1655760089072033,
+            "brier": 0.08196890404940928,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.09835767337274297
+          }
+        },
+        "retrospective_tip": {
+          "log_loss": 0.2952439744449517,
+          "roc_auc": 0.7365972582400724,
+          "average_precision": 0.2395738517261985,
+          "brier": 0.0856806591319602,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10265209201636831,
+          "gain_vs_product_employee": {
+            "point": 0.0018007780606178895,
+            "interval95": [
+              0.00026509095203687734,
+              0.0033424272874274827
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "card_only": {
+            "log_loss": 0.293741148796477,
+            "roc_auc": 0.6669817103799595,
+            "average_precision": 0.1756296467865892,
+            "brier": 0.0814346142146821,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.09800461052400378
+          }
+        }
+      }
+    }
+  ],
+  "limitations": "Retrospective association. Recorded gratuity may follow discount. Product category is final basket composition. Previously inspected time windows.",
+  "payment_refit_contrast": {
+    "point_pp": 7.5545528563738795,
+    "interval95_pp": [
+      6.245378898217724,
+      8.945517567729954
+    ],
+    "evaluation_n": 15166,
+    "draws": 150,
+    "training_locations": 127,
+    "training_weeks": 13,
+    "method": "Crossed location/week exponential-weight refits; fixed preprocessing and evaluation population; regularization retained",
+    "interpretation": "Associational model contrast; limited training weeks and no causal identification. Not a fixed-coefficient composition interval."
+  },
+  "runtime_seconds": 37.789094833889976
+}

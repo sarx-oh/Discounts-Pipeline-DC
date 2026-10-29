@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "change_scope": "English documentation and organization; notebook executable cells unchanged",
+  "notebooks": [
+    {
+      "file": "src/quality/00_auditoria_modelo.ipynb",
+      "executable_cells_match_validated_job": true
+    },
+    {
+      "file": "src/transformations/bronze/01_bronze_ingesta.ipynb",
+      "executable_cells_match_validated_job": true
+    },
+    {
+      "file": "src/transformations/silver/02_silver_preparacion.ipynb",
+      "executable_cells_match_validated_job": true
+    },
+    {
+      "file": "src/transformations/gold/03_gold_metricas.ipynb",
+      "executable_cells_match_validated_job": true
+    }
+  ],
+  "baseline_job": 372187525837578
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "source_statement_id": "01f1d268-f52e-1d6d-a834-0bf377a00e41",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  },
+  "supported_tickets_original": 1001265,
+  "eligible_attributed_tickets_original": 2062794,
+  "coverage_original": 0.4853926276690741,
+  "qualified_profiles": 435,
+  "qualification": "at least 8 early weeks/500 tickets and 2 later weeks/100 tickets; complete weeks only; transition week excluded",
+  "selection": [
+    {
+      "prior_equivalent_tickets": 0,
+      "early_above_10pp": 5,
+      "later_above_10pp": 4,
+      "later_positive": 5,
+      "mean_later_difference_pp": 15.89867254446353
+    },
+    {
+      "prior_equivalent_tickets": 100,
+      "early_above_10pp": 4,
+      "later_above_10pp": 3,
+      "later_positive": 4,
+      "mean_later_difference_pp": 16.248239474176337
+    },
+    {
+      "prior_equivalent_tickets": 500,
+      "early_above_10pp": 1,
+      "later_above_10pp": 1,
+      "later_positive": 1,
+      "mean_later_difference_pp": 16.79994856539609
+    }
+  ],
+  "multiplicity": {
+    "profiles_tested": 534,
+    "raw_p_below_05": 41,
+    "BY_below_05": 0,
+    "diagnostic_only": "Positive weekly excess sign test; independence of weeks unverified. BY addresses cross-profile dependence, not serial dependence inside a profile."
+  },
+  "rank_correlation_early_later": 0.5153883379755382
+}

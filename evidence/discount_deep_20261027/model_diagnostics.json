@@ -1,0 +1,740 @@
+{
+  "status": "PASS",
+  "folds": [
+    {
+      "evaluation_end": "2026-06-30",
+      "n": 26513,
+      "paired": {
+        "boosted_context_payment_vs_payment_logistic": {
+          "point": -0.0029484121204599975,
+          "interval95": [
+            -0.006815336338455034,
+            0.0008274434187637437
+          ],
+          "locations": 127,
+          "dates": 30,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "employee_logistic_vs_payment_logistic": {
+          "point": 0.0005969903736167343,
+          "interval95": [
+            -0.0002132938592428072,
+            0.00151390304703661
+          ],
+          "locations": 127,
+          "dates": 30,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "payment_logistic_vs_context_logistic": {
+          "point": 0.0031250434825727553,
+          "interval95": [
+            0.0013749639783820385,
+            0.005109685411713751
+          ],
+          "locations": 127,
+          "dates": 30,
+          "method": "independent exponential weights crossed by location and date"
+        }
+      },
+      "calibration": {
+        "payment_logistic": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 5038,
+            "observed": 0.02143707820563716,
+            "predicted": 0.019421535716239176
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8911,
+            "observed": 0.08281898776792727,
+            "predicted": 0.07850737831428672
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 10865,
+            "observed": 0.13584905660377358,
+            "predicted": 0.13609071135612782
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 1678,
+            "observed": 0.22765196662693682,
+            "predicted": 0.24061940172733298
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 21,
+            "observed": 0.19047619047619047,
+            "predicted": 0.5898795545419214
+          }
+        ],
+        "employee_logistic": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 5151,
+            "observed": 0.0231023102310231,
+            "predicted": 0.019883767579879755
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8971,
+            "observed": 0.08204213577081708,
+            "predicted": 0.07802476135232092
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 10652,
+            "observed": 0.13537363875328576,
+            "predicted": 0.13670834363513723
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 1709,
+            "observed": 0.2363955529549444,
+            "predicted": 0.24423212763876398
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 30,
+            "observed": 0.23333333333333334,
+            "predicted": 0.5557126394709055
+          }
+        ],
+        "boosted_context_payment": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 7646,
+            "observed": 0.036228093120585926,
+            "predicted": 0.01843326821414907
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8052,
+            "observed": 0.09513164431197219,
+            "predicted": 0.07421796282610514
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 7941,
+            "observed": 0.13474373504596399,
+            "predicted": 0.1404553840133612
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 2667,
+            "observed": 0.1968503937007874,
+            "predicted": 0.26116815679020355
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 207,
+            "observed": 0.33816425120772947,
+            "predicted": 0.46603729047241976
+          }
+        ]
+      },
+      "groups": {
+        "payment_logistic": {
+          "OTROS_O_MIXTOS": {
+            "n": 4408,
+            "log_loss": 0.14298769730978478,
+            "roc_auc": 0.8840279730387424,
+            "average_precision": 0.17566543347643282,
+            "brier": 0.04154860927641257,
+            "observed_rate": 0.047867513611615245,
+            "predicted_rate": 0.04249941072559346
+          },
+          "SOLO_EFECTIVO": {
+            "n": 5010,
+            "log_loss": 0.44043351621643306,
+            "roc_auc": 0.5948113839620919,
+            "average_precision": 0.22584620139696004,
+            "brier": 0.1357428141463099,
+            "observed_rate": 0.16526946107784432,
+            "predicted_rate": 0.17241219620538958
+          },
+          "SOLO_TARJETA": {
+            "n": 17095,
+            "log_loss": 0.31445087876815936,
+            "roc_auc": 0.6031692736353469,
+            "average_precision": 0.13926828538915118,
+            "brier": 0.08709672542335348,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.09599735859946056
+          }
+        },
+        "employee_logistic": {
+          "OTROS_O_MIXTOS": {
+            "n": 4408,
+            "log_loss": 0.14249024481809017,
+            "roc_auc": 0.8875714655130554,
+            "average_precision": 0.18810304843374306,
+            "brier": 0.04133803664795585,
+            "observed_rate": 0.047867513611615245,
+            "predicted_rate": 0.04266496736045233
+          },
+          "SOLO_EFECTIVO": {
+            "n": 5010,
+            "log_loss": 0.4381994358328569,
+            "roc_auc": 0.6044940127576893,
+            "average_precision": 0.23782424134873378,
+            "brier": 0.1350312627643569,
+            "observed_rate": 0.16526946107784432,
+            "predicted_rate": 0.17230660094499026
+          },
+          "SOLO_TARJETA": {
+            "n": 17095,
+            "log_loss": 0.3143080011740912,
+            "roc_auc": 0.6048074702417782,
+            "average_precision": 0.14138616975787632,
+            "brier": 0.08704316065024925,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.09601284210334093
+          }
+        },
+        "boosted_context_payment": {
+          "OTROS_O_MIXTOS": {
+            "n": 4408,
+            "log_loss": 0.13836861580440912,
+            "roc_auc": 0.8813449462321881,
+            "average_precision": 0.184065017140296,
+            "brier": 0.04143247510476079,
+            "observed_rate": 0.047867513611615245,
+            "predicted_rate": 0.04144816974397759
+          },
+          "SOLO_EFECTIVO": {
+            "n": 5010,
+            "log_loss": 0.44520083436486013,
+            "roc_auc": 0.6059700302885381,
+            "average_precision": 0.24651188551091519,
+            "brier": 0.136716868329519,
+            "observed_rate": 0.16526946107784432,
+            "predicted_rate": 0.16617420773329727
+          },
+          "SOLO_TARJETA": {
+            "n": 17095,
+            "log_loss": 0.31881752971298716,
+            "roc_auc": 0.6103449142418039,
+            "average_precision": 0.14159948231504388,
+            "brier": 0.08769002340471715,
+            "observed_rate": 0.09763088622404212,
+            "predicted_rate": 0.09544714186623426
+          }
+        }
+      },
+      "severity_paired": {
+        "fractional_logistic": {
+          "point": 0.006341936077692495,
+          "interval95": [
+            0.004650546806309655,
+            0.008268292114530736
+          ],
+          "locations": 127,
+          "dates": 30,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "boosted_conditional": {
+          "point": 0.004083029245147644,
+          "interval95": [
+            0.001556506916895051,
+            0.0069650768218928434
+          ],
+          "locations": 127,
+          "dates": 30,
+          "method": "independent exponential weights crossed by location and date"
+        }
+      }
+    },
+    {
+      "evaluation_end": "2026-07-25",
+      "n": 22530,
+      "paired": {
+        "boosted_context_payment_vs_payment_logistic": {
+          "point": 0.003459717861257874,
+          "interval95": [
+            0.0001669375900906644,
+            0.006870681396110942
+          ],
+          "locations": 127,
+          "dates": 25,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "employee_logistic_vs_payment_logistic": {
+          "point": 0.000788113205989485,
+          "interval95": [
+            -0.0002499613773089855,
+            0.002093149284016371
+          ],
+          "locations": 127,
+          "dates": 25,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "payment_logistic_vs_context_logistic": {
+          "point": 0.003574772274208216,
+          "interval95": [
+            0.0013837303396787173,
+            0.0059428106730171045
+          ],
+          "locations": 127,
+          "dates": 25,
+          "method": "independent exponential weights crossed by location and date"
+        }
+      },
+      "calibration": {
+        "payment_logistic": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 3991,
+            "observed": 0.03457780005011275,
+            "predicted": 0.01720177014152091
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8159,
+            "observed": 0.08322098296359848,
+            "predicted": 0.07790824822074009
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 9180,
+            "observed": 0.13986928104575164,
+            "predicted": 0.13582627941008296
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 1188,
+            "observed": 0.25336700336700335,
+            "predicted": 0.23783155050686935
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 12,
+            "observed": 0.4166666666666667,
+            "predicted": 0.4836993222194997
+          }
+        ],
+        "employee_logistic": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 4084,
+            "observed": 0.03550440744368266,
+            "predicted": 0.01775277470844784
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8243,
+            "observed": 0.08625500424602693,
+            "predicted": 0.07735987991217648
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 8881,
+            "observed": 0.13421911946852833,
+            "predicted": 0.13646557320071037
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 1300,
+            "observed": 0.2676923076923077,
+            "predicted": 0.24098876095212338
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 22,
+            "observed": 0.5,
+            "predicted": 0.4753153269332429
+          }
+        ],
+        "boosted_context_payment": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 5965,
+            "observed": 0.03487007544006706,
+            "predicted": 0.0183648476484121
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 7439,
+            "observed": 0.09423309584621589,
+            "predicted": 0.07510996565698529
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 6980,
+            "observed": 0.14068767908309457,
+            "predicted": 0.13874715387950134
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 2025,
+            "observed": 0.22864197530864197,
+            "predicted": 0.25761831461415813
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 121,
+            "observed": 0.4380165289256198,
+            "predicted": 0.47590908930511616
+          }
+        ]
+      },
+      "groups": {
+        "payment_logistic": {
+          "OTROS_O_MIXTOS": {
+            "n": 3757,
+            "log_loss": 0.14255881093052414,
+            "roc_auc": 0.8900888571254967,
+            "average_precision": 0.22217120310708627,
+            "brier": 0.04280893346874552,
+            "observed_rate": 0.051636944370508385,
+            "predicted_rate": 0.04324830795383711
+          },
+          "SOLO_EFECTIVO": {
+            "n": 4162,
+            "log_loss": 0.4416923712559556,
+            "roc_auc": 0.6256996718780158,
+            "average_precision": 0.2558291974854369,
+            "brier": 0.13707292183198383,
+            "observed_rate": 0.17011052378664104,
+            "predicted_rate": 0.16667219825253
+          },
+          "SOLO_TARJETA": {
+            "n": 14611,
+            "log_loss": 0.33213854799745907,
+            "roc_auc": 0.5643893415964791,
+            "average_precision": 0.13737054234786797,
+            "brier": 0.09211598503823927,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.09467973435162472
+          }
+        },
+        "employee_logistic": {
+          "OTROS_O_MIXTOS": {
+            "n": 3757,
+            "log_loss": 0.14206149823882155,
+            "roc_auc": 0.8918639742369312,
+            "average_precision": 0.22495959226901707,
+            "brier": 0.04264662097039404,
+            "observed_rate": 0.051636944370508385,
+            "predicted_rate": 0.04424702758849
+          },
+          "SOLO_EFECTIVO": {
+            "n": 4162,
+            "log_loss": 0.4389698161996657,
+            "roc_auc": 0.635669689445464,
+            "average_precision": 0.27107756740728384,
+            "brier": 0.13614494668439217,
+            "observed_rate": 0.17011052378664104,
+            "predicted_rate": 0.1671420080029038
+          },
+          "SOLO_TARJETA": {
+            "n": 14611,
+            "log_loss": 0.33182669305228507,
+            "roc_auc": 0.5679235702954646,
+            "average_precision": 0.14077662546467876,
+            "brier": 0.09201342792041285,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.09472259147855244
+          }
+        },
+        "boosted_context_payment": {
+          "OTROS_O_MIXTOS": {
+            "n": 3757,
+            "log_loss": 0.13898965069384922,
+            "roc_auc": 0.8914560011110758,
+            "average_precision": 0.23515361410257773,
+            "brier": 0.04256515220141177,
+            "observed_rate": 0.051636944370508385,
+            "predicted_rate": 0.042869444423563836
+          },
+          "SOLO_EFECTIVO": {
+            "n": 4162,
+            "log_loss": 0.4327405295521075,
+            "roc_auc": 0.6608525610198934,
+            "average_precision": 0.2813292661314152,
+            "brier": 0.13464740387559115,
+            "observed_rate": 0.17011052378664104,
+            "predicted_rate": 0.1635633013702425
+          },
+          "SOLO_TARJETA": {
+            "n": 14611,
+            "log_loss": 0.3302714243759728,
+            "roc_auc": 0.5983207457921684,
+            "average_precision": 0.1471760142252627,
+            "brier": 0.09182308002648522,
+            "observed_rate": 0.10300458558620218,
+            "predicted_rate": 0.09405212570811868
+          }
+        }
+      },
+      "severity_paired": {
+        "fractional_logistic": {
+          "point": 0.00741373467745302,
+          "interval95": [
+            0.005470665951069806,
+            0.00943552000511353
+          ],
+          "locations": 127,
+          "dates": 25,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "boosted_conditional": {
+          "point": 0.00771046763629537,
+          "interval95": [
+            0.004846409689265264,
+            0.010884879847725182
+          ],
+          "locations": 127,
+          "dates": 25,
+          "method": "independent exponential weights crossed by location and date"
+        }
+      }
+    },
+    {
+      "evaluation_end": "2026-08-20",
+      "n": 21796,
+      "paired": {
+        "boosted_context_payment_vs_payment_logistic": {
+          "point": 0.002948581611169264,
+          "interval95": [
+            -0.00023672052498966692,
+            0.006105138524424981
+          ],
+          "locations": 127,
+          "dates": 26,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "employee_logistic_vs_payment_logistic": {
+          "point": 0.0018469468759092357,
+          "interval95": [
+            0.0007010209255621472,
+            0.0031201358073308936
+          ],
+          "locations": 127,
+          "dates": 26,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "payment_logistic_vs_context_logistic": {
+          "point": 0.005745926295949677,
+          "interval95": [
+            0.0035840652490485535,
+            0.008211713049674219
+          ],
+          "locations": 127,
+          "dates": 26,
+          "method": "independent exponential weights crossed by location and date"
+        }
+      },
+      "calibration": {
+        "payment_logistic": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 3226,
+            "observed": 0.006819590824550527,
+            "predicted": 0.012291584092561989
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8385,
+            "observed": 0.07239117471675612,
+            "predicted": 0.0779083356478331
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 8960,
+            "observed": 0.1431919642857143,
+            "predicted": 0.13569967991141552
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 1215,
+            "observed": 0.2674897119341564,
+            "predicted": 0.23517246145519793
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 10,
+            "observed": 0.3,
+            "predicted": 0.5171737306060504
+          }
+        ],
+        "employee_logistic": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 3513,
+            "observed": 0.00825505266154284,
+            "predicted": 0.014892198996014341
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 8350,
+            "observed": 0.07317365269461078,
+            "predicted": 0.07734201110083529
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 8535,
+            "observed": 0.14012888107791446,
+            "predicted": 0.13579406315893977
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 1369,
+            "observed": 0.2841490138787436,
+            "predicted": 0.24141652137503064
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 29,
+            "observed": 0.5172413793103449,
+            "predicted": 0.47576288138317263
+          }
+        ],
+        "boosted_context_payment": [
+          {
+            "band": "(-0.001, 0.05]",
+            "n": 5351,
+            "observed": 0.020743786208185386,
+            "predicted": 0.017264699016043536
+          },
+          {
+            "band": "(0.05, 0.1]",
+            "n": 7037,
+            "observed": 0.08242148642887594,
+            "predicted": 0.07555035503596798
+          },
+          {
+            "band": "(0.1, 0.2]",
+            "n": 7266,
+            "observed": 0.13721442334159098,
+            "predicted": 0.13821515270957935
+          },
+          {
+            "band": "(0.2, 0.4]",
+            "n": 2017,
+            "observed": 0.2464055528011899,
+            "predicted": 0.2572421206206623
+          },
+          {
+            "band": "(0.4, 1.0]",
+            "n": 125,
+            "observed": 0.44,
+            "predicted": 0.46308000212871936
+          }
+        ]
+      },
+      "groups": {
+        "payment_logistic": {
+          "OTROS_O_MIXTOS": {
+            "n": 3654,
+            "log_loss": 0.12740579852456005,
+            "roc_auc": 0.8968315162047571,
+            "average_precision": 0.23145008085462077,
+            "brier": 0.03788899634725357,
+            "observed_rate": 0.045703338806787085,
+            "predicted_rate": 0.043915213254077975
+          },
+          "SOLO_EFECTIVO": {
+            "n": 4099,
+            "log_loss": 0.46897683053897044,
+            "roc_auc": 0.6246710588036626,
+            "average_precision": 0.26736779399631516,
+            "brier": 0.14839047914472062,
+            "observed_rate": 0.18736277140766042,
+            "predicted_rate": 0.16673710893843607
+          },
+          "SOLO_TARJETA": {
+            "n": 14043,
+            "log_loss": 0.3011614096060188,
+            "roc_auc": 0.6226497600626599,
+            "average_precision": 0.1481890641542653,
+            "brier": 0.08285569495382988,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.09654403303432628
+          }
+        },
+        "employee_logistic": {
+          "OTROS_O_MIXTOS": {
+            "n": 3654,
+            "log_loss": 0.12662135444744543,
+            "roc_auc": 0.9009116839449864,
+            "average_precision": 0.24472539576491817,
+            "brier": 0.037585954531409574,
+            "observed_rate": 0.045703338806787085,
+            "predicted_rate": 0.043459462806440204
+          },
+          "SOLO_EFECTIVO": {
+            "n": 4099,
+            "log_loss": 0.46368891639405757,
+            "roc_auc": 0.6438209871910336,
+            "average_precision": 0.2954196566531536,
+            "brier": 0.14659936819101685,
+            "observed_rate": 0.18736277140766042,
+            "predicted_rate": 0.16744033874599082
+          },
+          "SOLO_TARJETA": {
+            "n": 14043,
+            "log_loss": 0.30004237981398413,
+            "roc_auc": 0.6276391453093257,
+            "average_precision": 0.1534447116271042,
+            "brier": 0.082596444474927,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.09658064035708211
+          }
+        },
+        "boosted_context_payment": {
+          "OTROS_O_MIXTOS": {
+            "n": 3654,
+            "log_loss": 0.12481343287570756,
+            "roc_auc": 0.8959557226241524,
+            "average_precision": 0.24316147310378977,
+            "brier": 0.03778836886844236,
+            "observed_rate": 0.045703338806787085,
+            "predicted_rate": 0.044811041127821465
+          },
+          "SOLO_EFECTIVO": {
+            "n": 4099,
+            "log_loss": 0.4597639722460276,
+            "roc_auc": 0.6591596539452617,
+            "average_precision": 0.2919485441097637,
+            "brier": 0.1457841838185307,
+            "observed_rate": 0.18736277140766042,
+            "predicted_rate": 0.16637975447201153
+          },
+          "SOLO_TARJETA": {
+            "n": 14043,
+            "log_loss": 0.29994861500562253,
+            "roc_auc": 0.6343597369682772,
+            "average_precision": 0.1509952191732734,
+            "brier": 0.08271268361445774,
+            "observed_rate": 0.09292886135441145,
+            "predicted_rate": 0.09679660700041942
+          }
+        }
+      },
+      "severity_paired": {
+        "fractional_logistic": {
+          "point": 0.008012925462611446,
+          "interval95": [
+            0.005878460771517272,
+            0.010291587270301421
+          ],
+          "locations": 127,
+          "dates": 26,
+          "method": "independent exponential weights crossed by location and date"
+        },
+        "boosted_conditional": {
+          "point": 0.008199098288363614,
+          "interval95": [
+            0.005441264435872567,
+            0.010943019158187968
+          ],
+          "locations": 127,
+          "dates": 26,
+          "method": "independent exponential weights crossed by location and date"
+        }
+      }
+    }
+  ]
+}

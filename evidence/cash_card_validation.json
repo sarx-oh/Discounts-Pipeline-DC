@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checks": [
+    "source_and_sensitive_tables_unchanged",
+    "dashboard_unchanged",
+    "original_ticket_and_discount_counts",
+    "daily_rollups_match_global_exactly",
+    "standardization_reproduced_by_independent_sensitivity_query",
+    "rates_and_weights_valid"
+  ],
+  "dashboard_unchanged": true,
+  "protected_tables_unchanged": true,
+  "source_versions": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "outputs": {
+    "daily_payment_summary": {
+      "name": "workspace.applebees_test_0eef22876f8b_analysis_e3f68afbed05.daily_payment_summary",
+      "version": 0
+    },
+    "standardized_comparison": {
+      "name": "workspace.applebees_test_0eef22876f8b_analysis_e3f68afbed05.standardized_comparison",
+      "version": 0
+    }
+  },
+  "scope": "original_dataset_isolated_sandbox",
+  "source_hashes": {
+    "cash_card_sensitivity.py": "e7dac95a56126729f0891ce54eac681fcab4d3f657b01841eabad3e242721802",
+    "profile_payments.py": "4f22c92f7e1321f5f8633fe8c0b7cc4f7e908a45ca82adc482c1ecae073ea7e6",
+    "cash_card_analysis.py": "18088528cd9e11d3ea093d720b03a3079facd3bcffbec002bf4e2baa71ae442e",
+    "discount_review_base.py": "d827eeb9aadfaa88d7236810ae687fd6960b3b8d0707b923de9f41056fd4a776"
+  },
+  "runs": {
+    "profile": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/1009519459454363/run/822944705920663",
+    "analysis": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/434524489206350/run/250242239405793",
+    "sensitivity": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/154932897988761/run/288288482109919"
+  }
+}

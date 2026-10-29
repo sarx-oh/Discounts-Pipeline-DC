@@ -1,0 +1,55 @@
+{
+  "input_sha256": {
+    "policy_events_data.json": "104105e6d396051b33d2fdd6dc9d662e25d45de2781cd8257a0841f912f7aa6b",
+    "employee_weeks_data.json": "22d8de744720e64185dc095f8ab33c4c90df74137b58e4471b36049ad55a049e",
+    "enriched_train_early_data.json": "243b74d729074935141dd62533907ee7bcd7f5a7a3d8d79b6a16db1ba71237b2",
+    "enriched_train_late_data.json": "e2661ee8702ceb81fffddf05312f1b83e074a8baffeda24bd477ad2a1412e3c8",
+    "enriched_validation_data.json": "b9e877148c4f0f806452596932dcfaba59b4b3169ce195047f1556e6688881ea",
+    "enriched_test_data.json": "2a21ead039045bc4d7bfa6e136bb5dc21149985a868f964fcf0c6dec404f331d"
+  },
+  "source_sha256": {
+    "tools/build_detection_prototype.py": "77d1726bf671c859187cb8320b61fd1e02c6c3a3ebb3b730d08639211d7b630a",
+    "src/detection/core.py": "91458998c9b09ffb2ceeca8367b17e25bcbce4744f45ea98ebcd220f03b6b8e3",
+    "tools/deep_enriched_models.py": "83bf550afe1a36a4e190ccf426ff4bab073cfaedbfd05669da250550d3d75a53",
+    "tools/compare_discount_models.py": "44e5a4c94c58b6ddf391db85b1a17d7346ea5981486d809ad945621d3e8c65d8",
+    "src/common/review_contract.py": "44d4e880171fc0d4eca77d525161b3366ff0d7671746a9f2462fc448e75f1d38"
+  },
+  "config": {
+    "version": "prototype-2026-10-28-v1",
+    "status": "EXPERIMENTAL_NOT_DEPLOYED",
+    "policy_ids": [
+      518,
+      520,
+      523
+    ],
+    "policy_mapping_confirmed": false,
+    "policy_scope_confirmed": false,
+    "employee_meal_enabled": false,
+    "train_end": "2026-06-30",
+    "calibration_end": "2026-07-25",
+    "severity_residual_quantile": 0.95,
+    "severity_sensitivity_quantiles": [
+      0.9,
+      0.95,
+      0.99
+    ],
+    "pilot_arm_capacity": 50,
+    "pilot_control_capacity": 50,
+    "pilot_seed": "discount-review-pilot-v1",
+    "profile_prior_tickets": 100,
+    "profile_gap": 0.1,
+    "profile_min_early_weeks": 8,
+    "profile_min_early_tickets": 500,
+    "profile_min_later_weeks": 2,
+    "profile_min_later_tickets": 100,
+    "automatic_actions": false
+  },
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "snapshot": "1d0c27265ddf502573ea498bf8fe4a86570cc28b519430e5345bd68c75c71297",
+  "policy_statement_id": "01f1d316-7ccf-1054-ae54-79fbc4c79ae2"
+}

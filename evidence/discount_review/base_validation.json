@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "schema": "workspace.applebees_test_fdab42c8d6ad_discount_review",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.employee_ticket_activity": 9,
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "protected_before": {
+    "workspace.applebees_bronze.checks_raw": 1,
+    "workspace.applebees_bronze.locations_raw": 0,
+    "workspace.applebees_bronze.items_raw": 0,
+    "workspace.applebees_bronze.revenue_centers_raw": 0,
+    "workspace.applebees_bronze.employees_raw": 0,
+    "workspace.applebees_silver.checks": 3,
+    "workspace.applebees_silver.dim_locations": 1,
+    "workspace.applebees_silver.dim_items": 1,
+    "workspace.applebees_silver.dim_revenue_centers": 1,
+    "workspace.applebees_silver.dim_employees": 1,
+    "workspace.applebees_silver.items_sold": 4,
+    "workspace.applebees_silver.payments": 4,
+    "workspace.applebees_silver.discounts": 0,
+    "workspace.applebees_silver.taxes": 4,
+    "workspace.applebees_silver.voids": 4,
+    "workspace.applebees_silver.item_quality": 4,
+    "workspace.applebees_silver.ticket_quality": 3,
+    "workspace.applebees_silver.reference_quality": 1,
+    "workspace.applebees_gold.ticket_metrics": 5,
+    "workspace.applebees_gold.daily_location_channel": 3,
+    "workspace.applebees_gold.discount_type_daily": 6,
+    "workspace.applebees_gold.employee_ticket_activity": 4,
+    "workspace.applebees_gold.employee_activity_daily": 4,
+    "workspace.applebees_gold.review_thresholds": 1,
+    "workspace.applebees_gold.review_cases": 5
+  },
+  "tables": {
+    "ticket_features": {
+      "rows": 2142846,
+      "version": 0
+    },
+    "discount_events": {
+      "rows": 516690,
+      "version": 0
+    },
+    "policy_review_candidates": {
+      "rows": 2312,
+      "version": 0
+    },
+    "employee_weekly": {
+      "rows": 172826,
+      "version": 0
+    },
+    "review_decision_log": {
+      "rows": 0,
+      "version": 0
+    }
+  },
+  "protected_after": {
+    "workspace.applebees_bronze.checks_raw": 1,
+    "workspace.applebees_bronze.locations_raw": 0,
+    "workspace.applebees_bronze.items_raw": 0,
+    "workspace.applebees_bronze.revenue_centers_raw": 0,
+    "workspace.applebees_bronze.employees_raw": 0,
+    "workspace.applebees_silver.checks": 3,
+    "workspace.applebees_silver.dim_locations": 1,
+    "workspace.applebees_silver.dim_items": 1,
+    "workspace.applebees_silver.dim_revenue_centers": 1,
+    "workspace.applebees_silver.dim_employees": 1,
+    "workspace.applebees_silver.items_sold": 4,
+    "workspace.applebees_silver.payments": 4,
+    "workspace.applebees_silver.discounts": 0,
+    "workspace.applebees_silver.taxes": 4,
+    "workspace.applebees_silver.voids": 4,
+    "workspace.applebees_silver.item_quality": 4,
+    "workspace.applebees_silver.ticket_quality": 3,
+    "workspace.applebees_silver.reference_quality": 1,
+    "workspace.applebees_gold.ticket_metrics": 5,
+    "workspace.applebees_gold.daily_location_channel": 3,
+    "workspace.applebees_gold.discount_type_daily": 6,
+    "workspace.applebees_gold.employee_ticket_activity": 4,
+    "workspace.applebees_gold.employee_activity_daily": 4,
+    "workspace.applebees_gold.review_thresholds": 1,
+    "workspace.applebees_gold.review_cases": 5
+  },
+  "source_after": {
+    "workspace.applebees_test_0eef22876f8b_gold.employee_ticket_activity": 9,
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "positive_discount_events": 350307,
+  "distinct_candidate_tickets": 2135,
+  "dashboard_unchanged": true,
+  "run_id": 608560147970208,
+  "source_hash": "d827eeb9aadfaa88d7236810ae687fd6960b3b8d0707b923de9f41056fd4a776"
+}

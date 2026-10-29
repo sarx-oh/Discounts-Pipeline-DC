@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "retuning": false,
+  "calibration": [
+    {
+      "lower": 0,
+      "upper": 0.05,
+      "n": 4202,
+      "predicted": 0.015299238851253123,
+      "observed": 0.01546882436934793
+    },
+    {
+      "lower": 0.05,
+      "upper": 0.1,
+      "n": 7864,
+      "predicted": 0.07715909083612625,
+      "observed": 0.07782299084435401
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "n": 8388,
+      "predicted": 0.13706960064320528,
+      "observed": 0.14258464473056748
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 1327,
+      "predicted": 0.24005211506206744,
+      "observed": 0.27354935945742276
+    },
+    {
+      "lower": 0.4,
+      "upper": 1.000001,
+      "n": 15,
+      "predicted": 0.5035844714892669,
+      "observed": 0.26666666666666666
+    }
+  ],
+  "weekly": [
+    {
+      "week": "2026-07-20/2026-07-26",
+      "n": 917,
+      "log_loss": 0.3266079377231481,
+      "roc_auc": 0.7023843315356231,
+      "average_precision": 0.22296072151482027,
+      "brier": 0.09585889765714604,
+      "observed_rate": 0.1134133042529989,
+      "predicted_rate": 0.09668837663554047
+    },
+    {
+      "week": "2026-07-27/2026-08-02",
+      "n": 6230,
+      "log_loss": 0.32381015410217523,
+      "roc_auc": 0.6951121940622251,
+      "average_precision": 0.22349289033000164,
+      "brier": 0.09487863946921239,
+      "observed_rate": 0.11252006420545746,
+      "predicted_rate": 0.0995392072894433
+    },
+    {
+      "week": "2026-08-03/2026-08-09",
+      "n": 5994,
+      "log_loss": 0.29603954975839053,
+      "roc_auc": 0.697546296426783,
+      "average_precision": 0.19474611337878717,
+      "brier": 0.08480412554677758,
+      "observed_rate": 0.0985985985985986,
+      "predicted_rate": 0.09871102173087426
+    },
+    {
+      "week": "2026-08-10/2026-08-16",
+      "n": 5797,
+      "log_loss": 0.28682740933836676,
+      "roc_auc": 0.7052275759308351,
+      "average_precision": 0.1842797077882958,
+      "brier": 0.08195804300272401,
+      "observed_rate": 0.09487666034155598,
+      "predicted_rate": 0.09702247919904353
+    },
+    {
+      "week": "2026-08-17/2026-08-23",
+      "n": 2858,
+      "log_loss": 0.29976586170804953,
+      "roc_auc": 0.7185082301251233,
+      "average_precision": 0.22524108936171966,
+      "brier": 0.08701349032927932,
+      "observed_rate": 0.10286913925822254,
+      "predicted_rate": 0.09937143001519703
+    }
+  ],
+  "unknown_employees": {
+    "seen": {
+      "n": 19586,
+      "log_loss": 0.3025493627125489,
+      "roc_auc": 0.7038177505936412,
+      "average_precision": 0.2067180254972421,
+      "brier": 0.08748810079391067,
+      "observed_rate": 0.10267538037373634,
+      "predicted_rate": 0.09773521679213254
+    },
+    "unseen_or_missing": {
+      "n": 2210,
+      "log_loss": 0.3099707270627179,
+      "roc_auc": 0.6836805547901572,
+      "average_precision": 0.18190443005696597,
+      "brier": 0.08939631224910306,
+      "observed_rate": 0.10361990950226245,
+      "predicted_rate": 0.10527930762554889
+    }
+  },
+  "brier_gain_over_prevalence": {
+    "point": 0.004533245592678438,
+    "date_bootstrap_95_interval": [
+      0.004007220000835867,
+      0.005053139429766362
+    ],
+    "limitation": "26 dates; does not capture all cross-location dependence or new-period uncertainty"
+  },
+  "illustrative_review_capacity": {
+    "selection": "positive ratio residual > validation 99th percentile",
+    "validation_threshold": 0.4797875853277768,
+    "test_selected": 157,
+    "test_total": 21796,
+    "selected_discount_amount": 4074.5999999999995,
+    "interpretation": "review volume only, not accuracy, recoverable loss or confirmed misuse"
+  }
+}

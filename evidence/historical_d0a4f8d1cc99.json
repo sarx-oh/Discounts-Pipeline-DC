@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "six_delta_integration_tests",
+      "status": "PASS"
+    },
+    {
+      "name": "initial_two_tickets",
+      "status": "PASS"
+    },
+    {
+      "name": "initial_three_item_lines",
+      "status": "PASS"
+    },
+    {
+      "name": "initial_reconciliation",
+      "status": "PASS"
+    },
+    {
+      "name": "initial_totals",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_files_no_reingestion",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_ticket_timestamps",
+      "status": "PASS"
+    },
+    {
+      "name": "adoption_without_raw_rewrite",
+      "status": "PASS"
+    },
+    {
+      "name": "new_file_and_correction_three_unique_tickets",
+      "status": "PASS"
+    },
+    {
+      "name": "removed_item_not_retained",
+      "status": "PASS"
+    },
+    {
+      "name": "removed_discounts_not_retained",
+      "status": "PASS"
+    },
+    {
+      "name": "removed_void_not_retained",
+      "status": "PASS"
+    },
+    {
+      "name": "incomplete_ticket_preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "changed_channel_propagated",
+      "status": "PASS"
+    },
+    {
+      "name": "corrected_gold_totals",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate_batch_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "incomplete_bronze_blocks_silver",
+      "status": "PASS"
+    },
+    {
+      "name": "blocked_silver_tables_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery_complete",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery_no_duplicates",
+      "status": "PASS"
+    },
+    {
+      "name": "model_audit_passed",
+      "status": "PASS"
+    }
+  ],
+  "protected_tables_unchanged": true
+}

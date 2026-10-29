@@ -1,0 +1,378 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5",
+    "sklearn": "1.8.0"
+  },
+  "targets": {
+    "classification": "any positive discount, NOT abuse",
+    "regression": "discount / gross on eligible positive accounts"
+  },
+  "excluded_predictors": [
+    "employee_key",
+    "discount_amount",
+    "discount_ratio",
+    "has_discount",
+    "manager",
+    "discount type",
+    "net sales",
+    "gratuity"
+  ],
+  "sample": {
+    "train": {
+      "tickets": 59169,
+      "discounted": 5941,
+      "first_date": "2026-04-28",
+      "last_date": "2026-06-30",
+      "locations": 127,
+      "employees": 2579,
+      "unseen_employee_share": 0.0,
+      "line_quality_issue_tickets": 0
+    },
+    "validation": {
+      "tickets": 22530,
+      "discounted": 2407,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-25",
+      "locations": 127,
+      "employees": 2163,
+      "unseen_employee_share": 0.047758544163337774,
+      "line_quality_issue_tickets": 0
+    },
+    "test": {
+      "tickets": 21796,
+      "discounted": 2240,
+      "first_date": "2026-07-26",
+      "last_date": "2026-08-20",
+      "locations": 127,
+      "employees": 2154,
+      "unseen_employee_share": 0.10139475133051937,
+      "line_quality_issue_tickets": 0
+    }
+  },
+  "classification": {
+    "baseline": {
+      "validation": {
+        "log_loss": 0.34007177095964874,
+        "roc_auc": 0.5,
+        "average_precision": 0.10683533067021748,
+        "brier": 0.09546286226778385,
+        "observed_rate": 0.10683533067021748,
+        "predicted_rate": 0.10040730788081595
+      },
+      "test": {
+        "log_loss": 0.33116021459965184,
+        "roc_auc": 0.5,
+        "average_precision": 0.10277115066984768,
+        "brier": 0.0922148290125744,
+        "observed_rate": 0.10277115066984768,
+        "predicted_rate": 0.10040730788081595
+      }
+    },
+    "logistic_context": {
+      "validation_candidates": [
+        {
+          "C": 0.1,
+          "log_loss": 0.3243379070697789,
+          "roc_auc": 0.6372321337195442,
+          "average_precision": 0.16479935208585894,
+          "brier": 0.09316219438072391,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.0997458794423549
+        },
+        {
+          "C": 1.0,
+          "log_loss": 0.32470712402033886,
+          "roc_auc": 0.6370027178717114,
+          "average_precision": 0.16467161135645764,
+          "brier": 0.09320859792550006,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09956966129779304
+        },
+        {
+          "C": 10.0,
+          "log_loss": 0.3259015309841834,
+          "roc_auc": 0.6369061575837061,
+          "average_precision": 0.165817582564398,
+          "brier": 0.09321071664937139,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09955936462027526
+        }
+      ],
+      "chosen_C": 0.1,
+      "test": {
+        "log_loss": 0.30956624779002023,
+        "roc_auc": 0.6711207443641702,
+        "average_precision": 0.1771012814684384,
+        "brier": 0.08906132615798516,
+        "observed_rate": 0.10277115066984768,
+        "predicted_rate": 0.09858782196338874
+      },
+      "test_payment_groups": [
+        {
+          "family": "OTROS_O_MIXTOS",
+          "n": 3654,
+          "log_loss": 0.1317407423734274,
+          "roc_auc": 0.8946695081302838,
+          "average_precision": 0.231683092273603,
+          "brier": 0.0386061068430016,
+          "observed_rate": 0.045703338806787085,
+          "predicted_rate": 0.03646320213622665
+        },
+        {
+          "family": "SOLO_EFECTIVO",
+          "n": 4099,
+          "log_loss": 0.49236889560560665,
+          "roc_auc": 0.6177470713874712,
+          "average_precision": 0.26506590662197477,
+          "brier": 0.15434439853451246,
+          "observed_rate": 0.18736277140766042,
+          "predicted_rate": 0.11351411949761439
+        },
+        {
+          "family": "SOLO_TARJETA",
+          "n": 14043,
+          "log_loss": 0.30247847049144744,
+          "roc_auc": 0.6241234932855443,
+          "average_precision": 0.14764561963173942,
+          "brier": 0.0831343915788756,
+          "observed_rate": 0.09292886135441145,
+          "predicted_rate": 0.1103958734663197
+        }
+      ],
+      "max_solver_iterations": 50,
+      "features": [
+        "log_gross",
+        "log_lines",
+        "TrafficCount",
+        "LocationId",
+        "channel_name",
+        "open_hour",
+        "day_of_week"
+      ]
+    },
+    "logistic_context_with_payment": {
+      "validation_candidates": [
+        {
+          "C": 0.1,
+          "log_loss": 0.3207631348615207,
+          "roc_auc": 0.6594625541494797,
+          "average_precision": 0.18744882272793106,
+          "brier": 0.09219872710233988,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09940253806425862
+        },
+        {
+          "C": 1.0,
+          "log_loss": 0.320527481454423,
+          "roc_auc": 0.6610851055786721,
+          "average_precision": 0.1880342562004827,
+          "brier": 0.0921679814034989,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09946195788288135
+        },
+        {
+          "C": 10.0,
+          "log_loss": 0.32193459543917874,
+          "roc_auc": 0.6603095057626589,
+          "average_precision": 0.18766961539114574,
+          "brier": 0.09222724445318523,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09933421780782593
+        }
+      ],
+      "chosen_C": 1.0,
+      "test": {
+        "log_loss": 0.3033018501053675,
+        "roc_auc": 0.701803280597113,
+        "average_precision": 0.2033172549082499,
+        "brier": 0.08768158341989596,
+        "observed_rate": 0.10277115066984768,
+        "predicted_rate": 0.09850014800620163
+      },
+      "test_payment_groups": [
+        {
+          "family": "OTROS_O_MIXTOS",
+          "n": 3654,
+          "log_loss": 0.12586480866999636,
+          "roc_auc": 0.8942333285822963,
+          "average_precision": 0.22540012682278457,
+          "brier": 0.03800419542133803,
+          "observed_rate": 0.045703338806787085,
+          "predicted_rate": 0.04156688661262742
+        },
+        {
+          "family": "SOLO_EFECTIVO",
+          "n": 4099,
+          "log_loss": 0.4698185281178809,
+          "roc_auc": 0.6191617335259681,
+          "average_precision": 0.2652487033484607,
+          "brier": 0.1485383849402121,
+          "observed_rate": 0.18736277140766042,
+          "predicted_rate": 0.1657017272062345
+        },
+        {
+          "family": "SOLO_TARJETA",
+          "n": 14043,
+          "log_loss": 0.30086669281928563,
+          "roc_auc": 0.6221793902337049,
+          "average_precision": 0.14731652004733137,
+          "brier": 0.08284423714879684,
+          "observed_rate": 0.09292886135441145,
+          "predicted_rate": 0.09369881381772238
+        }
+      ],
+      "max_solver_iterations": 65,
+      "features": [
+        "log_gross",
+        "log_lines",
+        "TrafficCount",
+        "LocationId",
+        "channel_name",
+        "open_hour",
+        "day_of_week",
+        "payment_family"
+      ]
+    }
+  },
+  "regression": {
+    "mean_baseline": {
+      "validation": {
+        "mae": 0.04595955716321069,
+        "rmse": 0.1045326542336573,
+        "observed_mean": 0.028033926542387927,
+        "predicted_mean": 0.022704925907147316
+      },
+      "test": {
+        "mae": 0.04289852404985349,
+        "rmse": 0.09726250130348439,
+        "observed_mean": 0.02477308368507983,
+        "predicted_mean": 0.02270492590714732
+      }
+    },
+    "zero_baseline": {
+      "validation": {
+        "mae": 0.028033926542387927,
+        "rmse": 0.10809522926913548,
+        "observed_mean": 0.028033926542387927,
+        "predicted_mean": 0.0
+      },
+      "test": {
+        "mae": 0.02477308368507983,
+        "rmse": 0.10034651243807056,
+        "observed_mean": 0.02477308368507983,
+        "predicted_mean": 0.0
+      }
+    },
+    "ridge": {
+      "validation_candidates": [
+        {
+          "alpha": 0.1,
+          "mae": 0.045119691062199666,
+          "rmse": 0.10343183552340728,
+          "observed_mean": 0.028033926542387927,
+          "predicted_mean": 0.023324790848628485
+        },
+        {
+          "alpha": 10.0,
+          "mae": 0.045110400850280806,
+          "rmse": 0.1034357396766664,
+          "observed_mean": 0.028033926542387927,
+          "predicted_mean": 0.023300735292839637
+        },
+        {
+          "alpha": 100.0,
+          "mae": 0.045071309923281316,
+          "rmse": 0.10341990092414456,
+          "observed_mean": 0.028033926542387927,
+          "predicted_mean": 0.02320318121024747
+        }
+      ],
+      "chosen_alpha": 100.0,
+      "test": {
+        "mae": 0.041267650442575944,
+        "rmse": 0.0955542759764145,
+        "observed_mean": 0.02477308368507983,
+        "predicted_mean": 0.022717488188190766
+      },
+      "test_clipped_fraction": 0.06854468709855019,
+      "test_discounted_only": {
+        "mae": 0.21114984412770618,
+        "rmse": 0.2877666018081135,
+        "observed_mean": 0.2410509517857143,
+        "predicted_mean": 0.030650140334590313
+      }
+    }
+  },
+  "clustering": {
+    "unit": "employee-location profile with >=20 sampled tickets per period",
+    "features": [
+      "cash",
+      "instore",
+      "weekend",
+      "log_gross",
+      "log_lines"
+    ],
+    "train_profiles": 1255,
+    "validation_profiles": 253,
+    "test_profiles": 249,
+    "candidates": [
+      {
+        "k": 2,
+        "validation_silhouette": 0.2744730222266525,
+        "train_seed_stability_ari": 1.0
+      },
+      {
+        "k": 3,
+        "validation_silhouette": 0.24241439957753427,
+        "train_seed_stability_ari": 1.0
+      },
+      {
+        "k": 4,
+        "validation_silhouette": 0.1897588549140649,
+        "train_seed_stability_ari": 1.0
+      },
+      {
+        "k": 5,
+        "validation_silhouette": 0.19082307993034797,
+        "train_seed_stability_ari": 0.9924024062644774
+      }
+    ],
+    "chosen_k": 2,
+    "test_profiles_summary": [
+      {
+        "cluster": 0,
+        "profiles": 78,
+        "sample_tickets": 1978,
+        "cash": 0.1122345803842265,
+        "instore": 0.5424671385237614,
+        "weekend": 0.3948432760364004,
+        "log_gross": 3.6445818372176317,
+        "log_lines": 2.650820374111453,
+        "discount_rate": 0.0839231547017189,
+        "ratio": 0.01669567138523761
+      },
+      {
+        "cluster": 1,
+        "profiles": 171,
+        "sample_tickets": 4340,
+        "cash": 0.20599078341013824,
+        "instore": 0.7474654377880184,
+        "weekend": 0.19423963133640554,
+        "log_gross": 3.425178313391807,
+        "log_lines": 2.3177231515474155,
+        "discount_rate": 0.09976958525345622,
+        "ratio": 0.02442907811059908
+      }
+    ],
+    "interpretation": "context segmentation only, not good/bad labels; 5% sample limits small employees"
+  },
+  "sample_hashes": {
+    "train": "75b5499fdb83bbb22e8bfc2aefebef95dd698b313cb104ec643422b6a82a3f2c",
+    "validation": "702b1d24c2b9fb11fccf35e1cb3d9cfe61f4e5d4e99a4f03687fde48f4c8caf5",
+    "test": "81e061ece6879911c5a4e81148027da307e3cd30b14b017d145454c711d41bd4"
+  },
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  }
+}

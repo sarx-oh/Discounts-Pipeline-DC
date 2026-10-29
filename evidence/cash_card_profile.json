@@ -1,0 +1,373 @@
+{
+  "status": "PASS",
+  "versions": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "totals": {
+    "tickets": 2142846,
+    "days": 115,
+    "locations": 127,
+    "first_date": "2026-04-28",
+    "last_date": "2026-08-20",
+    "discounted": 268580,
+    "net_sales": "84292048.6000",
+    "discounts": "2968583.3900"
+  },
+  "payment_labels": [
+    {
+      "PayCatName": "VISA",
+      "IsCreditCard": true,
+      "records": 885871,
+      "negative_records": 3,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "45508556.5900",
+      "gratuity_sum": "-5512547.2500",
+      "positive_gratuity_records": 3
+    },
+    {
+      "PayCatName": "CASH",
+      "IsCreditCard": false,
+      "records": 486509,
+      "negative_records": 12,
+      "zero_records": 73464,
+      "null_amount_records": 0,
+      "amount_sum": "14517975.1100",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "MASTERCARD",
+      "IsCreditCard": true,
+      "records": 412939,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "21402260.4300",
+      "gratuity_sum": "-2596161.9900",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "DOORDASH",
+      "IsCreditCard": false,
+      "records": 197995,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "8025788.1000",
+      "gratuity_sum": "-5.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "GIFT CARD",
+      "IsCreditCard": false,
+      "records": 98762,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "2843537.4900",
+      "gratuity_sum": "-135120.5900",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "UBEREATS",
+      "IsCreditCard": false,
+      "records": 47914,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "2148221.0400",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "DISCOVER",
+      "IsCreditCard": true,
+      "records": 47528,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "2341006.4300",
+      "gratuity_sum": "-300450.1500",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "AMEX",
+      "IsCreditCard": true,
+      "records": 35387,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "1955147.5800",
+      "gratuity_sum": "-280138.5500",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "GRUBHUB",
+      "IsCreditCard": false,
+      "records": 7020,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "315313.5100",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "GC Sold",
+      "IsCreditCard": false,
+      "records": 5871,
+      "negative_records": 3764,
+      "zero_records": 2107,
+      "null_amount_records": 0,
+      "amount_sum": "-174691.9200",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "OLO-VISA",
+      "IsCreditCard": false,
+      "records": 2535,
+      "negative_records": 0,
+      "zero_records": 1,
+      "null_amount_records": 0,
+      "amount_sum": "111665.7500",
+      "gratuity_sum": "-5292.0100",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "POSTMATES",
+      "IsCreditCard": false,
+      "records": 1201,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "57234.3900",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "OLO-MASTERCARD",
+      "IsCreditCard": false,
+      "records": 1059,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "47850.5600",
+      "gratuity_sum": "-2607.2800",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "EZCATER",
+      "IsCreditCard": false,
+      "records": 441,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "137565.3300",
+      "gratuity_sum": "-562.3900",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "Olo",
+      "IsCreditCard": false,
+      "records": 405,
+      "negative_records": 0,
+      "zero_records": 7,
+      "null_amount_records": 0,
+      "amount_sum": "11443.4100",
+      "gratuity_sum": "-523.1400",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "WOTW",
+      "IsCreditCard": false,
+      "records": 317,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "19222.6300",
+      "gratuity_sum": "-4.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "OLO-DISCOVER",
+      "IsCreditCard": false,
+      "records": 136,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "6078.2500",
+      "gratuity_sum": "-388.6900",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "OLO-AMEX",
+      "IsCreditCard": false,
+      "records": 92,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "4961.5100",
+      "gratuity_sum": "-297.3500",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "DELIVERLOGIC",
+      "IsCreditCard": false,
+      "records": 37,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "1464.5400",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "HOUSE CHG",
+      "IsCreditCard": false,
+      "records": 36,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "6454.7900",
+      "gratuity_sum": "-656.6100",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "Postmates",
+      "IsCreditCard": false,
+      "records": 31,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "1938.3900",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "FOODJA",
+      "IsCreditCard": false,
+      "records": 5,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "1322.9200",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    },
+    {
+      "PayCatName": "BITESQUAD",
+      "IsCreditCard": false,
+      "records": 1,
+      "negative_records": 0,
+      "zero_records": 0,
+      "null_amount_records": 0,
+      "amount_sum": "47.6300",
+      "gratuity_sum": "0.0000",
+      "positive_gratuity_records": 0
+    }
+  ],
+  "families": [
+    {
+      "payment_family": "SOLO_TARJETA",
+      "account_status": "CONCILIA_CUENTA_POSITIVA",
+      "tickets": 1327880,
+      "discounted": 129070,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "SOLO_EFECTIVO",
+      "account_status": "CONCILIA_CUENTA_POSITIVA",
+      "tickets": 381970,
+      "discounted": 65739,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "account_status": "CONCILIA_CUENTA_POSITIVA",
+      "tickets": 353543,
+      "discounted": 15675,
+      "negative_payment_tickets": 404
+    },
+    {
+      "payment_family": "SOLO_EFECTIVO",
+      "account_status": "CONCILIA_CUENTA_NO_POSITIVA",
+      "tickets": 65116,
+      "discounted": 55839,
+      "negative_payment_tickets": 5
+    },
+    {
+      "payment_family": "SOLO_EFECTIVO",
+      "account_status": "SIN_PRODUCTOS",
+      "tickets": 8319,
+      "discounted": 0,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": null,
+      "account_status": "SIN_PAGOS",
+      "tickets": 2693,
+      "discounted": 2213,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "account_status": "SIN_PRODUCTOS",
+      "tickets": 2023,
+      "discounted": 0,
+      "negative_payment_tickets": 2023
+    },
+    {
+      "payment_family": null,
+      "account_status": "SIN_PRODUCTOS_NI_PAGOS",
+      "tickets": 1163,
+      "discounted": 0,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "account_status": "CONCILIA_CUENTA_NO_POSITIVA",
+      "tickets": 69,
+      "discounted": 2,
+      "negative_payment_tickets": 69
+    },
+    {
+      "payment_family": "SOLO_EFECTIVO",
+      "account_status": "NO_CONCILIA",
+      "tickets": 30,
+      "discounted": 19,
+      "negative_payment_tickets": 5
+    },
+    {
+      "payment_family": "SOLO_TARJETA",
+      "account_status": "NO_CONCILIA",
+      "tickets": 23,
+      "discounted": 11,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "SOLO_TARJETA",
+      "account_status": "CONCILIA_CUENTA_NO_POSITIVA",
+      "tickets": 8,
+      "discounted": 8,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "account_status": "NO_CONCILIA",
+      "tickets": 6,
+      "discounted": 4,
+      "negative_payment_tickets": 0
+    },
+    {
+      "payment_family": "SOLO_TARJETA",
+      "account_status": "SIN_PRODUCTOS",
+      "tickets": 3,
+      "discounted": 0,
+      "negative_payment_tickets": 3
+    }
+  ]
+}

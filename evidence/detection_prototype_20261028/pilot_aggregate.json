@@ -1,0 +1,12 @@
+{
+  "snapshot": "1d0c27265ddf502573ea498bf8fe4a86570cc28b519430e5345bd68c75c71297",
+  "common_universe_n": 21796,
+  "available_policy_candidates": 33,
+  "available_statistical_candidates": 95,
+  "arm_A_n": 33,
+  "arm_B_n": 50,
+  "control_n": 50,
+  "nonalerted_pool_n": 21684,
+  "unique_review_tickets": 100,
+  "comparison": "Both arms use the same sampled late-period ticket universe; profiles excluded."
+}

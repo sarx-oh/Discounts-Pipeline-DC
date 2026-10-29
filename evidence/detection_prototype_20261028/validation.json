@@ -1,0 +1,14 @@
+{
+  "deterministic_artifacts": {
+    "cases.json": true,
+    "pilot.json": true,
+    "summary.json": true,
+    "manifest.json": true,
+    "private_scored_sample.json": true
+  },
+  "existing_run_overwrite_rejected": true,
+  "real_review_events": 0,
+  "receipt_coverage": 100,
+  "local_tests_passed": 31,
+  "scope": "Implementation checks only; misuse detection utility remains unknown."
+}

@@ -1,0 +1,862 @@
+{
+  "status": "PASS",
+  "sample_n": 103495,
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  },
+  "input_sha256": {
+    "train": "75b5499fdb83bbb22e8bfc2aefebef95dd698b313cb104ec643422b6a82a3f2c",
+    "validation": "702b1d24c2b9fb11fccf35e1cb3d9cfe61f4e5d4e99a4f03687fde48f4c8caf5",
+    "test": "81e061ece6879911c5a4e81148027da307e3cd30b14b017d145454c711d41bd4"
+  },
+  "code_sha256": "64f083a49e2a9bf02c8b8738d3084f083e733675e20017734a64c8f1197dc299",
+  "versions": {
+    "python": "3.13.5",
+    "sklearn": "1.8.0"
+  },
+  "interpretation": "Exploratory temporal replication on previously examined sample; retrospective discount prediction, not misuse.",
+  "ratio_above_one": 0,
+  "folds": [
+    {
+      "train_end": "2026-05-31",
+      "evaluation_end": "2026-06-30",
+      "train_n": 32656,
+      "evaluation_n": 26513,
+      "positive_train_n": 3233,
+      "positive_evaluation_n": 2708,
+      "occurrence_positive_but_zero_ratio": 0,
+      "classification": {
+        "prevalence": {
+          "log_loss": 0.32981129637561407,
+          "roc_auc": 0.5,
+          "average_precision": 0.10213857352996643,
+          "brier": 0.09171612520963537,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.09900171484566389
+        },
+        "context_logistic": {
+          "log_loss": 0.3128749570543128,
+          "roc_auc": 0.6513930113486703,
+          "average_precision": 0.1576768376304091,
+          "brier": 0.08942879371826469,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10161541351889494
+        },
+        "payment_logistic": {
+          "log_loss": 0.30974991357174003,
+          "roc_auc": 0.6715092577338586,
+          "average_precision": 0.1746611823896439,
+          "brier": 0.08871633876497065,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10154253953627262,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.0031250434825727553,
+              "interval95": [
+                0.0020565142499708667,
+                0.004374807990434982
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.0031250434825727553,
+              "interval95": [
+                0.0020601100344451355,
+                0.004249384456218393
+              ],
+              "clusters": 30
+            }
+          }
+        },
+        "employee_logistic": {
+          "log_loss": 0.3091529231981233,
+          "roc_auc": 0.6743156949451119,
+          "average_precision": 0.180073577898962,
+          "brier": 0.0885123344513872,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10156009439202988,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.0037220338561894896,
+              "interval95": [
+                0.0024549700482133733,
+                0.005078257102928578
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.0037220338561894896,
+              "interval95": [
+                0.0025294290418803084,
+                0.005008674504332444
+              ],
+              "clusters": 30
+            }
+          },
+          "unseen_employee_share": 0.05985742843133557
+        },
+        "boosted_context_payment": {
+          "log_loss": 0.3126983256922,
+          "roc_auc": 0.6731806417665441,
+          "average_precision": 0.18221162130669027,
+          "brier": 0.08926363710995797,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.09983423992677357,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.0001766313621127568,
+              "interval95": [
+                -0.0023766487128501173,
+                0.0028111639515185694
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.0001766313621127568,
+              "interval95": [
+                -0.0021265356902223816,
+                0.0026649110356945097
+              ],
+              "clusters": 30
+            }
+          }
+        }
+      },
+      "severity": {
+        "conditional_mean": {
+          "conditional": {
+            "mae": 0.1548064345316554,
+            "rmse": 0.19225369263064535,
+            "observed_mean": 0.23788013552437226,
+            "predicted_mean": 0.21628467491493966
+          },
+          "hurdle_all": {
+            "mae": 0.0404230674364937,
+            "rmse": 0.09368554973515222,
+            "observed_mean": 0.024296737713574476,
+            "predicted_mean": 0.021962095153640143
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ],
+              "clusters": 30
+            }
+          }
+        },
+        "fractional_logistic": {
+          "conditional": {
+            "mae": 0.13870032758496542,
+            "rmse": 0.1749844171702902,
+            "observed_mean": 0.23788013552437226,
+            "predicted_mean": 0.22025229089208806
+          },
+          "hurdle_all": {
+            "mae": 0.040630705917339284,
+            "rmse": 0.09343811818328714,
+            "observed_mean": 0.024296737713574476,
+            "predicted_mean": 0.022252140606237977
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.006341936077692495,
+              "interval95": [
+                0.005179321378080039,
+                0.007503863273516778
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.006341936077692495,
+              "interval95": [
+                0.005397238767465545,
+                0.007269796175463705
+              ],
+              "clusters": 30
+            }
+          }
+        },
+        "boosted_conditional": {
+          "conditional": {
+            "mae": 0.13920862503794182,
+            "rmse": 0.18132416575010352,
+            "observed_mean": 0.23788013552437226,
+            "predicted_mean": 0.2220296604378348
+          },
+          "hurdle_all": {
+            "mae": 0.04067550958173405,
+            "rmse": 0.09327659664544544,
+            "observed_mean": 0.024296737713574476,
+            "predicted_mean": 0.02230294942672237
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.004083029245147644,
+              "interval95": [
+                0.0023143912979049124,
+                0.005923486365779003
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.004083029245147644,
+              "interval95": [
+                0.0027695832788415028,
+                0.005517012506921351
+              ],
+              "clusters": 30
+            }
+          }
+        }
+      },
+      "permutation_logloss_increase": {
+        "payment_logistic": {
+          "payment": {
+            "mean": 0.0062817123513727036,
+            "repetition_range": [
+              0.00561793005145006,
+              0.006624148014458209
+            ]
+          },
+          "location": {
+            "mean": 0.0037843495030324137,
+            "repetition_range": [
+              0.0033998461357824805,
+              0.004064036498397927
+            ]
+          },
+          "channel": {
+            "mean": 0.0442381196841497,
+            "repetition_range": [
+              0.042691963607620065,
+              0.04584832820911572
+            ]
+          },
+          "basket": {
+            "mean": 0.006912445566712044,
+            "repetition_range": [
+              0.006251405337580007,
+              0.007810000677764384
+            ]
+          },
+          "clock": {
+            "mean": 0.0010134564497286558,
+            "repetition_range": [
+              0.0007364493223324109,
+              0.0013664979595116034
+            ]
+          }
+        },
+        "boosted_context_payment": {
+          "payment": {
+            "mean": 0.008041585267765161,
+            "repetition_range": [
+              0.006884111311918739,
+              0.008880678390116747
+            ]
+          },
+          "location": {
+            "mean": 0.008444438905699736,
+            "repetition_range": [
+              0.0076499909488843,
+              0.010315079407248462
+            ]
+          },
+          "channel": {
+            "mean": 0.0693258197268271,
+            "repetition_range": [
+              0.06598833868225756,
+              0.0731481711400227
+            ]
+          },
+          "basket": {
+            "mean": 0.014710222178558486,
+            "repetition_range": [
+              0.013505249541520048,
+              0.01572686658162603
+            ]
+          },
+          "clock": {
+            "mean": 0.0016226241410700725,
+            "repetition_range": [
+              0.000913381093106902,
+              0.0020067502898110656
+            ]
+          }
+        }
+      }
+    },
+    {
+      "train_end": "2026-06-30",
+      "evaluation_end": "2026-07-25",
+      "train_n": 59169,
+      "evaluation_n": 22530,
+      "positive_train_n": 5941,
+      "positive_evaluation_n": 2407,
+      "occurrence_positive_but_zero_ratio": 0,
+      "classification": {
+        "prevalence": {
+          "log_loss": 0.34007177095964874,
+          "roc_auc": 0.5,
+          "average_precision": 0.10683533067021748,
+          "brier": 0.09546286226778385,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.10040730788081595
+        },
+        "context_logistic": {
+          "log_loss": 0.32433790705557264,
+          "roc_auc": 0.6372321337195442,
+          "average_precision": 0.16479935208585894,
+          "brier": 0.09316219437898725,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09974587908317675
+        },
+        "payment_logistic": {
+          "log_loss": 0.3207631347813644,
+          "roc_auc": 0.6594625747952544,
+          "average_precision": 0.18744882967044713,
+          "brier": 0.09219872707947212,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09940253798141076,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.003574772274208216,
+              "interval95": [
+                0.002111848237140741,
+                0.0050072413363615375
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.003574772274208216,
+              "interval95": [
+                0.0022755603737244514,
+                0.004783861132655686
+              ],
+              "clusters": 25
+            }
+          }
+        },
+        "employee_logistic": {
+          "log_loss": 0.31997502157537494,
+          "roc_auc": 0.6624760114163701,
+          "average_precision": 0.19484833795920398,
+          "brier": 0.09193372474173823,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09968366196409999,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.004362885480197701,
+              "interval95": [
+                0.00267807683243396,
+                0.006009658991094176
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.004362885480197701,
+              "interval95": [
+                0.0027392880703001874,
+                0.005824037523528445
+              ],
+              "clusters": 25
+            }
+          },
+          "unseen_employee_share": 0.047758544163337774
+        },
+        "boosted_context_payment": {
+          "log_loss": 0.3173034169201066,
+          "roc_auc": 0.6819072570744347,
+          "average_precision": 0.20216310800219198,
+          "brier": 0.09152005299679938,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09835803691627167,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.00703449013546609,
+              "interval95": [
+                0.00446257150480671,
+                0.010008475994498466
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.00703449013546609,
+              "interval95": [
+                0.0048524506780359055,
+                0.009150334627561643
+              ],
+              "clusters": 25
+            }
+          }
+        }
+      },
+      "severity": {
+        "conditional_mean": {
+          "conditional": {
+            "mae": 0.16776932666302424,
+            "rmse": 0.20452492825092353,
+            "observed_mean": 0.2624031429164936,
+            "predicted_mean": 0.2261282210065645
+          },
+          "hurdle_all": {
+            "mae": 0.044341200930720734,
+            "rmse": 0.10387182823572336,
+            "observed_mean": 0.028033926542387927,
+            "predicted_mean": 0.02247771907727388
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ],
+              "clusters": 25
+            }
+          }
+        },
+        "fractional_logistic": {
+          "conditional": {
+            "mae": 0.14826915981136018,
+            "rmse": 0.18551741589024032,
+            "observed_mean": 0.2624031429164936,
+            "predicted_mean": 0.2258176982774617
+          },
+          "hurdle_all": {
+            "mae": 0.04465354214815504,
+            "rmse": 0.10346477631916436,
+            "observed_mean": 0.028033926542387927,
+            "predicted_mean": 0.022763476901005636
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.00741373467745302,
+              "interval95": [
+                0.006167126805163018,
+                0.00875648504963327
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.00741373467745302,
+              "interval95": [
+                0.006265886335672517,
+                0.008546622329401381
+              ],
+              "clusters": 25
+            }
+          }
+        },
+        "boosted_conditional": {
+          "conditional": {
+            "mae": 0.1432691331025292,
+            "rmse": 0.18471594040512596,
+            "observed_mean": 0.2624031429164936,
+            "predicted_mean": 0.22625802709424397
+          },
+          "hurdle_all": {
+            "mae": 0.04447509699784865,
+            "rmse": 0.10337933595449873,
+            "observed_mean": 0.028033926542387927,
+            "predicted_mean": 0.022542977871872566
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.00771046763629537,
+              "interval95": [
+                0.005794623669734637,
+                0.009795095250187858
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.00771046763629537,
+              "interval95": [
+                0.0061365611328780025,
+                0.00925963184515732
+              ],
+              "clusters": 25
+            }
+          }
+        }
+      },
+      "permutation_logloss_increase": {
+        "payment_logistic": {
+          "payment": {
+            "mean": 0.00638168867600899,
+            "repetition_range": [
+              0.005723529035678354,
+              0.007047087691762488
+            ]
+          },
+          "location": {
+            "mean": 0.004489435168051803,
+            "repetition_range": [
+              0.0036972764469704877,
+              0.005321583489212078
+            ]
+          },
+          "channel": {
+            "mean": 0.046260739655128204,
+            "repetition_range": [
+              0.0429674804034485,
+              0.04977641639479158
+            ]
+          },
+          "basket": {
+            "mean": 0.0063191560177583315,
+            "repetition_range": [
+              0.005749431731238763,
+              0.006843375310882638
+            ]
+          },
+          "clock": {
+            "mean": 0.0011291758979880217,
+            "repetition_range": [
+              0.0008307856802706182,
+              0.0015385043136853516
+            ]
+          }
+        },
+        "boosted_context_payment": {
+          "payment": {
+            "mean": 0.009218316708074248,
+            "repetition_range": [
+              0.008420464343212697,
+              0.010216449672601213
+            ]
+          },
+          "location": {
+            "mean": 0.013385534356983909,
+            "repetition_range": [
+              0.011895644796149907,
+              0.014154246811199311
+            ]
+          },
+          "channel": {
+            "mean": 0.07708772810666728,
+            "repetition_range": [
+              0.07573850921514336,
+              0.07847485343088278
+            ]
+          },
+          "basket": {
+            "mean": 0.015540237227429077,
+            "repetition_range": [
+              0.014346885148988131,
+              0.017388926593532972
+            ]
+          },
+          "clock": {
+            "mean": 0.0023792987419605895,
+            "repetition_range": [
+              0.001547754763486342,
+              0.0029596250449696604
+            ]
+          }
+        }
+      }
+    },
+    {
+      "train_end": "2026-07-25",
+      "evaluation_end": "2026-08-20",
+      "train_n": 81699,
+      "evaluation_n": 21796,
+      "positive_train_n": 8348,
+      "positive_evaluation_n": 2240,
+      "occurrence_positive_but_zero_ratio": 0,
+      "classification": {
+        "prevalence": {
+          "log_loss": 0.33113139824884963,
+          "roc_auc": 0.5,
+          "average_precision": 0.10277115066984768,
+          "brier": 0.09220959077424065,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10217995324300173
+        },
+        "context_logistic": {
+          "log_loss": 0.30933770879206385,
+          "roc_auc": 0.6727167561837069,
+          "average_precision": 0.17667202643421978,
+          "brier": 0.08902309526977305,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10073381561027019
+        },
+        "payment_logistic": {
+          "log_loss": 0.3035917824961141,
+          "roc_auc": 0.7042813061574088,
+          "average_precision": 0.20532360469593308,
+          "brier": 0.08764183753458007,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10092170373784613,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.005745926295949677,
+              "interval95": [
+                0.004409731108313388,
+                0.007090382059220505
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.005745926295949677,
+              "interval95": [
+                0.004303368361596937,
+                0.007229512365424675
+              ],
+              "clusters": 26
+            }
+          }
+        },
+        "employee_logistic": {
+          "log_loss": 0.30174483562020493,
+          "roc_auc": 0.7092672736536833,
+          "average_precision": 0.21929548324468287,
+          "brier": 0.08708716084759353,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.1010011359033333,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.007592873171858913,
+              "interval95": [
+                0.005921526432341186,
+                0.009329070637366484
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.007592873171858913,
+              "interval95": [
+                0.006071242562790897,
+                0.009022322290705466
+              ],
+              "clusters": 26
+            }
+          },
+          "unseen_employee_share": 0.04110846026793907
+        },
+        "boosted_context_payment": {
+          "log_loss": 0.3006432008849449,
+          "roc_auc": 0.7123168149891885,
+          "average_precision": 0.21482100281216934,
+          "brier": 0.08704268146977776,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10116741190900738,
+          "loss_gain_over_context": {
+            "LocationId": {
+              "mean": 0.00869450790711894,
+              "interval95": [
+                0.0065057126756138724,
+                0.010894187314490072
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.00869450790711894,
+              "interval95": [
+                0.0061528130644997485,
+                0.011238656295201396
+              ],
+              "clusters": 26
+            }
+          }
+        }
+      },
+      "severity": {
+        "conditional_mean": {
+          "conditional": {
+            "mae": 0.1670031401706568,
+            "rmse": 0.19973342010766387,
+            "observed_mean": 0.2410509517857143,
+            "predicted_mean": 0.23658746118830856
+          },
+          "hurdle_all": {
+            "mae": 0.04203816046226592,
+            "rmse": 0.0960456844032885,
+            "observed_mean": 0.02477308368507983,
+            "predicted_mean": 0.023876809666135652
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ],
+              "clusters": 26
+            }
+          }
+        },
+        "fractional_logistic": {
+          "conditional": {
+            "mae": 0.14037407043804756,
+            "rmse": 0.17855115134127,
+            "observed_mean": 0.2410509517857143,
+            "predicted_mean": 0.23593890946659793
+          },
+          "hurdle_all": {
+            "mae": 0.04207489302216862,
+            "rmse": 0.09541394903021187,
+            "observed_mean": 0.02477308368507983,
+            "predicted_mean": 0.023827501372380804
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.008012925462611446,
+              "interval95": [
+                0.006546329752166479,
+                0.009541539507705907
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.008012925462611446,
+              "interval95": [
+                0.007078933714256729,
+                0.008859384303838905
+              ],
+              "clusters": 26
+            }
+          }
+        },
+        "boosted_conditional": {
+          "conditional": {
+            "mae": 0.13372732646082056,
+            "rmse": 0.17802904487622503,
+            "observed_mean": 0.2410509517857143,
+            "predicted_mean": 0.23536295935142953
+          },
+          "hurdle_all": {
+            "mae": 0.04176739412796312,
+            "rmse": 0.09527677570250655,
+            "observed_mean": 0.02477308368507983,
+            "predicted_mean": 0.023470357537818315
+          },
+          "conditional_squared_error_gain": {
+            "LocationId": {
+              "mean": 0.008199098288363614,
+              "interval95": [
+                0.0064656983777998875,
+                0.010089886022265876
+              ],
+              "clusters": 127
+            },
+            "BusinessDate": {
+              "mean": 0.008199098288363614,
+              "interval95": [
+                0.0068965328886921315,
+                0.00961498825319304
+              ],
+              "clusters": 26
+            }
+          }
+        }
+      },
+      "permutation_logloss_increase": {
+        "payment_logistic": {
+          "payment": {
+            "mean": 0.009556677965368299,
+            "repetition_range": [
+              0.008986623355976109,
+              0.010338894307684476
+            ]
+          },
+          "location": {
+            "mean": 0.004322542360382886,
+            "repetition_range": [
+              0.0036880127672691,
+              0.0048522547901982405
+            ]
+          },
+          "channel": {
+            "mean": 0.056104853676830935,
+            "repetition_range": [
+              0.05418123104803907,
+              0.056994767745075
+            ]
+          },
+          "basket": {
+            "mean": 0.00677225534157797,
+            "repetition_range": [
+              0.006103865098253947,
+              0.007443106733729721
+            ]
+          },
+          "clock": {
+            "mean": 0.0005391743703320962,
+            "repetition_range": [
+              0.00033322006002811655,
+              0.0008113658133364066
+            ]
+          }
+        },
+        "boosted_context_payment": {
+          "payment": {
+            "mean": 0.010969560930148026,
+            "repetition_range": [
+              0.010231565728427539,
+              0.012006402732376853
+            ]
+          },
+          "location": {
+            "mean": 0.012146637866479171,
+            "repetition_range": [
+              0.010237224582852866,
+              0.013105136186486732
+            ]
+          },
+          "channel": {
+            "mean": 0.08292373526229904,
+            "repetition_range": [
+              0.08070434936632848,
+              0.08479535777218877
+            ]
+          },
+          "basket": {
+            "mean": 0.015042582793963422,
+            "repetition_range": [
+              0.014070655457474268,
+              0.015521734125711173
+            ]
+          },
+          "clock": {
+            "mean": 0.0020747376028596777,
+            "repetition_range": [
+              0.001638017006500958,
+              0.00271080107619448
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "runtime_seconds": 14.57398141687736
+}

@@ -1,0 +1,22 @@
+{
+  "version": "prototype-2026-10-28-v1",
+  "status": "EXPERIMENTAL_NOT_DEPLOYED",
+  "policy_ids": [518, 520, 523],
+  "policy_mapping_confirmed": false,
+  "policy_scope_confirmed": false,
+  "employee_meal_enabled": false,
+  "train_end": "2026-06-30",
+  "calibration_end": "2026-07-25",
+  "severity_residual_quantile": 0.95,
+  "severity_sensitivity_quantiles": [0.90, 0.95, 0.99],
+  "pilot_arm_capacity": 50,
+  "pilot_control_capacity": 50,
+  "pilot_seed": "discount-review-pilot-v1",
+  "profile_prior_tickets": 100,
+  "profile_gap": 0.10,
+  "profile_min_early_weeks": 8,
+  "profile_min_early_tickets": 500,
+  "profile_min_later_weeks": 2,
+  "profile_min_later_tickets": 100,
+  "automatic_actions": false
+}

@@ -1,0 +1,159 @@
+{
+  "status": "PASS",
+  "scope": "Post-replication exploratory interaction sensitivity on original residue 0 only",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "folds": [
+    {
+      "evaluation_end": "2026-06-30",
+      "models": {
+        "additive": {
+          "log_loss": 0.3032287042769956,
+          "roc_auc": 0.7042831620282595,
+          "average_precision": 0.19674069645624775,
+          "brier": 0.08733921105497769,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10244920512591875
+        },
+        "explicit_interactions": {
+          "log_loss": 0.30236418170329277,
+          "roc_auc": 0.7068210615112883,
+          "average_precision": 0.19741802797227784,
+          "brier": 0.087253480245795,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.10248039580351123,
+          "gain_over_additive": {
+            "point": 0.0008645225737028803,
+            "interval95": [
+              0.00014672406495711536,
+              0.0015138200543104842
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          }
+        },
+        "boosted_interactions": {
+          "log_loss": 0.30473543456112906,
+          "roc_auc": 0.7092628297308541,
+          "average_precision": 0.20843196176477646,
+          "brier": 0.08778983546528275,
+          "observed_rate": 0.10213857352996643,
+          "predicted_rate": 0.09925885160975396,
+          "gain_over_additive": {
+            "point": -0.0015067302841334312,
+            "interval95": [
+              -0.005586169774227849,
+              0.0024656676623777073
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          }
+        }
+      }
+    },
+    {
+      "evaluation_end": "2026-07-25",
+      "models": {
+        "additive": {
+          "log_loss": 0.31335404608323486,
+          "roc_auc": 0.6971385018282144,
+          "average_precision": 0.20959889197932785,
+          "brier": 0.09072188950937277,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.10155569488680152
+        },
+        "explicit_interactions": {
+          "log_loss": 0.3121878328260491,
+          "roc_auc": 0.7007700316505919,
+          "average_precision": 0.21197516635577096,
+          "brier": 0.09054319687993553,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.10143944998010193,
+          "gain_over_additive": {
+            "point": 0.0011662132571857375,
+            "interval95": [
+              0.0005312893451300426,
+              0.0019800254846546275
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          }
+        },
+        "boosted_interactions": {
+          "log_loss": 0.3076652573942479,
+          "roc_auc": 0.7216779456942215,
+          "average_precision": 0.23590993005435482,
+          "brier": 0.08948070195608296,
+          "observed_rate": 0.10683533067021748,
+          "predicted_rate": 0.09754573643044256,
+          "gain_over_additive": {
+            "point": 0.00568878868898698,
+            "interval95": [
+              0.002122001648315668,
+              0.009513635600205734
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          }
+        }
+      }
+    },
+    {
+      "evaluation_end": "2026-08-20",
+      "models": {
+        "additive": {
+          "log_loss": 0.29722863971889724,
+          "roc_auc": 0.730959385409666,
+          "average_precision": 0.2257004494826254,
+          "brier": 0.08626270582386997,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10243637949926779
+        },
+        "explicit_interactions": {
+          "log_loss": 0.2968183211074371,
+          "roc_auc": 0.7308430756545305,
+          "average_precision": 0.22530977943229138,
+          "brier": 0.0862422416270665,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10235431736238625,
+          "gain_over_additive": {
+            "point": 0.00041031861146013097,
+            "interval95": [
+              -0.0001877521729892442,
+              0.0010581929184498501
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          }
+        },
+        "boosted_interactions": {
+          "log_loss": 0.28988230748706273,
+          "roc_auc": 0.7476968271520614,
+          "average_precision": 0.258715015468626,
+          "brier": 0.08455408410869365,
+          "observed_rate": 0.10277115066984768,
+          "predicted_rate": 0.10111486599877208,
+          "gain_over_additive": {
+            "point": 0.007346332231834507,
+            "interval95": [
+              0.004064805221781247,
+              0.010722953781105753
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          }
+        }
+      }
+    }
+  ]
+}

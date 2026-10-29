@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "15 successful untruncated read-only statement results and row counts",
+    "14 public requests regenerated identically",
+    "independent primary-tip versus threshold-zero equality",
+    "all current analysis script hashes verified",
+    "new Python syntax and Markdown links valid",
+    "aggregate export identifier-field scan passed",
+    "tip figure visually inspected",
+    "16 existing local tests passed"
+  ],
+  "limitations": [
+    "No production deployment or real-time authorization validation",
+    "No human-confirmed misuse labels",
+    "Replication partition previously included in full-population aggregates",
+    "Existing release ZIP intentionally preserved"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Applebees nuevas cargas prueba __ID__",
+  "max_concurrent_runs": 1,
+  "queue": {
+    "enabled": false
+  },
+  "tasks": [
+    {
+      "task_key": "bronze",
+      "run_if": "ALL_SUCCESS",
+      "timeout_seconds": 3600,
+      "max_retries": 0,
+      "retry_on_timeout": false,
+      "notebook_task": {
+        "notebook_path": "__WORKSPACE_ROOT__/bronze",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "job_run_id": "{{job.run_id}}"
+        }
+      }
+    },
+    {
+      "task_key": "silver",
+      "run_if": "ALL_SUCCESS",
+      "timeout_seconds": 3600,
+      "max_retries": 0,
+      "retry_on_timeout": false,
+      "notebook_task": {
+        "notebook_path": "__WORKSPACE_ROOT__/silver",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "job_run_id": "{{job.run_id}}"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "bronze"
+        }
+      ]
+    },
+    {
+      "task_key": "gold",
+      "run_if": "ALL_SUCCESS",
+      "timeout_seconds": 3600,
+      "max_retries": 0,
+      "retry_on_timeout": false,
+      "notebook_task": {
+        "notebook_path": "__WORKSPACE_ROOT__/gold",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "job_run_id": "{{job.run_id}}"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "silver"
+        }
+      ]
+    },
+    {
+      "task_key": "auditoria",
+      "run_if": "ALL_SUCCESS",
+      "timeout_seconds": 3600,
+      "max_retries": 0,
+      "retry_on_timeout": false,
+      "notebook_task": {
+        "notebook_path": "__WORKSPACE_ROOT__/auditoria",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "job_run_id": "{{job.run_id}}"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "gold"
+        }
+      ]
+    }
+  ],
+  "tags": {
+    "environment": "isolated-test",
+    "data": "synthetic"
+  }
+}

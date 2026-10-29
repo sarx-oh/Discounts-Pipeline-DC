@@ -1,0 +1,23 @@
+{
+  "catalog": "workspace",
+  "schemas": {"bronze": "applebees_bronze", "silver": "applebees_silver", "gold": "applebees_gold"},
+  "base_path": "/Volumes/workspace/applebees_eda/raw",
+  "tolerance": "0.02",
+  "run_original_regression": false,
+  "correction_mode": "upsert_tickets",
+  "adopt_existing_files": true,
+  "force_files": [],
+  "original": {
+    "tickets": 2142846,
+    "days": 115,
+    "files": 115,
+    "first_date": "2026-04-28",
+    "last_date": "2026-08-20",
+    "discounted_tickets": 268580,
+    "tickets_with_voids": 55120,
+    "non_reconciled_tickets": 59,
+    "mismatched_item_lines": 89,
+    "net_sales_reconciled": "84292048.6000",
+    "discounts_reconciled": "2968583.3900"
+  }
+}

@@ -1,0 +1,8 @@
+# Observed local analysis environment; Python 3.13.5.
+# Do not install this file into Databricks serverless notebook environments.
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.16.3
+scikit-learn==1.8.0
+matplotlib==3.10.9
+statsmodels==0.14.6

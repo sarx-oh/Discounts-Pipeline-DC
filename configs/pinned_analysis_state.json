@@ -1,0 +1,96 @@
+{
+  "status": {
+    "state": "SUCCEEDED"
+  },
+  "manifest": {
+    "chunks": [
+      {
+        "chunk_index": 0,
+        "row_count": 3,
+        "row_offset": 0
+      }
+    ],
+    "format": "JSON_ARRAY",
+    "schema": {
+      "column_count": 7,
+      "columns": [
+        {
+          "name": "layer",
+          "position": 0,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        },
+        {
+          "name": "status",
+          "position": 1,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        },
+        {
+          "name": "run_id",
+          "position": 2,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        },
+        {
+          "name": "inputs_json",
+          "position": 3,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        },
+        {
+          "name": "outputs_json",
+          "position": 4,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        },
+        {
+          "name": "config_hash",
+          "position": 5,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        },
+        {
+          "name": "updated_at",
+          "position": 6,
+          "type_name": "STRING",
+          "type_text": "STRING"
+        }
+      ]
+    },
+    "total_chunk_count": 1,
+    "total_row_count": 3,
+    "truncated": false
+  },
+  "result": {
+    "data_array": [
+      [
+        "gold",
+        "COMPLETE",
+        "537a9318-568f-4b2e-9da9-2d055ee6099c",
+        "{\"workspace.applebees_test_0eef22876f8b_silver.checks\": 7, \"workspace.applebees_test_0eef22876f8b_silver.dim_employees\": 3, \"workspace.applebees_test_0eef22876f8b_silver.dim_items\": 3, \"workspace.applebees_test_0eef22876f8b_silver.dim_locations\": 3, \"workspace.applebees_test_0eef22876f8b_silver.dim_revenue_centers\": 3, \"workspace.applebees_test_0eef22876f8b_silver.discounts\": 1, \"workspace.applebees_test_0eef22876f8b_silver.item_quality\": 9, \"workspace.applebees_test_0eef22876f8b_silver.items_sold\": 9, \"workspace.applebees_test_0eef22876f8b_silver.payments\": 9, \"workspace.applebees_test_0eef22876f8b_silver.reference_quality\": 3, \"workspace.applebees_test_0eef22876f8b_silver.taxes\": 9, \"workspace.applebees_test_0eef22876f8b_silver.ticket_quality\": 7, \"workspace.applebees_test_0eef22876f8b_silver.voids\": 9}",
+        "{\"workspace.applebees_test_0eef22876f8b_gold.daily_location_channel\": 7, \"workspace.applebees_test_0eef22876f8b_gold.discount_type_daily\": 13, \"workspace.applebees_test_0eef22876f8b_gold.employee_activity_daily\": 9, \"workspace.applebees_test_0eef22876f8b_gold.employee_ticket_activity\": 9, \"workspace.applebees_test_0eef22876f8b_gold.review_cases\": 9, \"workspace.applebees_test_0eef22876f8b_gold.review_thresholds\": 3, \"workspace.applebees_test_0eef22876f8b_gold.ticket_metrics\": 9}",
+        "2fe2de5bb15781415f07933ae30ce007aee44e84ab089c0d9cf7886a917ca248",
+        "2026-10-25T20:36:45.126320+00:00"
+      ],
+      [
+        "silver",
+        "COMPLETE",
+        "d0de6cfe-8848-4a87-9eb4-2733ef893b49",
+        "{\"workspace.applebees_test_0eef22876f8b_bronze.checks_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.employees_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.items_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.locations_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.revenue_centers_raw\": 0}",
+        "{\"workspace.applebees_test_0eef22876f8b_silver.checks\": 7, \"workspace.applebees_test_0eef22876f8b_silver.dim_employees\": 3, \"workspace.applebees_test_0eef22876f8b_silver.dim_items\": 3, \"workspace.applebees_test_0eef22876f8b_silver.dim_locations\": 3, \"workspace.applebees_test_0eef22876f8b_silver.dim_revenue_centers\": 3, \"workspace.applebees_test_0eef22876f8b_silver.discounts\": 1, \"workspace.applebees_test_0eef22876f8b_silver.item_quality\": 9, \"workspace.applebees_test_0eef22876f8b_silver.items_sold\": 9, \"workspace.applebees_test_0eef22876f8b_silver.payments\": 9, \"workspace.applebees_test_0eef22876f8b_silver.reference_quality\": 3, \"workspace.applebees_test_0eef22876f8b_silver.taxes\": 9, \"workspace.applebees_test_0eef22876f8b_silver.ticket_quality\": 7, \"workspace.applebees_test_0eef22876f8b_silver.voids\": 9}",
+        "2fe2de5bb15781415f07933ae30ce007aee44e84ab089c0d9cf7886a917ca248",
+        "2026-10-25T20:32:25.375836+00:00"
+      ],
+      [
+        "bronze",
+        "COMPLETE",
+        "d8ac45cb-1ef2-46f8-94e2-8a4a663148d7",
+        "{}",
+        "{\"workspace.applebees_test_0eef22876f8b_bronze.checks_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.employees_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.items_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.locations_raw\": 0, \"workspace.applebees_test_0eef22876f8b_bronze.revenue_centers_raw\": 0}",
+        "2fe2de5bb15781415f07933ae30ce007aee44e84ab089c0d9cf7886a917ca248",
+        "2026-10-25T20:26:16.725655+00:00"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,2375 @@
+{
+  "status": "PASS",
+  "job_id": 372187525837578,
+  "sandbox": "applebees_test_f1e4901c804c",
+  "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+  "source_hashes": {
+    "src/quality/00_auditoria_modelo.ipynb": "5921f98f88405b34b3341eadfafcac3d041b6a50ec2fac4339ef288bef26bd0c",
+    "src/transformations/bronze/01_bronze_ingesta.ipynb": "e0410fbb0147ab87d7397eed557f3c40e37ba60c0050a9ed9b51a1a35974c54d",
+    "src/transformations/silver/02_silver_preparacion.ipynb": "9fd8c1e75894f6b0e51d3b2e51ebaf014643779177e395d7d432cefe10399ae4",
+    "src/transformations/gold/03_gold_metricas.ipynb": "afd82f1cf23692dcc7ccf5bbc8498a17f9daa050b651dd956c3fc25fda8a4d16",
+    "src/common/pipeline_support.py": "d187adc240ff55b8630415dc8570c46085eb01431e792f41489760799e20574a",
+    "src/common/thresholds.py": "4a3df35f2d133e38dd09f185349706cb3492628b3e52a1fd44680d83aee617cc",
+    "src/common/runtime.py": "69553853bab810dc9e57b12dccc4715848d15f9064c0a346bd2d17c6ff1df705"
+  },
+  "completed_phases": [
+    "initial",
+    "repeat",
+    "changed",
+    "failure",
+    "recovery"
+  ],
+  "dashboard_unchanged": true,
+  "phases": {
+    "initial": {
+      "run_id": 1002764398858282,
+      "run_page_url": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/372187525837578/run/1002764398858282",
+      "job_state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "tasks": {
+        "gold": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "bronze": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "silver": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "auditoria": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        }
+      },
+      "stages": {
+        "bronze": {
+          "status": "PASS",
+          "seconds": 206.987,
+          "json_read_calls": 5,
+          "bronze_before": {},
+          "bronze_after": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          }
+        },
+        "silver": {
+          "status": "PASS",
+          "seconds": 301.205,
+          "json_read_calls": 0
+        },
+        "gold": {
+          "status": "PASS",
+          "seconds": 273.495,
+          "json_read_calls": 0,
+          "threshold_snapshot": {
+            "key": "415cafc5d642827fc4d67407c65e732f91cab32f388a841c52312c673bc6cf96",
+            "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_415cafc5d642827fc4d67407c65e732f",
+            "version": 0,
+            "reused": false,
+            "bronze_versions": {
+              "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+            },
+            "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+            "job_run_id": "1002764398858282",
+            "gold_run_id": "d6a78a71-3880-46d5-adc5-83c6826d0bb5",
+            "silver_versions": {
+              "workspace.applebees_test_f1e4901c804c_silver.checks": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 1,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_items": 1,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 1,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 1,
+              "workspace.applebees_test_f1e4901c804c_silver.discounts": 0,
+              "workspace.applebees_test_f1e4901c804c_silver.item_quality": 4,
+              "workspace.applebees_test_f1e4901c804c_silver.items_sold": 4,
+              "workspace.applebees_test_f1e4901c804c_silver.payments": 4,
+              "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 1,
+              "workspace.applebees_test_f1e4901c804c_silver.taxes": 4,
+              "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.voids": 4
+            },
+            "gold_versions": {
+              "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 3,
+              "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 6,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 4,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 4,
+              "workspace.applebees_test_f1e4901c804c_gold.review_cases": 3,
+              "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 1,
+              "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 3
+            },
+            "status": "GOLD_COMPLETE",
+            "recorded_at": "2026-10-27T21:26:38.996312+00:00"
+          }
+        },
+        "auditoria": {
+          "status": "PASS",
+          "seconds": 220.049,
+          "json_read_calls": 0,
+          "protected_tables_unchanged": true,
+          "audit_checks": [
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_employees",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.checks",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.items_sold",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.payments",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.taxes",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.voids",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.item_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.reference_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_thresholds",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_cases",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily",
+              "status": "OK"
+            },
+            {
+              "name": "discounts ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts item",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Gold ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "Cobertura vigente",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Descuentos de producto conservados",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n locations",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n items",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n employees",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "taxes -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_quality -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "item_quality -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "descuento producto -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "checks.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "checks.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "voids.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.HomeLocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "Gold ticket_metrics -> Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_thresholds -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "Jerarqu\u00eda POS",
+              "status": "PENDIENTE_DEFINICION"
+            },
+            {
+              "name": "Gold vs EDA original",
+              "status": "NO_APLICA"
+            },
+            {
+              "name": "Aplicaciones descuentos detalle vs Gold",
+              "status": "OK"
+            },
+            {
+              "name": "Actividad empleado detalle vs Gold",
+              "status": "OK"
+            }
+          ]
+        }
+      },
+      "attempts": [
+        {
+          "task_key": "gold",
+          "run_id": 238216252292831,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "bronze",
+          "run_id": 384633840093069,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "silver",
+          "run_id": 479414940607131,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "auditoria",
+          "run_id": 61247680637603,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        }
+      ],
+      "verification": {
+        "action": "verify",
+        "phase": "initial",
+        "checks": [
+          "unique_tickets",
+          "snapshot_registered",
+          "initial_snapshot_created",
+          "reconciled_totals",
+          "all_layers_complete"
+        ],
+        "snapshot": {
+          "key": "415cafc5d642827fc4d67407c65e732f91cab32f388a841c52312c673bc6cf96",
+          "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_415cafc5d642827fc4d67407c65e732f",
+          "version": 0,
+          "reused": false,
+          "bronze_versions": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          },
+          "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+          "job_run_id": "1002764398858282",
+          "gold_run_id": "d6a78a71-3880-46d5-adc5-83c6826d0bb5",
+          "silver_versions": {
+            "workspace.applebees_test_f1e4901c804c_silver.checks": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 1,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_items": 1,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 1,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 1,
+            "workspace.applebees_test_f1e4901c804c_silver.discounts": 0,
+            "workspace.applebees_test_f1e4901c804c_silver.item_quality": 4,
+            "workspace.applebees_test_f1e4901c804c_silver.items_sold": 4,
+            "workspace.applebees_test_f1e4901c804c_silver.payments": 4,
+            "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 1,
+            "workspace.applebees_test_f1e4901c804c_silver.taxes": 4,
+            "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.voids": 4
+          },
+          "gold_versions": {
+            "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 3,
+            "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 6,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 4,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 4,
+            "workspace.applebees_test_f1e4901c804c_gold.review_cases": 3,
+            "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 1,
+            "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 3
+          },
+          "status": "GOLD_COMPLETE",
+          "recorded_at": "2026-10-27T21:26:38.996312+00:00"
+        },
+        "status": "PASS"
+      }
+    },
+    "repeat": {
+      "run_id": 14430882277484,
+      "run_page_url": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/372187525837578/run/14430882277484",
+      "job_state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "tasks": {
+        "gold": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "bronze": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "silver": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "auditoria": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        }
+      },
+      "stages": {
+        "bronze": {
+          "status": "PASS",
+          "seconds": 61.788,
+          "json_read_calls": 0,
+          "bronze_before": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0
+          },
+          "bronze_after": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          }
+        },
+        "silver": {
+          "status": "PASS",
+          "seconds": 285.181,
+          "json_read_calls": 0
+        },
+        "gold": {
+          "status": "PASS",
+          "seconds": 257.892,
+          "json_read_calls": 0,
+          "threshold_snapshot": {
+            "key": "415cafc5d642827fc4d67407c65e732f91cab32f388a841c52312c673bc6cf96",
+            "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_415cafc5d642827fc4d67407c65e732f",
+            "version": 0,
+            "reused": true,
+            "bronze_versions": {
+              "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+            },
+            "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+            "job_run_id": "14430882277484",
+            "gold_run_id": "04cf4c36-139e-4202-b6fa-b267d6c8b399",
+            "silver_versions": {
+              "workspace.applebees_test_f1e4901c804c_silver.checks": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_items": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.discounts": 1,
+              "workspace.applebees_test_f1e4901c804c_silver.item_quality": 9,
+              "workspace.applebees_test_f1e4901c804c_silver.items_sold": 9,
+              "workspace.applebees_test_f1e4901c804c_silver.payments": 9,
+              "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.taxes": 9,
+              "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.voids": 9
+            },
+            "gold_versions": {
+              "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 7,
+              "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 13,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 9,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 9,
+              "workspace.applebees_test_f1e4901c804c_gold.review_cases": 7,
+              "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 3,
+              "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 7
+            },
+            "status": "GOLD_COMPLETE",
+            "recorded_at": "2026-10-27T21:41:57.794604+00:00"
+          }
+        },
+        "auditoria": {
+          "status": "PASS",
+          "seconds": 231.518,
+          "json_read_calls": 0,
+          "protected_tables_unchanged": true,
+          "audit_checks": [
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_employees",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.checks",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.items_sold",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.payments",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.taxes",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.voids",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.item_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.reference_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_thresholds",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_cases",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily",
+              "status": "OK"
+            },
+            {
+              "name": "discounts ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts item",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Gold ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "Cobertura vigente",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Descuentos de producto conservados",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n locations",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n items",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n employees",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "taxes -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_quality -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "item_quality -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "descuento producto -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "checks.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "checks.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "voids.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.HomeLocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "Gold ticket_metrics -> Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_thresholds -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "Jerarqu\u00eda POS",
+              "status": "PENDIENTE_DEFINICION"
+            },
+            {
+              "name": "Gold vs EDA original",
+              "status": "NO_APLICA"
+            },
+            {
+              "name": "Aplicaciones descuentos detalle vs Gold",
+              "status": "OK"
+            },
+            {
+              "name": "Actividad empleado detalle vs Gold",
+              "status": "OK"
+            }
+          ]
+        }
+      },
+      "attempts": [
+        {
+          "task_key": "gold",
+          "run_id": 437313069689725,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "bronze",
+          "run_id": 39645516119591,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "silver",
+          "run_id": 480975960741382,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "auditoria",
+          "run_id": 554393107691720,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        }
+      ],
+      "verification": {
+        "action": "verify",
+        "phase": "repeat",
+        "checks": [
+          "unique_tickets",
+          "snapshot_registered",
+          "repeat_no_json_read",
+          "repeat_no_raw_write",
+          "repeat_payload_and_timestamps_identical",
+          "repeat_same_snapshot",
+          "reconciled_totals",
+          "all_layers_complete"
+        ],
+        "snapshot": {
+          "key": "415cafc5d642827fc4d67407c65e732f91cab32f388a841c52312c673bc6cf96",
+          "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_415cafc5d642827fc4d67407c65e732f",
+          "version": 0,
+          "reused": true,
+          "bronze_versions": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          },
+          "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+          "job_run_id": "14430882277484",
+          "gold_run_id": "04cf4c36-139e-4202-b6fa-b267d6c8b399",
+          "silver_versions": {
+            "workspace.applebees_test_f1e4901c804c_silver.checks": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_items": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.discounts": 1,
+            "workspace.applebees_test_f1e4901c804c_silver.item_quality": 9,
+            "workspace.applebees_test_f1e4901c804c_silver.items_sold": 9,
+            "workspace.applebees_test_f1e4901c804c_silver.payments": 9,
+            "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.taxes": 9,
+            "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.voids": 9
+          },
+          "gold_versions": {
+            "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 7,
+            "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 13,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 9,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 9,
+            "workspace.applebees_test_f1e4901c804c_gold.review_cases": 7,
+            "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 3,
+            "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 7
+          },
+          "status": "GOLD_COMPLETE",
+          "recorded_at": "2026-10-27T21:41:57.794604+00:00"
+        },
+        "status": "PASS"
+      }
+    },
+    "changed": {
+      "run_id": 98450439332572,
+      "run_page_url": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/372187525837578/run/98450439332572",
+      "job_state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "tasks": {
+        "gold": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "bronze": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "silver": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "auditoria": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        }
+      },
+      "stages": {
+        "bronze": {
+          "status": "PASS",
+          "seconds": 96.374,
+          "json_read_calls": 2,
+          "bronze_before": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0
+          },
+          "bronze_after": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 1,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          }
+        },
+        "silver": {
+          "status": "PASS",
+          "seconds": 261.566,
+          "json_read_calls": 0
+        },
+        "gold": {
+          "status": "PASS",
+          "seconds": 261.978,
+          "json_read_calls": 0,
+          "threshold_snapshot": {
+            "key": "ec199a547f4e50724b9eefe6934712514cb18346c13ef6900a5125efeab60856",
+            "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_ec199a547f4e50724b9eefe693471251",
+            "version": 0,
+            "reused": false,
+            "bronze_versions": {
+              "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 1,
+              "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+            },
+            "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+            "job_run_id": "98450439332572",
+            "gold_run_id": "ee8bdabc-e64c-498d-8296-ac3b123265c1",
+            "silver_versions": {
+              "workspace.applebees_test_f1e4901c804c_silver.checks": 11,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 5,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_items": 5,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 5,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 5,
+              "workspace.applebees_test_f1e4901c804c_silver.discounts": 2,
+              "workspace.applebees_test_f1e4901c804c_silver.item_quality": 14,
+              "workspace.applebees_test_f1e4901c804c_silver.items_sold": 14,
+              "workspace.applebees_test_f1e4901c804c_silver.payments": 14,
+              "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 5,
+              "workspace.applebees_test_f1e4901c804c_silver.taxes": 14,
+              "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 11,
+              "workspace.applebees_test_f1e4901c804c_silver.voids": 14
+            },
+            "gold_versions": {
+              "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 11,
+              "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 20,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 14,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 14,
+              "workspace.applebees_test_f1e4901c804c_gold.review_cases": 11,
+              "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 5,
+              "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 11
+            },
+            "status": "GOLD_COMPLETE",
+            "recorded_at": "2026-10-27T21:58:14.063992+00:00"
+          }
+        },
+        "auditoria": {
+          "status": "PASS",
+          "seconds": 233.037,
+          "json_read_calls": 0,
+          "protected_tables_unchanged": true,
+          "audit_checks": [
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_employees",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.checks",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.items_sold",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.payments",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.taxes",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.voids",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.item_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.reference_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_thresholds",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_cases",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily",
+              "status": "OK"
+            },
+            {
+              "name": "discounts ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts item",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Gold ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "Cobertura vigente",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Descuentos de producto conservados",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n locations",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n items",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n employees",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "taxes -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_quality -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "item_quality -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "descuento producto -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "checks.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "checks.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "voids.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.HomeLocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "Gold ticket_metrics -> Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_thresholds -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "Jerarqu\u00eda POS",
+              "status": "PENDIENTE_DEFINICION"
+            },
+            {
+              "name": "Gold vs EDA original",
+              "status": "NO_APLICA"
+            },
+            {
+              "name": "Aplicaciones descuentos detalle vs Gold",
+              "status": "OK"
+            },
+            {
+              "name": "Actividad empleado detalle vs Gold",
+              "status": "OK"
+            }
+          ]
+        }
+      },
+      "attempts": [
+        {
+          "task_key": "gold",
+          "run_id": 1012428580933017,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "bronze",
+          "run_id": 454676558059009,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "silver",
+          "run_id": 256242091981271,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "auditoria",
+          "run_id": 990894914968882,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        }
+      ],
+      "verification": {
+        "action": "verify",
+        "phase": "changed",
+        "checks": [
+          "unique_tickets",
+          "snapshot_registered",
+          "new_snapshot_for_changed_input",
+          "omitted_ticket_retained",
+          "removed_children_not_retained",
+          "corrected_channel",
+          "incomplete_retained",
+          "reconciled_totals",
+          "all_layers_complete"
+        ],
+        "snapshot": {
+          "key": "ec199a547f4e50724b9eefe6934712514cb18346c13ef6900a5125efeab60856",
+          "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_ec199a547f4e50724b9eefe693471251",
+          "version": 0,
+          "reused": false,
+          "bronze_versions": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 1,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          },
+          "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+          "job_run_id": "98450439332572",
+          "gold_run_id": "ee8bdabc-e64c-498d-8296-ac3b123265c1",
+          "silver_versions": {
+            "workspace.applebees_test_f1e4901c804c_silver.checks": 11,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 5,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_items": 5,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 5,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 5,
+            "workspace.applebees_test_f1e4901c804c_silver.discounts": 2,
+            "workspace.applebees_test_f1e4901c804c_silver.item_quality": 14,
+            "workspace.applebees_test_f1e4901c804c_silver.items_sold": 14,
+            "workspace.applebees_test_f1e4901c804c_silver.payments": 14,
+            "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 5,
+            "workspace.applebees_test_f1e4901c804c_silver.taxes": 14,
+            "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 11,
+            "workspace.applebees_test_f1e4901c804c_silver.voids": 14
+          },
+          "gold_versions": {
+            "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 11,
+            "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 20,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 14,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 14,
+            "workspace.applebees_test_f1e4901c804c_gold.review_cases": 11,
+            "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 5,
+            "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 11
+          },
+          "status": "GOLD_COMPLETE",
+          "recorded_at": "2026-10-27T21:58:14.063992+00:00"
+        },
+        "status": "PASS"
+      }
+    },
+    "failure": {
+      "run_id": 294698028124863,
+      "run_page_url": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/372187525837578/run/294698028124863",
+      "job_state": {
+        "life_cycle_state": "INTERNAL_ERROR",
+        "result_state": "FAILED",
+        "state_message": "Task bronze failed with message: Workload failed, see run output for details. This caused all downstream tasks to get skipped.",
+        "user_cancelled_or_timedout": false
+      },
+      "tasks": {
+        "gold": {
+          "life_cycle_state": "SKIPPED",
+          "result_state": "UPSTREAM_FAILED",
+          "state_message": "An upstream task failed.",
+          "user_cancelled_or_timedout": false
+        },
+        "bronze": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "FAILED",
+          "state_message": "Workload failed, see run output for details",
+          "user_cancelled_or_timedout": false
+        },
+        "silver": {
+          "life_cycle_state": "SKIPPED",
+          "result_state": "UPSTREAM_FAILED",
+          "state_message": "An upstream task failed.",
+          "user_cancelled_or_timedout": false
+        },
+        "auditoria": {
+          "life_cycle_state": "SKIPPED",
+          "result_state": "UPSTREAM_FAILED",
+          "state_message": "An upstream task failed.",
+          "user_cancelled_or_timedout": false
+        }
+      },
+      "stages": {
+        "bronze": {
+          "status": "FAIL",
+          "seconds": 46.041,
+          "json_read_calls": 2,
+          "bronze_before": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 1,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0
+          }
+        }
+      },
+      "attempts": [
+        {
+          "task_key": "gold",
+          "run_id": 147296361539145,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "SKIPPED",
+            "result_state": "UPSTREAM_FAILED",
+            "state_message": "An upstream task failed.",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "bronze",
+          "run_id": 209658044347404,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "FAILED",
+            "state_message": "Workload failed, see run output for details",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "bronze",
+          "run_id": 465802897836557,
+          "attempt_number": 1,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "FAILED",
+            "state_message": "Workload failed, see run output for details",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "silver",
+          "run_id": 157125386713338,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "SKIPPED",
+            "result_state": "UPSTREAM_FAILED",
+            "state_message": "An upstream task failed.",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "auditoria",
+          "run_id": 153020487962854,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "SKIPPED",
+            "result_state": "UPSTREAM_FAILED",
+            "state_message": "An upstream task failed.",
+            "user_cancelled_or_timedout": false
+          }
+        }
+      ],
+      "expected_failure_reason": "ValueError: Llave repetida: entrada checks; no se elige una versi\u00f3n arbitraria",
+      "verification": {
+        "action": "verify",
+        "phase": "failure",
+        "checks": [
+          "failure_keeps_all_data_versions",
+          "bronze_incomplete_after_rejected_batch"
+        ],
+        "status": "PASS"
+      }
+    },
+    "recovery": {
+      "run_id": 857356524085370,
+      "run_page_url": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/372187525837578/run/857356524085370",
+      "job_state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "tasks": {
+        "gold": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "bronze": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "silver": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "auditoria": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        }
+      },
+      "stages": {
+        "bronze": {
+          "status": "PASS",
+          "seconds": 78.262,
+          "json_read_calls": 2,
+          "bronze_before": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 1,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0
+          },
+          "bronze_after": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 2,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          }
+        },
+        "silver": {
+          "status": "PASS",
+          "seconds": 263.939,
+          "json_read_calls": 0
+        },
+        "gold": {
+          "status": "PASS",
+          "seconds": 259.302,
+          "json_read_calls": 0,
+          "threshold_snapshot": {
+            "key": "2f83bde127976b6ce5f74a732d47a420a9da34709cc162f2cb65916fc77914bf",
+            "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_2f83bde127976b6ce5f74a732d47a420",
+            "version": 0,
+            "reused": false,
+            "bronze_versions": {
+              "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 2,
+              "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+              "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+            },
+            "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+            "job_run_id": "857356524085370",
+            "gold_run_id": "ee565344-a325-4981-9d62-8e43deecedeb",
+            "silver_versions": {
+              "workspace.applebees_test_f1e4901c804c_silver.checks": 15,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_items": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.discounts": 3,
+              "workspace.applebees_test_f1e4901c804c_silver.item_quality": 19,
+              "workspace.applebees_test_f1e4901c804c_silver.items_sold": 19,
+              "workspace.applebees_test_f1e4901c804c_silver.payments": 19,
+              "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 7,
+              "workspace.applebees_test_f1e4901c804c_silver.taxes": 19,
+              "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 15,
+              "workspace.applebees_test_f1e4901c804c_silver.voids": 19
+            },
+            "gold_versions": {
+              "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 15,
+              "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 27,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 19,
+              "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 19,
+              "workspace.applebees_test_f1e4901c804c_gold.review_cases": 15,
+              "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 7,
+              "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 15
+            },
+            "status": "GOLD_COMPLETE",
+            "recorded_at": "2026-10-27T22:17:51.983421+00:00"
+          }
+        },
+        "auditoria": {
+          "status": "PASS",
+          "seconds": 220.244,
+          "json_read_calls": 0,
+          "protected_tables_unchanged": true,
+          "audit_checks": [
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.dim_employees",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.checks",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.items_sold",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.payments",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.taxes",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.voids",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.item_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_silver.reference_quality",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_thresholds",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.review_cases",
+              "status": "OK"
+            },
+            {
+              "name": "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily",
+              "status": "OK"
+            },
+            {
+              "name": "discounts ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts item",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Gold ticket_metrics",
+              "status": "OK"
+            },
+            {
+              "name": "Llaves Bronze vs Silver ticket_quality",
+              "status": "OK"
+            },
+            {
+              "name": "Cobertura vigente",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones ItemsSold",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Payments",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Discounts",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Tax",
+              "status": "OK"
+            },
+            {
+              "name": "Filas array Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Posiciones Voids",
+              "status": "OK"
+            },
+            {
+              "name": "Descuentos de producto conservados",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n locations",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n items",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "Dimensi\u00f3n employees",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "taxes -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_quality -> ticket",
+              "status": "OK"
+            },
+            {
+              "name": "item_quality -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "descuento producto -> l\u00ednea",
+              "status": "OK"
+            },
+            {
+              "name": "checks.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "checks.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold.RevenueCenterId -> dim_revenue_centers",
+              "status": "OK"
+            },
+            {
+              "name": "voids.ItemId -> dim_items",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.LocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "dim_employees.HomeLocationId -> dim_locations",
+              "status": "OK"
+            },
+            {
+              "name": "items_sold -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "payments -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "discounts -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "voids -> gerente",
+              "status": "OK"
+            },
+            {
+              "name": "Gold ticket_metrics -> Silver checks",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> Gold ticket",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> sucursal",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "daily_location_channel -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "discount_type_daily -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_thresholds -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> canal",
+              "status": "OK"
+            },
+            {
+              "name": "employee_ticket_activity -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "employee_activity_daily -> empleado",
+              "status": "OK"
+            },
+            {
+              "name": "ticket_metrics -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "review_cases -> empleado de pago",
+              "status": "OK"
+            },
+            {
+              "name": "Jerarqu\u00eda POS",
+              "status": "PENDIENTE_DEFINICION"
+            },
+            {
+              "name": "Gold vs EDA original",
+              "status": "NO_APLICA"
+            },
+            {
+              "name": "Aplicaciones descuentos detalle vs Gold",
+              "status": "OK"
+            },
+            {
+              "name": "Actividad empleado detalle vs Gold",
+              "status": "OK"
+            }
+          ]
+        }
+      },
+      "attempts": [
+        {
+          "task_key": "gold",
+          "run_id": 178264830782775,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "bronze",
+          "run_id": 26866699607783,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "silver",
+          "run_id": 455989054966826,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        },
+        {
+          "task_key": "auditoria",
+          "run_id": 82807002299204,
+          "attempt_number": 0,
+          "state": {
+            "life_cycle_state": "TERMINATED",
+            "result_state": "SUCCESS",
+            "state_message": "",
+            "user_cancelled_or_timedout": false
+          }
+        }
+      ],
+      "verification": {
+        "action": "verify",
+        "phase": "recovery",
+        "checks": [
+          "unique_tickets",
+          "snapshot_registered",
+          "new_snapshot_for_changed_input",
+          "omitted_ticket_retained",
+          "removed_children_not_retained",
+          "corrected_channel",
+          "incomplete_retained",
+          "reconciled_totals",
+          "all_layers_complete"
+        ],
+        "snapshot": {
+          "key": "2f83bde127976b6ce5f74a732d47a420a9da34709cc162f2cb65916fc77914bf",
+          "table": "workspace.applebees_test_f1e4901c804c_gold.threshold_snapshot_2f83bde127976b6ce5f74a732d47a420",
+          "version": 0,
+          "reused": false,
+          "bronze_versions": {
+            "workspace.applebees_test_f1e4901c804c_bronze.checks_raw": 2,
+            "workspace.applebees_test_f1e4901c804c_bronze.employees_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.items_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.locations_raw": 0,
+            "workspace.applebees_test_f1e4901c804c_bronze.revenue_centers_raw": 0
+          },
+          "code_hash": "9036a384b9fc1edb56954cab171b0f516ede9137885bf13e52843ed1fc0cba83",
+          "job_run_id": "857356524085370",
+          "gold_run_id": "ee565344-a325-4981-9d62-8e43deecedeb",
+          "silver_versions": {
+            "workspace.applebees_test_f1e4901c804c_silver.checks": 15,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_employees": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_items": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_locations": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.dim_revenue_centers": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.discounts": 3,
+            "workspace.applebees_test_f1e4901c804c_silver.item_quality": 19,
+            "workspace.applebees_test_f1e4901c804c_silver.items_sold": 19,
+            "workspace.applebees_test_f1e4901c804c_silver.payments": 19,
+            "workspace.applebees_test_f1e4901c804c_silver.reference_quality": 7,
+            "workspace.applebees_test_f1e4901c804c_silver.taxes": 19,
+            "workspace.applebees_test_f1e4901c804c_silver.ticket_quality": 15,
+            "workspace.applebees_test_f1e4901c804c_silver.voids": 19
+          },
+          "gold_versions": {
+            "workspace.applebees_test_f1e4901c804c_gold.daily_location_channel": 15,
+            "workspace.applebees_test_f1e4901c804c_gold.discount_type_daily": 27,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_activity_daily": 19,
+            "workspace.applebees_test_f1e4901c804c_gold.employee_ticket_activity": 19,
+            "workspace.applebees_test_f1e4901c804c_gold.review_cases": 15,
+            "workspace.applebees_test_f1e4901c804c_gold.review_thresholds": 7,
+            "workspace.applebees_test_f1e4901c804c_gold.ticket_metrics": 15
+          },
+          "status": "GOLD_COMPLETE",
+          "recorded_at": "2026-10-27T22:17:51.983421+00:00"
+        },
+        "status": "PASS"
+      }
+    }
+  }
+}

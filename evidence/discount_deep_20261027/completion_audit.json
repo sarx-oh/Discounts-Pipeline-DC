@@ -1,0 +1,97 @@
+{
+  "status": "COMPLETE_FOR_REQUESTED_INVESTIGATION_AND_PROPOSALS",
+  "requirements": [
+    {
+      "requirement": "Orientation and reassessment",
+      "evidence": "docs/deep_analysis_protocol.md",
+      "assessment": "Reviewed requirements, baseline code and evidence; earlier recommendation explicitly superseded."
+    },
+    {
+      "requirement": "Targets, signs, joins, coverage and timing",
+      "evidence": "evidence/discount_deep_20261027/full_population_results.json",
+      "assessment": "Full 2142846-key audit passed; exceptional cohorts retained; schema lacks authorization timestamps."
+    },
+    {
+      "requirement": "Cash/card/mixed and gratuities",
+      "evidence": "evidence/discount_deep_20261027/full_population_results.json",
+      "assessment": "Full matched contrasts, payment-family coverage and denominator/account sensitivities executed."
+    },
+    {
+      "requirement": "Product and employee adjustment with uncertainty",
+      "evidence": "evidence/discount_deep_20261027/enriched_models.json",
+      "assessment": "103495-key enriched sample reconciled; fixed temporal models and 150 location/week refits executed."
+    },
+    {
+      "requirement": "Positive-intensity and nonlinear comparisons",
+      "evidence": "evidence/discount_deep_20261027/confirmation_results.json",
+      "assessment": "Separate fractional intensity and fixed boosted comparison evaluated; inconsistent gains retained."
+    },
+    {
+      "requirement": "Interactions",
+      "evidence": "evidence/discount_deep_20261027/interaction_results.json",
+      "assessment": "Explicit payment/channel/tip interactions and enriched shallow trees evaluated; post-replication exploratory status retained."
+    },
+    {
+      "requirement": "Employee persistence, shrinkage, multiplicity",
+      "evidence": "evidence/discount_deep_20261027/employee_persistence.json",
+      "assessment": "Full weekly peer aggregates, temporal persistence, two shrinkage strengths and BY diagnostic; no validated anomaly claim."
+    },
+    {
+      "requirement": "Manager, repetitions, products, voids",
+      "evidence": "evidence/discount_deep_20261027/composition_context.json",
+      "assessment": "Concentration and co-occurrence measured; absent manager opportunity denominator reported as unresolved."
+    },
+    {
+      "requirement": "Repeated product and line-percentage patterns",
+      "evidence": "evidence/discount_deep_20261027/product_patterns.json",
+      "assessment": "Full item-discount joins and type-specific repetition measured with invalid denominator counts."
+    },
+    {
+      "requirement": "Clustering usefulness",
+      "evidence": "docs/deep_discount_findings.md",
+      "assessment": "Existing low-coverage segmentation reviewed; no demonstrated decision benefit, so no forced additional clustering."
+    },
+    {
+      "requirement": "Exploration and separate replication",
+      "evidence": "evidence/discount_deep_20261027/confirmation_results.json",
+      "assessment": "21483 residue19 late-period records, disjoint keys, fixed models; prior aggregate exposure disclosed."
+    },
+    {
+      "requirement": "Variable/effect/stability map and hypotheses",
+      "evidence": "docs/deep_discount_findings.md",
+      "assessment": "Numerical effects, map, H1-H7 outcomes, supported versus unresolved evidence documented."
+    },
+    {
+      "requirement": "Practical cases with private identifiers",
+      "evidence": "docs/deep_discount_findings.md",
+      "assessment": "Ten cases traced to 28 events privately; all different-line combinations, no confirmed violations."
+    },
+    {
+      "requirement": "Operational magnitudes and evidence-backed options",
+      "evidence": "docs/deep_discount_findings.md",
+      "assessment": "Three options, matched-support scale, review pilot design, tradeoffs; no recovered-loss or final selection claim."
+    },
+    {
+      "requirement": "Reproducibility, source protection and validation",
+      "evidence": "evidence/discount_deep_20261027/final_validation.json",
+      "assessment": "All saved statements read-only, exact request regeneration, source/result hashes, syntax, links, figure review and local tests passed."
+    },
+    {
+      "requirement": "English maintained deliverables and baseline preservation",
+      "evidence": "docs/deep_reproduction.md",
+      "assessment": "English new code/docs/figures; original resources not written; existing ZIP retained."
+    }
+  ],
+  "remaining_business_evidence_not_claimed_as_completed": [
+    "Policy mappings, scope, exceptions and eligibility",
+    "Manager authorization roles and opportunity records",
+    "Fresh prospective period and decision-time feature snapshots",
+    "Human-reviewed labels, review utility and recoverable-loss measurement"
+  ],
+  "not_performed_by_design": [
+    "Production deployment",
+    "Final operational model selection",
+    "Phase 2 presentation",
+    "Release ZIP replacement"
+  ]
+}

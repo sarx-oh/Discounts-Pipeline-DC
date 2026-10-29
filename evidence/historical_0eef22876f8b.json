@@ -1,0 +1,291 @@
+{
+  "status": "PASS_WITH_EXPLORATORY_DIFFERENCES",
+  "checks": [
+    {
+      "name": "zero_copy_clone_checks_raw",
+      "status": "PASS"
+    },
+    {
+      "name": "zero_copy_clone_locations_raw",
+      "status": "PASS"
+    },
+    {
+      "name": "zero_copy_clone_items_raw",
+      "status": "PASS"
+    },
+    {
+      "name": "zero_copy_clone_revenue_centers_raw",
+      "status": "PASS"
+    },
+    {
+      "name": "zero_copy_clone_employees_raw",
+      "status": "PASS"
+    },
+    {
+      "name": "bronze_clones_not_rewritten",
+      "status": "PASS"
+    },
+    {
+      "name": "no_json_ingestion",
+      "status": "PASS"
+    },
+    {
+      "name": "original_regressions_and_model_audit",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_pinned_lineage",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_checks",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_dim_locations",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_dim_items",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_dim_revenue_centers",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_dim_employees",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_items_sold",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_payments",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_discounts",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_taxes",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_voids",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_item_quality",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_ticket_quality",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_reference_quality",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_ticket_metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_daily_location_channel",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_discount_type_daily",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_employee_ticket_activity",
+      "status": "PASS"
+    },
+    {
+      "name": "matches_snapshot_employee_activity_daily",
+      "status": "PASS"
+    }
+  ],
+  "protected_tables_unchanged": true,
+  "original_totals": {
+    "tickets": 2142846,
+    "discounted_tickets": 268580,
+    "tickets_with_voids": 55120,
+    "non_reconciled_tickets": 59,
+    "mismatched_item_lines": 89,
+    "net_sales_reconciled": "84292048.6000",
+    "discounts_reconciled": "2968583.3900"
+  },
+  "stage_seconds": {
+    "01_bronze_ingesta": 144.136,
+    "02_silver_preparacion": 323.324,
+    "03_gold_metricas": 230.068,
+    "00_auditoria_modelo": 240.808
+  },
+  "comparisons": {
+    "workspace.applebees_silver.checks": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.checks",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 3
+    },
+    "workspace.applebees_silver.dim_locations": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.dim_locations",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 1
+    },
+    "workspace.applebees_silver.dim_items": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.dim_items",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 1
+    },
+    "workspace.applebees_silver.dim_revenue_centers": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.dim_revenue_centers",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 1
+    },
+    "workspace.applebees_silver.dim_employees": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.dim_employees",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 1
+    },
+    "workspace.applebees_silver.items_sold": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.items_sold",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_silver.payments": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.payments",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_silver.discounts": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.discounts",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 0
+    },
+    "workspace.applebees_silver.taxes": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.taxes",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_silver.voids": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.voids",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_silver.item_quality": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.item_quality",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_silver.ticket_quality": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.ticket_quality",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 3
+    },
+    "workspace.applebees_silver.reference_quality": {
+      "target": "workspace.applebees_test_0eef22876f8b_silver.reference_quality",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 1
+    },
+    "workspace.applebees_gold.ticket_metrics": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 5
+    },
+    "workspace.applebees_gold.daily_location_channel": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.daily_location_channel",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 3
+    },
+    "workspace.applebees_gold.discount_type_daily": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.discount_type_daily",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 6
+    },
+    "workspace.applebees_gold.employee_ticket_activity": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.employee_ticket_activity",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_gold.employee_activity_daily": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.employee_activity_daily",
+      "same": true,
+      "missing_original_rows": false,
+      "extra_new_rows": false,
+      "float_rounding_decimal_places": 6,
+      "source_version": 4
+    },
+    "workspace.applebees_gold.review_thresholds": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.review_thresholds",
+      "same": false,
+      "missing_original_rows": true,
+      "extra_new_rows": true,
+      "float_rounding_decimal_places": 6,
+      "source_version": 1
+    },
+    "workspace.applebees_gold.review_cases": {
+      "target": "workspace.applebees_test_0eef22876f8b_gold.review_cases",
+      "same": false,
+      "missing_original_rows": true,
+      "extra_new_rows": true,
+      "float_rounding_decimal_places": 6,
+      "source_version": 5
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "scope": "Previously examined deterministic 5% sample; exploratory, not full-population or causal evidence",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  },
+  "input_sha256": {
+    "train": "75b5499fdb83bbb22e8bfc2aefebef95dd698b313cb104ec643422b6a82a3f2c",
+    "validation": "702b1d24c2b9fb11fccf35e1cb3d9cfe61f4e5d4e99a4f03687fde48f4c8caf5",
+    "test": "81e061ece6879911c5a4e81148027da307e3cd30b14b017d145454c711d41bd4"
+  },
+  "code_sha256": "2b1317bafeebe3b6b810087234d0f2c67f39c82b0394606c4e02c347de1345bb",
+  "sample_n": 103495,
+  "pure_attributed_n": 85905,
+  "invalid_employee_n": 11,
+  "stratified": [
+    {
+      "dimensions": [
+        "LocationId",
+        "channel_name",
+        "week"
+      ],
+      "minimum_per_method": 1,
+      "supported_cells": 2911,
+      "supported_tickets": 78204,
+      "coverage": 0.9103544613235551,
+      "cash_rate": 0.17319384626576023,
+      "card_rate": 0.0999822900390635,
+      "difference_pp": 7.321155622669673
+    },
+    {
+      "dimensions": [
+        "LocationId",
+        "channel_name",
+        "week"
+      ],
+      "minimum_per_method": 2,
+      "supported_cells": 2274,
+      "supported_tickets": 75813,
+      "coverage": 0.8825213899074559,
+      "cash_rate": 0.17352610880325073,
+      "card_rate": 0.09945731600831968,
+      "difference_pp": 7.4068792794931015
+    },
+    {
+      "dimensions": [
+        "LocationId",
+        "channel_name",
+        "week"
+      ],
+      "minimum_per_method": 5,
+      "supported_cells": 1765,
+      "supported_tickets": 66709,
+      "coverage": 0.7765438565857633,
+      "cash_rate": 0.17172797603573,
+      "card_rate": 0.09835778210997512,
+      "difference_pp": 7.33701939257549
+    },
+    {
+      "dimensions": [
+        "LocationId",
+        "employee_key",
+        "channel_name",
+        "week"
+      ],
+      "minimum_per_method": 1,
+      "supported_cells": 10666,
+      "supported_tickets": 44493,
+      "coverage": 0.5179325999650777,
+      "cash_rate": 0.17162239539017907,
+      "card_rate": 0.0991461309039355,
+      "difference_pp": 7.2476264486243585
+    },
+    {
+      "dimensions": [
+        "LocationId",
+        "employee_key",
+        "channel_name",
+        "week"
+      ],
+      "minimum_per_method": 2,
+      "supported_cells": 2712,
+      "supported_tickets": 16288,
+      "coverage": 0.1896047959955765,
+      "cash_rate": 0.16718720764337167,
+      "card_rate": 0.09804132354629654,
+      "difference_pp": 6.914588409707516
+    },
+    {
+      "dimensions": [
+        "LocationId",
+        "employee_key",
+        "channel_name",
+        "week"
+      ],
+      "minimum_per_method": 5,
+      "supported_cells": 30,
+      "supported_tickets": 355,
+      "coverage": 0.004132471916652116,
+      "cash_rate": 0.09000670690811535,
+      "card_rate": 0.1052917505030181,
+      "difference_pp": -1.5285043594902745
+    }
+  ],
+  "model_contrasts": [
+    {
+      "train_end": "2026-05-31",
+      "evaluation_end": "2026-06-30",
+      "eligible_pure_attributed": 22105,
+      "supported_evaluation": 16958,
+      "support_coverage": 0.7671567518660937,
+      "models": {
+        "without_employee": {
+          "cash_standardized_rate": 0.17915166506638447,
+          "card_standardized_rate": 0.09897104955067097,
+          "difference_pp": {
+            "point": 8.018061551571348,
+            "interval95": [
+              7.754092299253596,
+              8.281621529704559
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "cash_vs_card_conditional_odds_ratio": 2.0124680465703717,
+          "uncertainty_limit": "Interval resamples evaluation composition only; model coefficients fixed. It omits estimation uncertainty and is not an inferential effect interval."
+        },
+        "with_employee": {
+          "cash_standardized_rate": 0.17930754104330565,
+          "card_standardized_rate": 0.09903400290842759,
+          "difference_pp": {
+            "point": 8.027353813487803,
+            "interval95": [
+              7.758873865452276,
+              8.3026539353036
+            ],
+            "locations": 127,
+            "dates": 30,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "cash_vs_card_conditional_odds_ratio": 2.017056576079298,
+          "uncertainty_limit": "Interval resamples evaluation composition only; model coefficients fixed. It omits estimation uncertainty and is not an inferential effect interval."
+        }
+      }
+    },
+    {
+      "train_end": "2026-06-30",
+      "evaluation_end": "2026-07-25",
+      "eligible_pure_attributed": 18773,
+      "supported_evaluation": 15232,
+      "support_coverage": 0.811378042934001,
+      "models": {
+        "without_employee": {
+          "cash_standardized_rate": 0.17209648478101755,
+          "card_standardized_rate": 0.09737036090546172,
+          "difference_pp": {
+            "point": 7.472612387555585,
+            "interval95": [
+              7.210756226182256,
+              7.7386377048880055
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "cash_vs_card_conditional_odds_ratio": 1.948479466217548,
+          "uncertainty_limit": "Interval resamples evaluation composition only; model coefficients fixed. It omits estimation uncertainty and is not an inferential effect interval."
+        },
+        "with_employee": {
+          "cash_standardized_rate": 0.17215349999427415,
+          "card_standardized_rate": 0.09749310257519718,
+          "difference_pp": {
+            "point": 7.466039741907698,
+            "interval95": [
+              7.212248471275438,
+              7.728712905095854
+            ],
+            "locations": 127,
+            "dates": 25,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "cash_vs_card_conditional_odds_ratio": 1.950471673083256,
+          "uncertainty_limit": "Interval resamples evaluation composition only; model coefficients fixed. It omits estimation uncertainty and is not an inferential effect interval."
+        }
+      }
+    },
+    {
+      "train_end": "2026-07-25",
+      "evaluation_end": "2026-08-20",
+      "eligible_pure_attributed": 18141,
+      "supported_evaluation": 15166,
+      "support_coverage": 0.8360068353453504,
+      "models": {
+        "without_employee": {
+          "cash_standardized_rate": 0.1716547755315245,
+          "card_standardized_rate": 0.0973144252347385,
+          "difference_pp": {
+            "point": 7.434035029678598,
+            "interval95": [
+              7.170362704025079,
+              7.702364440118352
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "cash_vs_card_conditional_odds_ratio": 1.9430196083770581,
+          "uncertainty_limit": "Interval resamples evaluation composition only; model coefficients fixed. It omits estimation uncertainty and is not an inferential effect interval."
+        },
+        "with_employee": {
+          "cash_standardized_rate": 0.1721437270759408,
+          "card_standardized_rate": 0.09751358165550682,
+          "difference_pp": {
+            "point": 7.463014542043401,
+            "interval95": [
+              7.195362740797669,
+              7.740089321328629
+            ],
+            "locations": 127,
+            "dates": 26,
+            "method": "independent exponential weights crossed by location and date"
+          },
+          "cash_vs_card_conditional_odds_ratio": 1.951618915915354,
+          "uncertainty_limit": "Interval resamples evaluation composition only; model coefficients fixed. It omits estimation uncertainty and is not an inferential effect interval."
+        }
+      }
+    }
+  ]
+}

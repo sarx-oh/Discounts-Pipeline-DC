@@ -1,0 +1,37 @@
+{
+  "source_statement_id": "01f1d269-5984-1620-8f94-f18e2528b15e",
+  "results": [
+    {
+      "minimum_account": 0,
+      "matched_n": 370509,
+      "coverage": 0.2822493469571517,
+      "weighted_amount_difference": -0.9665301386848902,
+      "weighted_gross_rate_difference": -0.03212763846762157,
+      "weighted_account_rate_difference": 0.18893916846824235
+    },
+    {
+      "minimum_account": 5,
+      "matched_n": 368008,
+      "coverage": 0.2823264420583605,
+      "weighted_amount_difference": -0.9719451878002653,
+      "weighted_gross_rate_difference": -0.024638587142127345,
+      "weighted_account_rate_difference": 0.012035686085628572
+    },
+    {
+      "minimum_account": 10,
+      "matched_n": 360790,
+      "coverage": 0.28387449063652437,
+      "weighted_amount_difference": -0.9711633516117409,
+      "weighted_gross_rate_difference": -0.02393013233459907,
+      "weighted_account_rate_difference": 0.009141645344937497
+    },
+    {
+      "minimum_account": 20,
+      "matched_n": 313191,
+      "coverage": 0.2802844808144592,
+      "weighted_amount_difference": -0.9996639909512087,
+      "weighted_gross_rate_difference": -0.02298378154225377,
+      "weighted_account_rate_difference": 0.004288850311790569
+    }
+  ]
+}

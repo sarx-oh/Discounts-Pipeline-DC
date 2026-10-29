@@ -1,0 +1,170 @@
+{
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.16.3",
+    "sklearn": "1.8.0",
+    "statsmodels": "0.14.6"
+  },
+  "status": "PASS",
+  "query_records": [
+    {
+      "query": "cash_within_employee",
+      "statement_id": "01f1d268-4125-1759-b5fe-4a932f1f446c",
+      "returned_rows": 6477,
+      "request_sha256": "1acc5df9baa16812617561c5386513ad0e2eb05497e8409298e57d89376b53fc",
+      "result_sha256": "023b5c629c89e90b4ec9257ce04a2d10d9b4adb5baa24ad916f4b1098b96c463",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "composition_context",
+      "statement_id": "01f1d269-2e4b-1497-9914-663245557540",
+      "returned_rows": 5,
+      "request_sha256": "c230adabd53bf25f287e5ef521f78ecaf447892657c93a16c9c9203a82d4c229",
+      "result_sha256": "b409039b2680a63a9e43770e1867581e5d8c13232f65e355bbfa8dceb8119504",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "confirmation_residue19",
+      "statement_id": "01f1d269-05a4-1cba-9889-ac2d8ed58798",
+      "returned_rows": 21483,
+      "request_sha256": "e991d4bee623f6fd90fc84c314df91562b551ce3e740af93eb3e44e3d22c3754",
+      "result_sha256": "5bb65671d12bcd275c2b1ad2b058a2abba0470c0beddcdfc2ec1a3f9f2946363",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "employee_weeks",
+      "statement_id": "01f1d268-f52e-1d6d-a834-0bf377a00e41",
+      "returned_rows": 18251,
+      "request_sha256": "121a5747e9b3b66eca4bfabb1a9b24d16a0ac0f103622646ae26b0c5d0416570",
+      "result_sha256": "22d8de744720e64185dc095f8ab33c4c90df74137b58e4471b36049ad55a049e",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "enriched_test",
+      "statement_id": "01f1d268-8bb3-1a61-b6c5-3d574e886fd2",
+      "returned_rows": 21796,
+      "request_sha256": "f5b1f9df6be33426b5a86d24fbad08591f98b3a482fb7fa4703b7435349be674",
+      "result_sha256": "2a21ead039045bc4d7bfa6e136bb5dc21149985a868f964fcf0c6dec404f331d",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "enriched_train_early",
+      "statement_id": "01f1d268-8bb6-1230-b188-18292e133288",
+      "returned_rows": 32656,
+      "request_sha256": "f1eeffba12cefa2c6f6b4a20a2a17eb72cc284e3182018d318ea6bf5f70250fa",
+      "result_sha256": "243b74d729074935141dd62533907ee7bcd7f5a7a3d8d79b6a16db1ba71237b2",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "enriched_train_late",
+      "statement_id": "01f1d268-8ab7-139e-a98e-a53d888b05c8",
+      "returned_rows": 26513,
+      "request_sha256": "6bd4c6daa229729bb987e84f3f840ffbef21092b4a47c206294d472aab806066",
+      "result_sha256": "e2661ee8702ceb81fffddf05312f1b83e074a8baffeda24bd477ad2a1412e3c8",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "enriched_validation",
+      "statement_id": "01f1d268-8ba5-19b3-ab1f-7a7fde2eb24d",
+      "returned_rows": 22530,
+      "request_sha256": "8204b44d553c038a570324d05c010771231211e387e6df6f3e200888d0b984db",
+      "result_sha256": "b9e877148c4f0f806452596932dcfaba59b4b3169ce195047f1556e6688881ea",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "private_case_events",
+      "statement_id": "01f1d269-92f8-103a-a283-a6775cf669f8",
+      "returned_rows": 28,
+      "request_sha256": "05a1c90a568172a66233d715c7fc60ce397a79139f97bb2a3ad000b04fc55570",
+      "result_sha256": "d9bc5222502184b40dfadf0f0b44f0ea1db85fc90a7fb9074d3cc7d7692b7c40",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "product_patterns",
+      "statement_id": "01f1d26a-7f4f-1a9e-9593-e9996ccffdbb",
+      "returned_rows": 2,
+      "request_sha256": "b541fb08c46307761cfd14c7ffce5eb6a2d543fe99c158c9b5ac633b8c15210c",
+      "result_sha256": "f19775fc2107239e2754893b739c65938c5290a0df24b72cabc8d7a912098f30",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "recording_audit",
+      "statement_id": "01f1d268-345f-1445-a184-bba8ddcc5886",
+      "returned_rows": 3,
+      "request_sha256": "5d840dc9b57ea54e38f57ccf9073ab788dd189c0eacfaad2538a2383d6faf7d3",
+      "result_sha256": "0979c03e56f05806b0e475c2b7ebc49231c4b146fc9a8674f10cc32dde5655bd",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "source_schema",
+      "statement_id": "01f1d268-57b7-190e-b2d3-7e26cbc97558",
+      "returned_rows": 6,
+      "request_sha256": "2757b7ea1788a2a003f36375f6369bd51bd34d1e5e35adf062bd4eaab91b8410",
+      "result_sha256": "f13b8a4859c7b37553c7df838d147b7f046e8e4c856b6dcca7038edfb95e2476",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "tip_account_sensitivity",
+      "statement_id": "01f1d268-6789-18e4-b68d-b87a2f8ec187",
+      "returned_rows": 2,
+      "request_sha256": "c182b7a70f41c81b3f2325022c9b5d3877043492e75db64c6ca3c04837687c1d",
+      "result_sha256": "925059ba54ce21e6b857dc91f37185a076822f1137a4700bf63c82b6a774681a",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "tip_denominators",
+      "statement_id": "01f1d268-429f-1597-a6a1-832fecea949b",
+      "returned_rows": 2,
+      "request_sha256": "618c843ad5b664eb331b2c8c5d4d79623c6aa1cdbcef6dd672002b6c75483805",
+      "result_sha256": "cf603cb2d596b5b706901bbe0fe63acaad5e6ef4396fb92923ba0d5c4c938ecc",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    },
+    {
+      "query": "tip_exclude_emp50",
+      "statement_id": "01f1d269-5984-1620-8f94-f18e2528b15e",
+      "returned_rows": 2,
+      "request_sha256": "083d72b22e03fd8be1e2fa195aa90e6e2b64a7ed75d979dc00bfaeb7cab16b69",
+      "result_sha256": "eeedadc41858840d6f65aae5dc2fca2b8d36b614e4d223e523a023bcddb66e81",
+      "warehouse_id": "1e882596e2d90b44",
+      "read_only": true
+    }
+  ],
+  "remote_mutations_executed": 0,
+  "scope": "Read-only SELECT/CTE queries against pinned sandbox sources; no notebook, table, Job or dashboard write. This does not audit changes by other actors.",
+  "sample_reconciliation": "Enriched sample keys and all targets match prior 103495 rows",
+  "private_exports_excluded": [
+    "ticket-level samples",
+    "employee weekly keys",
+    "manager keys",
+    "case keys and event details"
+  ],
+  "source_code_sha256": {
+    "tools/deep_confirm_models.py": "df9ab218e607ad74f28c8ade6d4a14e869f6c79bcff2248e48a09b49eb70f462",
+    "tools/deep_employee_persistence.py": "258abea156112d183f2cbe119fbbde83cf45a51f63c416e88f66d305b2e00354",
+    "tools/deep_enriched_models.py": "83bf550afe1a36a4e190ccf426ff4bab073cfaedbfd05669da250550d3d75a53",
+    "tools/deep_export_evidence.py": "5a7c113c5ec50d6b6a4744fcc8afe7750b7e3d1ab3a5579b197b1496aafaaa09",
+    "tools/deep_full_aggregates.py": "02d2702070f3ec926fd027d9170f3630a5ffb72d1406a7b879ed1def06398d0a",
+    "tools/deep_interaction_check.py": "d8492992c0531d5c4d4594f64605cc575ff07833f6893bbccf2beaae6f4a0886",
+    "tools/deep_model_diagnostics.py": "2fc588dc8953244a11d16d4d7385ae9c174145f4fb10a354032540cf1d02f907",
+    "tools/deep_payment_support.py": "2b1317bafeebe3b6b810087234d0f2c67f39c82b0394606c4e02c347de1345bb",
+    "tools/deep_plot_findings.py": "546118af4410962b21f5027054d17b7e0f1b33a2f343bf70f5df457695850aea",
+    "tools/deep_report_local.py": "76dbfbd745e4ab9acb9eb9affd6646a9e9056a8b2b73cab5e9d43f8e55c11080",
+    "tools/deep_temporal_models.py": "64f083a49e2a9bf02c8b8738d3084f083e733675e20017734a64c8f1197dc299"
+  }
+}

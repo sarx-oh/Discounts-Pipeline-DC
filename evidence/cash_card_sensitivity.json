@@ -1,0 +1,276 @@
+{
+  "status": "PASS",
+  "input_versions": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "payment_transition": [
+    {
+      "payment_family": "SOLO_TARJETA",
+      "active_family": "SOLO_TARJETA",
+      "tickets": 1327911,
+      "positive_tickets": 1327880
+    },
+    {
+      "payment_family": "SOLO_EFECTIVO",
+      "active_family": "SOLO_EFECTIVO",
+      "tickets": 381992,
+      "positive_tickets": 381970
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "active_family": "OTROS_O_MIXTOS",
+      "tickets": 353293,
+      "positive_tickets": 353124
+    },
+    {
+      "payment_family": "SOLO_EFECTIVO",
+      "active_family": "SIN_COBRO_POSITIVO",
+      "tickets": 73443,
+      "positive_tickets": 0
+    },
+    {
+      "payment_family": null,
+      "active_family": "OTROS_O_MIXTOS",
+      "tickets": 3856,
+      "positive_tickets": 0
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "active_family": "SOLO_TARJETA",
+      "tickets": 1451,
+      "positive_tickets": 15
+    },
+    {
+      "payment_family": "OTROS_O_MIXTOS",
+      "active_family": "SOLO_EFECTIVO",
+      "tickets": 897,
+      "positive_tickets": 0
+    },
+    {
+      "payment_family": "SOLO_TARJETA",
+      "active_family": "SIN_COBRO_POSITIVO",
+      "tickets": 3,
+      "positive_tickets": 0
+    }
+  ],
+  "employee_label_codes": [
+    {
+      "DiscountId": 2,
+      "DiscountName": "EMP 25%"
+    },
+    {
+      "DiscountId": 17,
+      "DiscountName": "EMP 10%"
+    },
+    {
+      "DiscountId": 428,
+      "DiscountName": "EMP 10%"
+    },
+    {
+      "DiscountId": 432,
+      "DiscountName": "EMP 25%"
+    },
+    {
+      "DiscountId": 518,
+      "DiscountName": "EMP 50%"
+    },
+    {
+      "DiscountId": 520,
+      "DiscountName": "EMP 50"
+    },
+    {
+      "DiscountId": 523,
+      "DiscountName": "EMP 50%"
+    }
+  ],
+  "global": [
+    {
+      "scenario": "without_emp_labels",
+      "family": "SOLO_EFECTIVO",
+      "n": 363430,
+      "d": 47199,
+      "discount": "444518.8400",
+      "gross": "13149351.5000"
+    },
+    {
+      "scenario": "without_emp_labels",
+      "family": "SOLO_TARJETA",
+      "n": 1305048,
+      "d": 106238,
+      "discount": "969517.6700",
+      "gross": "57453705.1200"
+    },
+    {
+      "scenario": "primary",
+      "family": "SOLO_EFECTIVO",
+      "n": 381970,
+      "d": 65739,
+      "discount": "593004.4700",
+      "gross": "13543970.5800"
+    },
+    {
+      "scenario": "positive_payments_only",
+      "family": "SOLO_TARJETA",
+      "n": 1327895,
+      "d": 129074,
+      "discount": "1180841.0000",
+      "gross": "58116261.3800"
+    },
+    {
+      "scenario": "without_emp50",
+      "family": "SOLO_EFECTIVO",
+      "n": 368520,
+      "d": 52289,
+      "discount": "471993.3800",
+      "gross": "13287026.6800"
+    },
+    {
+      "scenario": "olo_labels",
+      "family": "SOLO_EFECTIVO",
+      "n": 381970,
+      "d": 65739,
+      "discount": "593004.4700",
+      "gross": "13543970.5800"
+    },
+    {
+      "scenario": "olo_labels",
+      "family": "SOLO_TARJETA",
+      "n": 1331545,
+      "d": 129280,
+      "discount": "1182642.2400",
+      "gross": "58265011.6600"
+    },
+    {
+      "scenario": "positive_payments_and_olo",
+      "family": "SOLO_EFECTIVO",
+      "n": 381970,
+      "d": 65739,
+      "discount": "593004.4700",
+      "gross": "13543970.5800"
+    },
+    {
+      "scenario": "positive_payments_and_olo",
+      "family": "SOLO_TARJETA",
+      "n": 1331562,
+      "d": 129284,
+      "discount": "1182701.4100",
+      "gross": "58265883.4600"
+    },
+    {
+      "scenario": "primary",
+      "family": "SOLO_TARJETA",
+      "n": 1327880,
+      "d": 129070,
+      "discount": "1180781.8300",
+      "gross": "58115477.7400"
+    },
+    {
+      "scenario": "without_emp50",
+      "family": "SOLO_TARJETA",
+      "n": 1312727,
+      "d": 113917,
+      "discount": "1016275.8700",
+      "gross": "57733126.4000"
+    },
+    {
+      "scenario": "positive_payments_only",
+      "family": "SOLO_EFECTIVO",
+      "n": 381970,
+      "d": 65739,
+      "discount": "593004.4700",
+      "gross": "13543970.5800"
+    }
+  ],
+  "adjusted_frequency": [
+    {
+      "scenario": "positive_payments_only",
+      "cells": 15153,
+      "cash_n": 356225,
+      "card_n": 1156127,
+      "cash_pct": 17.25952969129352,
+      "card_pct": 9.932472948193679
+    },
+    {
+      "scenario": "primary",
+      "cells": 15153,
+      "cash_n": 356225,
+      "card_n": 1156112,
+      "cash_pct": 17.25952870085008,
+      "card_pct": 9.932272383784852
+    },
+    {
+      "scenario": "without_emp_labels",
+      "cells": 14979,
+      "cash_n": 339893,
+      "card_n": 1136191,
+      "cash_pct": 13.543497187861744,
+      "card_pct": 8.427428451134292
+    },
+    {
+      "scenario": "olo_labels",
+      "cells": 15153,
+      "cash_n": 356225,
+      "card_n": 1156112,
+      "cash_pct": 17.25952870085008,
+      "card_pct": 9.93227238378485
+    },
+    {
+      "scenario": "positive_payments_and_olo",
+      "cells": 15153,
+      "cash_n": 356225,
+      "card_n": 1156127,
+      "cash_pct": 17.259529691293512,
+      "card_pct": 9.932472948193684
+    },
+    {
+      "scenario": "without_emp50",
+      "cells": 15023,
+      "cash_n": 344456,
+      "card_n": 1143129,
+      "cash_pct": 14.575473917373388,
+      "card_pct": 8.970856701989701
+    }
+  ],
+  "adjusted_intensity": [
+    {
+      "scenario": "positive_payments_only",
+      "cells": 15153,
+      "cash_pct": "4.353100",
+      "card_pct": "2.051900"
+    },
+    {
+      "scenario": "primary",
+      "cells": 15153,
+      "cash_pct": "4.353100",
+      "card_pct": "2.051800"
+    },
+    {
+      "scenario": "without_emp_labels",
+      "cells": 14979,
+      "cash_pct": "3.458600",
+      "card_pct": "1.723400"
+    },
+    {
+      "scenario": "olo_labels",
+      "cells": 15153,
+      "cash_pct": "4.353100",
+      "card_pct": "2.051800"
+    },
+    {
+      "scenario": "positive_payments_and_olo",
+      "cells": 15153,
+      "cash_pct": "4.353100",
+      "card_pct": "2.051900"
+    },
+    {
+      "scenario": "without_emp50",
+      "cells": 15023,
+      "cash_pct": "3.607600",
+      "card_pct": "1.798700"
+    }
+  ],
+  "input_versions_unchanged": true,
+  "protected_tables_unchanged": true
+}

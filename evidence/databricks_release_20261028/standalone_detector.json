@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "execution": "DATABRICKS_STANDALONE",
+  "run_id": "87e533a1e39144dca9c5d21f886b3801",
+  "queries": [
+    {
+      "name": "baseline_train",
+      "rows": 59169,
+      "sql_sha256": "bb3210a32c5e0c91819f1d38a8ac77354d3573a69a0b41fc1bf2769e5adf3960",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+      }
+    },
+    {
+      "name": "baseline_validation",
+      "rows": 22530,
+      "sql_sha256": "7a9c8f9217ba326cc5c84759f4a74b056a57da2b30d4cfb0ff13c7703bbe6c32",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+      }
+    },
+    {
+      "name": "baseline_test",
+      "rows": 21796,
+      "sql_sha256": "d489a0be83a7a9bbfd4aff1bc6a74b599861cbb1f140e352791928dbb4b9febb",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+      }
+    },
+    {
+      "name": "enriched_train_early",
+      "rows": 32656,
+      "sql_sha256": "6786e8e6bdafd7b8890ef84a55c67efc08d90c9ceb65dc55f49a95dd45827a92",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+      }
+    },
+    {
+      "name": "enriched_train_late",
+      "rows": 26513,
+      "sql_sha256": "ae398619326412caa845f2eaaf9ee73db75da0b46ab0a66b6687de5b2e4330e3",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+      }
+    },
+    {
+      "name": "enriched_validation",
+      "rows": 22530,
+      "sql_sha256": "f701cfc396ea1784b19880e1a6d1168cb5e0296ce454282883494255831b4894",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+      }
+    },
+    {
+      "name": "enriched_test",
+      "rows": 21796,
+      "sql_sha256": "b94d3c00496a0b0056edc3e746f65d644009a7dbd6bcc6e5fe43a24ffc018aab",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+      }
+    },
+    {
+      "name": "employee_weeks",
+      "rows": 18251,
+      "sql_sha256": "fd21c5631592d8ad7cf5da3ca88e0c8d299e29e9023274bcac05aa09780a50b4",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+      }
+    },
+    {
+      "name": "policy_events",
+      "rows": 5209,
+      "sql_sha256": "42c1dcd27032636095156f40b9db48e7f8cc44b0ff28dfb51538bf580e139ed4",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_silver.discounts": 1,
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+      }
+    },
+    {
+      "name": "pilot_receipts",
+      "rows": 100,
+      "sql_sha256": "e5aaef67dd44231973ac15d0e3c8f12b3561037dded8cc25652a99fb3eb4ac66",
+      "sources": {
+        "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+        "workspace.applebees_test_0eef22876f8b_silver.discounts": 1,
+        "workspace.applebees_test_0eef22876f8b_silver.payments": 9
+      }
+    }
+  ],
+  "source_versions": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.payments": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.items_sold": 9,
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1
+  },
+  "main_job_modified": false,
+  "human_reviews_submitted": 0,
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.10.9"
+  },
+  "summary": {
+    "status": "PASS",
+    "snapshot": "7a6745e04899ea02c076f575f50ac3391e0bb3e1db0bc6f0fb2d9f0e3288aeb5",
+    "full_policy_cases": 2135,
+    "policy_scope_counts": {
+      "OVERLAPPING_SCOPE": 2050,
+      "DISTINCT_LINES": 85,
+      "UNKNOWN_SCOPE": 0
+    },
+    "train_n": 59169,
+    "calibration_n": 22530,
+    "evaluation_n": 21796,
+    "statistical_candidates": 95,
+    "profile_cases": 4,
+    "case_records_including_controls": 2268,
+    "threshold_sensitivity": [
+      {
+        "quantile": 0.9,
+        "cutoff": 0.2504328968538993,
+        "evaluation_candidates": 174
+      },
+      {
+        "quantile": 0.95,
+        "cutoff": 0.3538590008797214,
+        "evaluation_candidates": 95
+      },
+      {
+        "quantile": 0.99,
+        "cutoff": 0.596344725843223,
+        "evaluation_candidates": 26
+      }
+    ],
+    "occurrence_prediction": {
+      "log_loss": 0.2995987349652726,
+      "roc_auc": 0.7214704726170996,
+      "average_precision": 0.21822937740169285,
+      "brier": 0.08677397732986096,
+      "observed_rate": 0.10277115066984768,
+      "predicted_rate": 0.10099528331650588
+    },
+    "conditional_severity_prediction": {
+      "mae": 0.13801838531779467,
+      "rmse": 0.1759560492883744,
+      "observed_mean": 0.2410509517857143,
+      "predicted_mean": 0.2281766686325746
+    },
+    "model_predictors": "location, channel, hour, weekday, gross, lines, traffic, product category/diversity/share, detailed payment; no employee identity, tips, discount labels or manager",
+    "usefulness": "UNKNOWN: no human reviews yet; predictive accuracy is not misuse detection precision",
+    "remote_deployment": false,
+    "zip_modified": false
+  },
+  "pilot": {
+    "snapshot": "7a6745e04899ea02c076f575f50ac3391e0bb3e1db0bc6f0fb2d9f0e3288aeb5",
+    "common_universe_n": 21796,
+    "available_policy_candidates": 33,
+    "available_statistical_candidates": 95,
+    "arm_A_n": 33,
+    "arm_B_n": 50,
+    "control_n": 50,
+    "nonalerted_pool_n": 21684,
+    "unique_review_tickets": 100,
+    "comparison": "Both arms use the same sampled late-period ticket universe; profiles excluded."
+  },
+  "receipt_coverage": 100,
+  "protected_tables_unchanged": true,
+  "protected_table_count": 25,
+  "contract_tests_passed": true,
+  "source_sha256": {
+    "src/analysis/discount_model_sample.sql": "c6f2bf762060131f89bb9f6c281b16125138a26f6ed0a87a39901576e64ffcff",
+    "src/analysis/deep_enriched_sample.sql": "f216f2da5bf60b1128b42e1c66da1cc0958fc902ed52a2060d23dcd8cca7e6b6",
+    "src/analysis/deep_employee_weeks.sql": "88418abac0da5da8542ce2e92ea70eb2d8dccbac1cba9182a7f5f21904ea1b33",
+    "src/analysis/cash_card_analysis.py": "18088528cd9e11d3ea093d720b03a3079facd3bcffbec002bf4e2baa71ae442e",
+    "src/analysis/cash_card_sensitivity.py": "e7dac95a56126729f0891ce54eac681fcab4d3f657b01841eabad3e242721802",
+    "src/analysis/deep_cash_within_employee.sql": "eec6ed40ac47cbfef51680275284f6251936a6b6271052f07ce82ccf24ae4697",
+    "src/analysis/deep_composition_context.sql": "c355f2b511291af1c21e977d361ec0b0a2e19cf4436e67ceef6440d1a32b07ec",
+    "src/analysis/deep_product_patterns.sql": "b7535909d9fb52ce3d3ac736c7b6b15ff5800bef6a5669e215041021a4fd2913",
+    "src/analysis/deep_recording_audit.sql": "d9e939ad6784b8311315c643559f7049fc6d1e1eb720e97eaf1badec6c20dc60",
+    "src/analysis/deep_source_schema.sql": "ac69c48a65e6dd36e4328a87defd1bf9e205f8ac19872ea5c0136ca2d6d61f77",
+    "src/analysis/deep_tip_account_sensitivity.sql": "f2c345d370c0159f55f562900922dce8d7296cf6d9160655b56b4dd49d165dc1",
+    "src/analysis/deep_tip_denominators.sql": "d6dfadce4bfadfa9af4d25e179c7e6c428e839a9d3d27807cf7002febce1cdd2",
+    "src/analysis/deep_tip_exclude_emp50.sql": "985ffb6f5dd7fd28c064bdb2dbba928f93a321005bab0964d881e0890bdc23e8",
+    "src/analysis/detection_pilot_receipts.sql": "2067f9a80f5a8ac5e5d7b8176fd48169b23628a39afbb85e1472bd34cfc8ec89",
+    "src/analysis/detection_policy_events.sql": "5f8c6fd8748b89ec45bc64465c7132007c403be00df8280fd18cebd15532fc86",
+    "src/analysis/discount_combinations.sql": "4200bf0d95b502ed8d523bb8cde61a9ecb7d5d66597b14a6dda09f3408aa2c77",
+    "src/analysis/discount_employee_context.sql": "69ca6a41ec14234655537261264c83f0572efb21c1d112ca843f54066d0cd70f",
+    "src/analysis/discount_employee_dynamics.sql": "bee894b99d5c819cf2066504553021231fefaf4866b797066aaf0dcff4a47e12",
+    "src/analysis/discount_model_population.sql": "76a825be6f25b359956f7c3045c8269c792e765bda7c4496e8b24acb77a71abb",
+    "src/analysis/discount_review_base.py": "d827eeb9aadfaa88d7236810ae687fd6960b3b8d0707b923de9f41056fd4a776",
+    "src/analysis/discount_roles.sql": "59327e4c3265f84d9e15cfa66c3885a70d3b66ccc74dee49803b9ad8a9aaf7a1",
+    "src/analysis/discount_weekly.sql": "8dccf34139dd9cf5b45e99ef6a54021526b0e18ecba4df4761136fb9a659f83f",
+    "src/analysis/profile_payments.py": "4f22c92f7e1321f5f8633fe8c0b7cc4f7e908a45ca82adc482c1ecae073ea7e6",
+    "src/common/review_contract.py": "c779a647810cc2e86695428d43de15d89b695ee22df80d12e0a4458cc750bf33",
+    "src/common/pipeline_support.py": "88ab07b61fc2018d77844d1ff2ed6cc263a52f1b1c667c7b71701c343428e830",
+    "src/common/runtime.py": "69553853bab810dc9e57b12dccc4715848d15f9064c0a346bd2d17c6ff1df705",
+    "src/common/thresholds.py": "c3a8ce74804866ca73bb79645b9cbf663f112641ed2e25dd10fa4184d21c93c2",
+    "src/dashboard/00_comprobar_estado.sql": "f86453e8f51c868cb266815489063109acbc059a7f22a853e1c51bf23ee3a0d3",
+    "src/dashboard/01_panorama.sql": "234c7aa72dc6115e917dcc0f9ee14d8a894ee4ab6c0349b5e5b061dd2fdbbe75",
+    "src/dashboard/02_canales.sql": "2f9a034a5cc75c3d444c81e7cab85c05963277ebec1d54b60bca57a7f5f66c56",
+    "src/dashboard/03_evolucion.sql": "d00ba7e8e058050f0276513f412cdd1570786942e35f2dd2f30188627650fd17",
+    "src/dashboard/04_tipos_descuento.sql": "cb15836cdfbf6c2bf1f0a4d020a19cbb43364e95d9d8dd042f30709e1dd1764a",
+    "src/dashboard/05_propinas.sql": "fb3ea816a0ba7f53fbb66818ff3fe82e7fd6ce2f41c0a9de671cd5d086396894",
+    "src/dashboard/06_casos.sql": "216631cd9f6e5f11dcc113b23d46c190ad84bd00efe08f532fb7a16e8899768e",
+    "src/dashboard/90_opciones.sql": "ba12db8dc824350bc4a72a9cb7b7786c97bb2583263a6f4aab5fc5fd7e546553",
+    "src/detection/core.py": "7505b84765af4298ba300e0353a7e449a2778bf4374e054c35651ecd0888ed0b",
+    "src/quality/00_auditoria_modelo.ipynb": "bdcf1e0705f1e492385eb9489b216f30ce80c75067f852bed9055650f6b5c0f6",
+    "src/transformations/bronze/01_bronze_ingesta.ipynb": "acafd960561db280bffb7216891747740224b29fd3ffb5e23a48aca26954df4f",
+    "src/transformations/gold/03_gold_metricas.ipynb": "266624f66e910813e13e851bc1d70f897a494876e1329f0d5858265a886746a8",
+    "src/transformations/silver/02_silver_preparacion.ipynb": "5647b61e50404ed57eea7ff3185da7fc14af7bcee5480b7ce6b1933efd8da528",
+    "tools/build_detection_prototype.py": "77d1726bf671c859187cb8320b61fd1e02c6c3a3ebb3b730d08639211d7b630a",
+    "tools/build_sandbox.py": "3b2d05d7511892ca087df1ae4be066d57b4f1d5ab1ddf32d15a888f68b504e99",
+    "tools/collect_review_base.py": "b1d765741c578fb6c1766f40b935100ff5d4e87808a884f723e90209fef56a95",
+    "tools/compare_discount_models.py": "44e5a4c94c58b6ddf391db85b1a17d7346ea5981486d809ad945621d3e8c65d8",
+    "tools/deep_confirm_models.py": "df9ab218e607ad74f28c8ade6d4a14e869f6c79bcff2248e48a09b49eb70f462",
+    "tools/deep_employee_persistence.py": "258abea156112d183f2cbe119fbbde83cf45a51f63c416e88f66d305b2e00354",
+    "tools/deep_enriched_models.py": "83bf550afe1a36a4e190ccf426ff4bab073cfaedbfd05669da250550d3d75a53",
+    "tools/deep_export_evidence.py": "5a7c113c5ec50d6b6a4744fcc8afe7750b7e3d1ab3a5579b197b1496aafaaa09",
+    "tools/deep_full_aggregates.py": "02d2702070f3ec926fd027d9170f3630a5ffb72d1406a7b879ed1def06398d0a",
+    "tools/deep_interaction_check.py": "d8492992c0531d5c4d4594f64605cc575ff07833f6893bbccf2beaae6f4a0886",
+    "tools/deep_model_diagnostics.py": "2fc588dc8953244a11d16d4d7385ae9c174145f4fb10a354032540cf1d02f907",
+    "tools/deep_payment_support.py": "2b1317bafeebe3b6b810087234d0f2c67f39c82b0394606c4e02c347de1345bb",
+    "tools/deep_plot_findings.py": "546118af4410962b21f5027054d17b7e0f1b33a2f343bf70f5df457695850aea",
+    "tools/deep_report_local.py": "76dbfbd745e4ab9acb9eb9affd6646a9e9056a8b2b73cab5e9d43f8e55c11080",
+    "tools/deep_temporal_models.py": "64f083a49e2a9bf02c8b8738d3084f083e733675e20017734a64c8f1197dc299",
+    "tools/detection_review.py": "1254bdf2f33d110febd4ebef0aa5fbc0554bbcbb5415c91575c219a6ca17e776",
+    "tools/diagnose_discount_models.py": "537b9cf33605a7627f25fea60fcabd021dd1e1bfe59e1da531ab0627654ed889",
+    "tools/export_discount_review.py": "9639cf5001b101ef7706014776c9137beea9ea315af555140d822b1424894c0d",
+    "tools/export_evidence.py": "b517c6f2ae6a1dbe874248aae99645150dfe8584f867ae565cdf764d690ee4b0",
+    "tools/hydrate_detection_pilot.py": "7047515217ab6e3fbf303eb32d5eb45f34097af6f21795d14f676ed2238cb9d3",
+    "tools/package.py": "374d028787bd238a5ecd02003d40f881f0c6c02992e077276c95ff63d5fb041f",
+    "tools/plot_discount_review.py": "43562af07f270a68842c16d2d68ac70d877ad0976127a705635e269075a2203a",
+    "tools/prepare_deep_queries.py": "b7a2dad8d85d8f0feae00a9ea3afd66b949e87b6f1ccda92374d4b40724227b5",
+    "tools/prepare_discount_query.py": "105162c4b487c7b908376fb1753972eeaebfee111d3afbe50f6296f3e0e7c188",
+    "tools/prepare_discount_suite.py": "2441facd19b0af83da0bc67a06906152d4595084271482f3514b1e0c7b6b4e5e",
+    "tools/prepare_review_base.py": "bc786e1b3522f6d452c7b49020ed4fb8b518dbc2a08efe5b65595a2e67089e62",
+    "tools/remote_test.py": "cb67353d4feb2e2b789427ff51335d81cfde3ac833f713b489b89b69d3515530",
+    "tools/render_results.py": "c57b8f4f25b8ee75c6b4da2025c6c74607b79b6ef9d7ede48f92eb6c9c9f12b6",
+    "tools/report_cash_card.py": "dd54b94ddc4a4b76d533daf0010ed3e7f2bf78dc4166be9e05cf83e5a5e411e4",
+    "tools/run_cash_card_analysis.py": "2c8ed3212193343261d6e144044239a09ec9ecadf11928612b597254baa64bea",
+    "tools/run_readonly_query.py": "2154877aaa1c10ddc025d9b0a0f5f80b3d3e7f854363b9cf8c62007109cca593",
+    "tools/submit_review_base.py": "1c7b31cb20d4627708da404437ec7e1777bd57c7033524ae60ce0ce4c8c82e0e",
+    "tools/validate_release.py": "a58ca4fb5291b1a3803102f9b6e621d70908a657fa7c35c56b058fb752384894",
+    "tools/databricks_prototype.py": "f4e8651d763649d888ea30a4548e97d7943090a02e5ff7c913de9f0284206841",
+    "configs/pinned_analysis_state.json": "b35ad2e6d0ade6c7cc5a4895af603bc74fff389b6abb089634cb15e66d1f05b8",
+    "configs/detection_prototype.json": "57723c1f298a1f0f6dd9931c8fbf24efd91b45cf8cafa6dff8f138910d25a67d",
+    "configs/analysis_environment.json": "ae3e0d240657ce9fb3d4fe0c442b8b5dd57a2b31381a135f05564b38d0694bfd",
+    "configs/pipeline.json": "27a61ceee4a1954580cb316d7035fc265c6baabe4bc9068ea565518fa487384b",
+    "configs/review_policy_candidates.json": "bd38501bd3cd38c7dd213a942bac6ee4b015fc072bafedd9ab07bd857c30b5ba"
+  },
+  "run_id_databricks": 789881187167631,
+  "task_run_id": 273388893936815,
+  "run_page_url": "https://dbc-16eae557-a41d.cloud.databricks.com/?o=7474660351820655#job/538434602018695/run/789881187167631",
+  "summary_scope_note": "remote_deployment=false and zip_modified=false are legacy builder fields: the builder changes neither Jobs nor archives. This wrapper executed independently on Databricks."
+}

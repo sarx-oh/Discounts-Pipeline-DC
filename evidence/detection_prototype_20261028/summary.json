@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "snapshot": "1d0c27265ddf502573ea498bf8fe4a86570cc28b519430e5345bd68c75c71297",
+  "full_policy_cases": 2135,
+  "policy_scope_counts": {
+    "OVERLAPPING_SCOPE": 2050,
+    "DISTINCT_LINES": 85,
+    "UNKNOWN_SCOPE": 0
+  },
+  "train_n": 59169,
+  "calibration_n": 22530,
+  "evaluation_n": 21796,
+  "statistical_candidates": 95,
+  "profile_cases": 4,
+  "case_records_including_controls": 2268,
+  "threshold_sensitivity": [
+    {
+      "quantile": 0.9,
+      "cutoff": 0.25043289685381964,
+      "evaluation_candidates": 174
+    },
+    {
+      "quantile": 0.95,
+      "cutoff": 0.3538590008797964,
+      "evaluation_candidates": 95
+    },
+    {
+      "quantile": 0.99,
+      "cutoff": 0.5963447258431253,
+      "evaluation_candidates": 26
+    }
+  ],
+  "occurrence_prediction": {
+    "log_loss": 0.2995987349966926,
+    "roc_auc": 0.7214704726170996,
+    "average_precision": 0.21822937740169285,
+    "brier": 0.08677397733676766,
+    "observed_rate": 0.10277115066984768,
+    "predicted_rate": 0.1009952834617627
+  },
+  "conditional_severity_prediction": {
+    "mae": 0.138018385317791,
+    "rmse": 0.17595604928837208,
+    "observed_mean": 0.2410509517857143,
+    "predicted_mean": 0.22817666863255578
+  },
+  "model_predictors": "location, channel, hour, weekday, gross, lines, traffic, product category/diversity/share, detailed payment; no employee identity, tips, discount labels or manager",
+  "usefulness": "UNKNOWN: no human reviews yet; predictive accuracy is not misuse detection precision",
+  "remote_deployment": false,
+  "zip_modified": false
+}

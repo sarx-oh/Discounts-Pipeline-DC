@@ -1,0 +1,32 @@
+{
+  "00_auditoria_modelo.ipynb": {
+    "baseline_sha256": "5921f98f88405b34b3341eadfafcac3d041b6a50ec2fac4339ef288bef26bd0c",
+    "delivery_sha256": "5921f98f88405b34b3341eadfafcac3d041b6a50ec2fac4339ef288bef26bd0c",
+    "baseline_code_cells": 7,
+    "delivery_code_cells": 7,
+    "changed_code_cell_positions": []
+  },
+  "01_bronze_ingesta.ipynb": {
+    "baseline_sha256": "e0410fbb0147ab87d7397eed557f3c40e37ba60c0050a9ed9b51a1a35974c54d",
+    "delivery_sha256": "e0410fbb0147ab87d7397eed557f3c40e37ba60c0050a9ed9b51a1a35974c54d",
+    "baseline_code_cells": 3,
+    "delivery_code_cells": 3,
+    "changed_code_cell_positions": []
+  },
+  "02_silver_preparacion.ipynb": {
+    "baseline_sha256": "9fd8c1e75894f6b0e51d3b2e51ebaf014643779177e395d7d432cefe10399ae4",
+    "delivery_sha256": "9fd8c1e75894f6b0e51d3b2e51ebaf014643779177e395d7d432cefe10399ae4",
+    "baseline_code_cells": 17,
+    "delivery_code_cells": 17,
+    "changed_code_cell_positions": []
+  },
+  "03_gold_metricas.ipynb": {
+    "baseline_sha256": "237f8d235648cef52e83033d6adce374d7cf614e892dadb4687999104cf400d7",
+    "delivery_sha256": "afd82f1cf23692dcc7ccf5bbc8498a17f9daa050b651dd956c3fc25fda8a4d16",
+    "baseline_code_cells": 20,
+    "delivery_code_cells": 20,
+    "changed_code_cell_positions": [
+      13
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "counts": {
+    "full_policy_cases": {
+      "historical_local": 2135,
+      "databricks": 2135,
+      "equal": true
+    },
+    "train_n": {
+      "historical_local": 59169,
+      "databricks": 59169,
+      "equal": true
+    },
+    "calibration_n": {
+      "historical_local": 22530,
+      "databricks": 22530,
+      "equal": true
+    },
+    "evaluation_n": {
+      "historical_local": 21796,
+      "databricks": 21796,
+      "equal": true
+    },
+    "statistical_candidates": {
+      "historical_local": 95,
+      "databricks": 95,
+      "equal": true
+    },
+    "profile_cases": {
+      "historical_local": 4,
+      "databricks": 4,
+      "equal": true
+    },
+    "case_records_including_controls": {
+      "historical_local": 2268,
+      "databricks": 2268,
+      "equal": true
+    },
+    "policy_scope_counts": {
+      "historical_local": {
+        "OVERLAPPING_SCOPE": 2050,
+        "DISTINCT_LINES": 85,
+        "UNKNOWN_SCOPE": 0
+      },
+      "databricks": {
+        "OVERLAPPING_SCOPE": 2050,
+        "DISTINCT_LINES": 85,
+        "UNKNOWN_SCOPE": 0
+      },
+      "equal": true
+    }
+  },
+  "maximum_absolute_predictive_metric_difference": 1.452568204607374e-10,
+  "absolute_tolerance": 1e-08,
+  "note": "Numerical libraries/platforms may differ at floating-point precision. Snapshot IDs also differ because runtime/source hashes are part of lineage; do not reuse case IDs or reviews across snapshots."
+}

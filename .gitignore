@@ -1,0 +1,10 @@
+build/
+.deployment/
+__pycache__/
+*.pyc
+.venv/
+.env
+.databrickscfg
+.DS_Store
+data/
+*.zip

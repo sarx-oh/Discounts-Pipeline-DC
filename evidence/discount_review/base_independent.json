@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "statement_id": "01f1d24c-aee4-1bd5-851f-d3b0d27b0d2b",
+  "checks": {
+    "missing_tickets": "0",
+    "extra_or_changed_tickets": "0",
+    "missing_cases": "0",
+    "extra_cases": "0",
+    "weekly_ticket_difference": "0",
+    "weekly_discount_difference": "0.0000",
+    "review_decisions": "0"
+  }
+}

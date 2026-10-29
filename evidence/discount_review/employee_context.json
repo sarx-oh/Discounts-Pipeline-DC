@@ -1,0 +1,16 @@
+{
+  "statement_id": "01f1d24a-ba19-1efe-aa52-6edbba66ec39",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  },
+  "rows": [
+    {
+      "section": "coverage",
+      "payload": "[{\"eligible_tickets\":2062794,\"eligible_employees\":3150,\"comparable_tickets\":1001265,\"comparable_cells\":19503,\"employee_location_profiles\":2329,\"stable_support_profiles\":1436}]"
+    },
+    {
+      "section": "distribution",
+      "payload": "[{\"profiles\":2329,\"above_10pp\":15,\"within_2pp\":772}]"
+    }
+  ]
+}

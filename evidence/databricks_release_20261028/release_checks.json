@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "local_tests": 34,
+  "native_detector_contract_tests": 31,
+  "pipeline_source_matches_tested_bundle": true,
+  "pipeline_source_hashes": {
+    "src/quality/00_auditoria_modelo.ipynb": "bdcf1e0705f1e492385eb9489b216f30ce80c75067f852bed9055650f6b5c0f6",
+    "src/transformations/bronze/01_bronze_ingesta.ipynb": "acafd960561db280bffb7216891747740224b29fd3ffb5e23a48aca26954df4f",
+    "src/transformations/silver/02_silver_preparacion.ipynb": "5647b61e50404ed57eea7ff3185da7fc14af7bcee5480b7ce6b1933efd8da528",
+    "src/transformations/gold/03_gold_metricas.ipynb": "266624f66e910813e13e851bc1d70f897a494876e1329f0d5858265a886746a8",
+    "src/common/pipeline_support.py": "88ab07b61fc2018d77844d1ff2ed6cc263a52f1b1c667c7b71701c343428e830",
+    "src/common/thresholds.py": "c3a8ce74804866ca73bb79645b9cbf663f112641ed2e25dd10fa4184d21c93c2",
+    "src/common/review_contract.py": "c779a647810cc2e86695428d43de15d89b695ee22df80d12e0a4458cc750bf33",
+    "src/common/runtime.py": "69553853bab810dc9e57b12dccc4715848d15f9064c0a346bd2d17c6ff1df705"
+  },
+  "pipeline_job_id": 546964718724235,
+  "pipeline_scenarios": [
+    "initial",
+    "repeat",
+    "changed",
+    "failure",
+    "recovery"
+  ],
+  "original_dashboard_unchanged": true,
+  "private_case_data_packaged": false
+}

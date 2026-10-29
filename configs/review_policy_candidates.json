@@ -1,0 +1,37 @@
+{
+  "version": "exploration-2026-10-27-v1",
+  "deployment_status": "NOT_DEPLOYED",
+  "confirmed_business_statement": "Employee Meal and Employee Fifty must not combine with other discounts, according to the business clarification relayed by the user.",
+  "rules": [
+    {
+      "business_name": "Employee Fifty",
+      "candidate_ids": [518, 520, 523],
+      "mapping_status": "REQUIRES_BUSINESS_CONFIRMATION",
+      "observed_scopes": {"518": "ticket", "520": "ticket", "523": "item"},
+      "candidate_condition": "Positive amount and another positive discount with a different DiscountId on the same ticket",
+      "unresolved": ["Whether all three IDs implement the stated policy", "Whether incompatibility applies across distinct item lines", "Permitted operational exceptions"],
+      "automatic_blocking": false
+    },
+    {
+      "business_name": "Employee Meal",
+      "candidate_ids": [],
+      "mapping_status": "UNRESOLVED",
+      "observed_label_for_investigation": {"DiscountId": 65, "DiscountName": "MIT MEAL"},
+      "warning": "Do not treat MIT MEAL as Employee Meal without confirmation",
+      "automatic_blocking": false
+    }
+  ],
+  "exploratory_context_parameters": {
+    "comparison": ["LocationId", "channel_name", "payment_family", "week"],
+    "exclude_employee_from_peers": true,
+    "min_employee_tickets_per_cell": 30,
+    "min_peer_tickets_per_cell": 100,
+    "min_profile_weeks": 4,
+    "min_profile_tickets": 200,
+    "high_frequency_gap": 0.10,
+    "near_peer_frequency_band": 0.02,
+    "week_over_week_excess_rate_increase": 0.15,
+    "interpretation": "Exploratory review criteria, not validated compliance thresholds"
+  },
+  "review_decisions": ["JUSTIFIED", "CONFIRMED_POLICY_BREACH", "DATA_ISSUE", "INSUFFICIENT_EVIDENCE"]
+}

@@ -1,0 +1,41 @@
+{
+  "release_date": "2026-10-28",
+  "scope": "Local release checks; no remote Job execution or production changes",
+  "checks": {
+    "clean_extraction_local_tests": 31,
+    "clean_source_validation": "PASS",
+    "local_sandbox_bundle": "4 tasks; all bundle hashes verified; no remote submission",
+    "regenerated_deep_requests_match_recorded": 14,
+    "tampered_archive_rejected": "PASS",
+    "private_case_file_rejected": "PASS",
+    "notebook_processing_ast_unchanged": true,
+    "shared_pipeline_logic_comparison": {
+      "src/common/pipeline_support.py": true,
+      "src/common/thresholds.py": true,
+      "src/common/review_contract.py": true,
+      "src/common/runtime.py": true,
+      "src/quality/00_auditoria_modelo.ipynb": true,
+      "src/transformations/bronze/01_bronze_ingesta.ipynb": true,
+      "src/transformations/silver/02_silver_preparacion.ipynb": true,
+      "src/transformations/gold/03_gold_metricas.ipynb": true
+    },
+    "local_detector_rebuild": {
+      "status": "PASS",
+      "full_policy_cases": 2135,
+      "train_n": 59169,
+      "calibration_n": 22530,
+      "evaluation_n": 21796,
+      "statistical_candidates": 95,
+      "profile_cases": 4,
+      "historical_metrics_equal": true,
+      "private_inputs_included_in_release": false
+    }
+  },
+  "limitations": [
+    "Remote five-scenario results are historical evidence, not rerun for this release.",
+    "Optional dependencies verified in existing environment; no clean network installation performed.",
+    "Model utility and production performance remain unvalidated.",
+    "Historical evidence hashes are preserved; documentation and diagnostic text changes alter current file hashes."
+  ],
+  "status": "PASS"
+}

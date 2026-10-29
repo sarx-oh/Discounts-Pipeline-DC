@@ -1,0 +1,1101 @@
+{
+  "statement_id": "01f1d24a-23dc-14e7-982a-017a0d96b3dc",
+  "sources": {
+    "workspace.applebees_test_0eef22876f8b_silver.discounts": 1,
+    "workspace.applebees_test_0eef22876f8b_silver.dim_employees": 3,
+    "workspace.applebees_test_0eef22876f8b_gold.ticket_metrics": 9
+  },
+  "sections": {
+    "labels": [
+      {
+        "DiscountId": 69,
+        "DiscountName": "HOTEL %",
+        "discount_scope": "ticket",
+        "records": 1461,
+        "positive_records": 1461,
+        "amount": 7816.16,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 16,
+        "DiscountName": "GC BONUS",
+        "discount_scope": "ticket",
+        "records": 3134,
+        "positive_records": 3134,
+        "amount": 31185.42,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 3134
+      },
+      {
+        "DiscountId": 501,
+        "DiscountName": "Free Dessert ",
+        "discount_scope": "ticket",
+        "records": 38,
+        "positive_records": 38,
+        "amount": 344.12,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 425,
+        "DiscountName": "HUSKER",
+        "discount_scope": "ticket",
+        "records": 1,
+        "positive_records": 1,
+        "amount": 11.49,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 524,
+        "DiscountName": "2026 MDG ",
+        "discount_scope": "ticket",
+        "records": 11,
+        "positive_records": 11,
+        "amount": 109.99,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 17,
+        "DiscountName": "EMP 10%",
+        "discount_scope": "ticket",
+        "records": 5486,
+        "positive_records": 5486,
+        "amount": 18213.61,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 146,
+        "DiscountName": "LRM10%",
+        "discount_scope": "ticket",
+        "records": 29527,
+        "positive_records": 29527,
+        "amount": 89979.87,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 282,
+        "DiscountName": "FREELUNCH",
+        "discount_scope": "ticket",
+        "records": 2371,
+        "positive_records": 2371,
+        "amount": 24127.96,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 128,
+        "DiscountName": "HQ DISC",
+        "discount_scope": "ticket",
+        "records": 224,
+        "positive_records": 224,
+        "amount": 2304.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 526,
+        "DiscountName": "CTR 15",
+        "discount_scope": "ticket",
+        "records": 2,
+        "positive_records": 2,
+        "amount": 31.95,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 531,
+        "DiscountName": "PUNCHH A1 [TMobile2026]",
+        "discount_scope": "ticket",
+        "records": 169,
+        "positive_records": 169,
+        "amount": 1621.81,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 127,
+        "DiscountName": "5 OFF 25",
+        "discount_scope": "ticket",
+        "records": 2225,
+        "positive_records": 2225,
+        "amount": 11125.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 41,
+        "DiscountName": "2/20 QUAL",
+        "discount_scope": "ticket",
+        "records": 5524,
+        "positive_records": 5524,
+        "amount": 52977.3,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 463,
+        "DiscountName": "BURGER12",
+        "discount_scope": "ticket",
+        "records": 5,
+        "positive_records": 5,
+        "amount": 25.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 511,
+        "DiscountName": "2026 Date Night Pass",
+        "discount_scope": "ticket",
+        "records": 10,
+        "positive_records": 10,
+        "amount": 491.86,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 414,
+        "DiscountName": "PUNCHH A1 2025GIFT2[$10 off $40]",
+        "discount_scope": "ticket",
+        "records": 59,
+        "positive_records": 59,
+        "amount": 590.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 496,
+        "DiscountName": "Free App ",
+        "discount_scope": "ticket",
+        "records": 8,
+        "positive_records": 8,
+        "amount": 86.72,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 534,
+        "DiscountName": "GIFT $10 OFF $40 2026 C2",
+        "discount_scope": "ticket",
+        "records": 1,
+        "positive_records": 1,
+        "amount": 10.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 170,
+        "DiscountName": "PUNCHHOLO",
+        "discount_scope": "ticket",
+        "records": 9060,
+        "positive_records": 9060,
+        "amount": 83766.82,
+        "unknown_employee_records": 2,
+        "unknown_manager_records": 8333
+      },
+      {
+        "DiscountId": 503,
+        "DiscountName": "GIFT $10 OFF $40 2026 C1",
+        "discount_scope": "ticket",
+        "records": 11,
+        "positive_records": 11,
+        "amount": 110.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 518,
+        "DiscountName": "EMP 50%",
+        "discount_scope": "ticket",
+        "records": 276,
+        "positive_records": 276,
+        "amount": 2413.98,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 497,
+        "DiscountName": "Loyalty Integration Check Discount",
+        "discount_scope": "ticket",
+        "records": 262,
+        "positive_records": 261,
+        "amount": 2157.62,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 521,
+        "DiscountName": "6OFF26",
+        "discount_scope": "ticket",
+        "records": 97,
+        "positive_records": 97,
+        "amount": 582.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 519,
+        "DiscountName": "PUNCHH A1 2026GIFT1[$10 off $40]",
+        "discount_scope": "ticket",
+        "records": 410,
+        "positive_records": 410,
+        "amount": 4100.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 83,
+        "DiscountName": "RMH-CC",
+        "discount_scope": "ticket",
+        "records": 2075,
+        "positive_records": 2075,
+        "amount": 20085.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 15,
+        "DiscountName": "ROLLOUT",
+        "discount_scope": "ticket",
+        "records": 3517,
+        "positive_records": 3517,
+        "amount": 87739.7,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 488,
+        "DiscountName": "COMP balance: 0.00",
+        "discount_scope": "ticket",
+        "records": 60,
+        "positive_records": 60,
+        "amount": 600.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 499,
+        "DiscountName": "PUNCHH A1 Club APPB[Free Dessert w/$15]2026",
+        "discount_scope": "ticket",
+        "records": 1565,
+        "positive_records": 1565,
+        "amount": 14540.25,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 176,
+        "DiscountName": "PUNCHH A1",
+        "discount_scope": "ticket",
+        "records": 3049,
+        "positive_records": 3049,
+        "amount": 38570.63,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 462,
+        "DiscountName": "12OFF50",
+        "discount_scope": "ticket",
+        "records": 49,
+        "positive_records": 49,
+        "amount": 588.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 510,
+        "DiscountName": "PUNCHH A1 [$50 Date Night Pass] 2026 DNP",
+        "discount_scope": "ticket",
+        "records": 139,
+        "positive_records": 139,
+        "amount": 6725.99,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 73,
+        "DiscountName": "GC ITEM",
+        "discount_scope": "ticket",
+        "records": 3,
+        "positive_records": 3,
+        "amount": 23.98,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 473,
+        "DiscountName": "5OFF25",
+        "discount_scope": "ticket",
+        "records": 51,
+        "positive_records": 51,
+        "amount": 255.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 3,
+        "DiscountName": "TRAINER",
+        "discount_scope": "ticket",
+        "records": 6788,
+        "positive_records": 6788,
+        "amount": 106472.98,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 147,
+        "DiscountName": "LRM20%",
+        "discount_scope": "ticket",
+        "records": 2821,
+        "positive_records": 2821,
+        "amount": 19893.62,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 11,
+        "DiscountName": "MARKETING",
+        "discount_scope": "ticket",
+        "records": 10011,
+        "positive_records": 10011,
+        "amount": 95166.74,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 424,
+        "DiscountName": "PUNCHH A1 [FreeApps$15]",
+        "discount_scope": "ticket",
+        "records": 10,
+        "positive_records": 10,
+        "amount": 103.92,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 513,
+        "DiscountName": "PUNCHH A1 2026GIFT1GR[$10 off $40]",
+        "discount_scope": "ticket",
+        "records": 4,
+        "positive_records": 4,
+        "amount": 40.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 516,
+        "DiscountName": "Club Applebee's Free Birthday Dessert",
+        "discount_scope": "ticket",
+        "records": 7,
+        "positive_records": 7,
+        "amount": 61.73,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 532,
+        "DiscountName": "PUNCHH A1 2026GIFT2[$10 off $40]",
+        "discount_scope": "ticket",
+        "records": 99,
+        "positive_records": 99,
+        "amount": 990.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 530,
+        "DiscountName": "Free Classic Burger and Fries with a $10 Purchase",
+        "discount_scope": "ticket",
+        "records": 11,
+        "positive_records": 11,
+        "amount": 147.49,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 466,
+        "DiscountName": "FREECHPS",
+        "discount_scope": "ticket",
+        "records": 6,
+        "positive_records": 6,
+        "amount": 36.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 211,
+        "DiscountName": "ALFS$5",
+        "discount_scope": "ticket",
+        "records": 9,
+        "positive_records": 9,
+        "amount": 45.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 358,
+        "DiscountName": "10OFF40",
+        "discount_scope": "ticket",
+        "records": 1857,
+        "positive_records": 1857,
+        "amount": 18570.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 461,
+        "DiscountName": "FREEPIE",
+        "discount_scope": "ticket",
+        "records": 1612,
+        "positive_records": 1612,
+        "amount": 12796.64,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 93,
+        "DiscountName": "MILTARY 10",
+        "discount_scope": "ticket",
+        "records": 32913,
+        "positive_records": 32913,
+        "amount": 117058.82,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 10,
+        "DiscountName": "BIRTHDAY",
+        "discount_scope": "ticket",
+        "records": 13751,
+        "positive_records": 13751,
+        "amount": 27782.88,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 275,
+        "DiscountName": "BOGO",
+        "discount_scope": "ticket",
+        "records": 815,
+        "positive_records": 815,
+        "amount": 15035.11,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 159,
+        "DiscountName": "FREEAPP",
+        "discount_scope": "ticket",
+        "records": 9334,
+        "positive_records": 9334,
+        "amount": 110174.65,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 148,
+        "DiscountName": "LRM15%",
+        "discount_scope": "ticket",
+        "records": 2922,
+        "positive_records": 2922,
+        "amount": 16821.37,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 413,
+        "DiscountName": "15OFF65",
+        "discount_scope": "ticket",
+        "records": 71,
+        "positive_records": 71,
+        "amount": 1070.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 471,
+        "DiscountName": "20OFF75",
+        "discount_scope": "ticket",
+        "records": 7,
+        "positive_records": 7,
+        "amount": 140.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 515,
+        "DiscountName": "PUNCHH A1 MDG2026[$10 Bonus Card]SVSPreGen300K",
+        "discount_scope": "ticket",
+        "records": 34,
+        "positive_records": 34,
+        "amount": 335.37,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 418,
+        "DiscountName": "PUNCHH A1 [$10 Off $40] Pre-Gen Off Prem",
+        "discount_scope": "ticket",
+        "records": 19,
+        "positive_records": 19,
+        "amount": 180.5,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 172,
+        "DiscountName": "10OFF30",
+        "discount_scope": "ticket",
+        "records": 798,
+        "positive_records": 798,
+        "amount": 7980.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 320,
+        "DiscountName": "PUNCHH A1 Club APPB [Free App w/$15] 12.23",
+        "discount_scope": "ticket",
+        "records": 465,
+        "positive_records": 465,
+        "amount": 5810.31,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 517,
+        "DiscountName": "PUNCHH A1 MDG2026[$10 Bonus Card]CashStar(88.4K)",
+        "discount_scope": "ticket",
+        "records": 397,
+        "positive_records": 397,
+        "amount": 3952.31,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 336,
+        "DiscountName": "MAIL%21",
+        "discount_scope": "ticket",
+        "records": 351,
+        "positive_records": 350,
+        "amount": 3021.18,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 381,
+        "DiscountName": "HOTEL$",
+        "discount_scope": "ticket",
+        "records": 143,
+        "positive_records": 143,
+        "amount": 672.44,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 509,
+        "DiscountName": "PUNCHH A1 Club APPB [Free App w/$15] GR",
+        "discount_scope": "ticket",
+        "records": 1,
+        "positive_records": 1,
+        "amount": 5.99,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 494,
+        "DiscountName": "PUNCHH A1 [$8Cheeseburger]",
+        "discount_scope": "ticket",
+        "records": 3,
+        "positive_records": 3,
+        "amount": 13.47,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 533,
+        "DiscountName": "FREEDRTY",
+        "discount_scope": "ticket",
+        "records": 2,
+        "positive_records": 2,
+        "amount": 10.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 38,
+        "DiscountName": "KIDS FREE",
+        "discount_scope": "ticket",
+        "records": 22935,
+        "positive_records": 22935,
+        "amount": 176585.5,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 520,
+        "DiscountName": "EMP 50",
+        "discount_scope": "ticket",
+        "records": 28620,
+        "positive_records": 28620,
+        "amount": 252397.29,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 96,
+        "DiscountName": "PRIDE",
+        "discount_scope": "ticket",
+        "records": 2282,
+        "positive_records": 2282,
+        "amount": 33297.73,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 65,
+        "DiscountName": "MIT MEAL",
+        "discount_scope": "ticket",
+        "records": 598,
+        "positive_records": 598,
+        "amount": 9889.65,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 464,
+        "DiscountName": "BWBOGO",
+        "discount_scope": "ticket",
+        "records": 277,
+        "positive_records": 277,
+        "amount": 3988.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 528,
+        "DiscountName": "PUNCHH A1 MDG2026[$10 Bonus Card]CashStar(5K)",
+        "discount_scope": "ticket",
+        "records": 12,
+        "positive_records": 12,
+        "amount": 120.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 1,
+        "DiscountName": "MANAGER",
+        "discount_scope": "ticket",
+        "records": 21730,
+        "positive_records": 21730,
+        "amount": 366730.97,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 2,
+        "DiscountName": "EMP 25%",
+        "discount_scope": "ticket",
+        "records": 8065,
+        "positive_records": 8065,
+        "amount": 41264.98,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 514,
+        "DiscountName": "Club Applebee's Free Appetizer  ",
+        "discount_scope": "ticket",
+        "records": 17,
+        "positive_records": 17,
+        "amount": 189.35,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 522,
+        "DiscountName": "PUNCHH A1 [$10 BounceBack] Pre-Gen Off Prem",
+        "discount_scope": "ticket",
+        "records": 21,
+        "positive_records": 21,
+        "amount": 210.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 527,
+        "DiscountName": "$10 Digital Bonus Card",
+        "discount_scope": "ticket",
+        "records": 1,
+        "positive_records": 1,
+        "amount": 10.0,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 465,
+        "DiscountName": "FREEPIE",
+        "discount_scope": "item",
+        "records": 6,
+        "positive_records": 6,
+        "amount": 49.94,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 436,
+        "DiscountName": "Birthday",
+        "discount_scope": "item",
+        "records": 764,
+        "positive_records": 764,
+        "amount": 5202.83,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 428,
+        "DiscountName": "EMP 10%",
+        "discount_scope": "item",
+        "records": 192,
+        "positive_records": 192,
+        "amount": 245.41,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 447,
+        "DiscountName": "LRM20%",
+        "discount_scope": "item",
+        "records": 567,
+        "positive_records": 567,
+        "amount": 1547.52,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 479,
+        "DiscountName": "BWBOGO",
+        "discount_scope": "item",
+        "records": 1,
+        "positive_records": 1,
+        "amount": 15.49,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 476,
+        "DiscountName": "FREE CHPS",
+        "discount_scope": "item",
+        "records": 1,
+        "positive_records": 1,
+        "amount": 6.99,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 433,
+        "DiscountName": "LRM10%",
+        "discount_scope": "item",
+        "records": 1762,
+        "positive_records": 1761,
+        "amount": 2277.05,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 19,
+        "DiscountName": "TASTE",
+        "discount_scope": "item",
+        "records": 59102,
+        "positive_records": 24326,
+        "amount": 247200.12,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 111,
+        "DiscountName": "2F20STKCMP",
+        "discount_scope": "item",
+        "records": 47,
+        "positive_records": 17,
+        "amount": 215.66,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 432,
+        "DiscountName": "EMP 25%",
+        "discount_scope": "item",
+        "records": 405,
+        "positive_records": 405,
+        "amount": 1190.39,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 440,
+        "DiscountName": "Rollout",
+        "discount_scope": "item",
+        "records": 226,
+        "positive_records": 226,
+        "amount": 2584.36,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 455,
+        "DiscountName": "10OFF30",
+        "discount_scope": "item",
+        "records": 24,
+        "positive_records": 24,
+        "amount": 233.49,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 20,
+        "DiscountName": "TEMP",
+        "discount_scope": "item",
+        "records": 20853,
+        "positive_records": 6879,
+        "amount": 86148.59,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 23,
+        "DiscountName": "WAIT",
+        "discount_scope": "item",
+        "records": 8922,
+        "positive_records": 3256,
+        "amount": 33251.74,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 18,
+        "DiscountName": "SERVERERR",
+        "discount_scope": "item",
+        "records": 35518,
+        "positive_records": 13267,
+        "amount": 133933.33,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 435,
+        "DiscountName": "Free APP",
+        "discount_scope": "item",
+        "records": 164,
+        "positive_records": 164,
+        "amount": 2128.84,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 523,
+        "DiscountName": "EMP 50%",
+        "discount_scope": "item",
+        "records": 1498,
+        "positive_records": 1497,
+        "amount": 8980.99,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 143,
+        "DiscountName": "GST CORECT",
+        "discount_scope": "item",
+        "records": 50022,
+        "positive_records": 17815,
+        "amount": 181494.54,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 438,
+        "DiscountName": "10OFF40",
+        "discount_scope": "item",
+        "records": 66,
+        "positive_records": 66,
+        "amount": 614.12,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 429,
+        "DiscountName": "Marketing",
+        "discount_scope": "item",
+        "records": 3359,
+        "positive_records": 3357,
+        "amount": 35654.82,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 27,
+        "DiscountName": "WALKOUT",
+        "discount_scope": "item",
+        "records": 27306,
+        "positive_records": 9768,
+        "amount": 92758.02,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 24,
+        "DiscountName": "WRNG STORE",
+        "discount_scope": "item",
+        "records": 2467,
+        "positive_records": 702,
+        "amount": 7749.58,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 529,
+        "DiscountName": "15OFF65",
+        "discount_scope": "item",
+        "records": 12,
+        "positive_records": 12,
+        "amount": 173.46,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 437,
+        "DiscountName": "Military",
+        "discount_scope": "item",
+        "records": 3695,
+        "positive_records": 3694,
+        "amount": 4659.2,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 434,
+        "DiscountName": "Pride",
+        "discount_scope": "item",
+        "records": 1280,
+        "positive_records": 1269,
+        "amount": 14340.58,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 26,
+        "DiscountName": "WRNG DRINK",
+        "discount_scope": "item",
+        "records": 1654,
+        "positive_records": 1210,
+        "amount": 8149.74,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 443,
+        "DiscountName": "LRM15%",
+        "discount_scope": "item",
+        "records": 449,
+        "positive_records": 448,
+        "amount": 930.81,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 174,
+        "DiscountName": "NOSHOW",
+        "discount_scope": "item",
+        "records": 10152,
+        "positive_records": 2695,
+        "amount": 28895.45,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 25,
+        "DiscountName": "ENTRE CARD",
+        "discount_scope": "item",
+        "records": 1274,
+        "positive_records": 425,
+        "amount": 4374.33,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 454,
+        "DiscountName": "2/20 QUAL",
+        "discount_scope": "item",
+        "records": 35,
+        "positive_records": 35,
+        "amount": 473.99,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 525,
+        "DiscountName": "FREELUNCH",
+        "discount_scope": "item",
+        "records": 4,
+        "positive_records": 4,
+        "amount": 35.47,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 21,
+        "DiscountName": "KITCHNERR",
+        "discount_scope": "item",
+        "records": 35410,
+        "positive_records": 11737,
+        "amount": 133364.44,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      },
+      {
+        "DiscountId": 22,
+        "DiscountName": "SPEED",
+        "discount_scope": "item",
+        "records": 8754,
+        "positive_records": 3020,
+        "amount": 31903.24,
+        "unknown_employee_records": 0,
+        "unknown_manager_records": 0
+      }
+    ],
+    "discount_role_coverage": [
+      {
+        "records": 516690,
+        "positive_records": 350307,
+        "positive_employee_id_missing_catalog": 0,
+        "positive_manager_id_missing_catalog": 0,
+        "deleted_employee_records": 78744,
+        "same_employee_manager_records": 661
+      }
+    ],
+    "ticket_coverage": [
+      {
+        "tickets": 2142846,
+        "discounted_tickets": 268580,
+        "single_payment_employee_tickets": 2138811,
+        "multiple_payment_employee_tickets": 0,
+        "unknown_payment_employee_tickets": 179,
+        "attributed_discounted_tickets": 266365,
+        "positive_reconciled_tickets": 2063393
+      }
+    ],
+    "employee_catalog": [
+      {
+        "rows": 156975,
+        "distinct_ids": 156975,
+        "null_ids": 0,
+        "deleted_rows": 148650
+      }
+    ]
+  }
+}

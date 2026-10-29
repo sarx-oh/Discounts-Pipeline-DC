@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "fractional_weighted_binary_matches_direct_objective_max_coefficient_error": 2.6862219733303494e-08,
+  "prepared_readonly_queries": 3,
+  "remote_execution": "NOT EXECUTED: authentication required"
+}
